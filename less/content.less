@@ -1,0 +1,385 @@
+h1, h2, h3, h4, h5, h6 {
+  color: @brand-primary;
+}
+
+// Use contextual links for actions on Nodes. Affects staff only.
+.page-node {
+  .tabs--primary.nav-tabs {
+    display: none;
+  }
+}
+
+.main-container {
+  padding-top: @grid-gutter-width;
+}
+
+.views {
+  max-width: 720px;
+}
+
+.views-row + .views-row {
+  padding-top: @grid-gutter-width;
+}
+
+.views-field-title {
+  margin-top: 0px;
+}
+
+.views-field-field-in-activity,
+.views-field-field-is-audio {
+  display: none;
+}
+
+.views-field-field-speakers {
+  float: left;
+}
+
+.views-field-body,
+.views-field-nid {
+  display: inline;
+
+  .field-content {
+    display: inline;
+  }
+}
+
+.views-field-field-speakers,
+.views-field-field-date-text {
+  width: 50%;
+}
+
+.views-field-field-speakers,
+.views-field-field-date-text {
+  font-weight: bold;
+}
+
+.views-field-field-date-text {
+  float: right;
+  text-align: right;
+}
+
+.views-field-body {
+  clear: both;
+}
+
+.not-front {
+  .region-content {
+    .views-field-body {
+      display: block;
+    }
+  }
+}
+
+.view-national-blog,
+.view-activity-to-event,
+.region-sidebar-second {
+  .views-field-field-speakers,
+  .views-field-field-date-text {
+    float: none;
+    text-align: inherit;
+    width: auto;
+  }
+}
+
+.view-national-blog,
+.view-activity-to-event {
+  .views-field-field-thumbnail-image {
+    float: left;
+  }
+
+  .views-field-title,
+  .views-field-field-date-text,
+  .views-field-body {
+    margin-left: 60px;
+  }
+
+  .views-field-body {
+    display: inherit;
+    margin-bottom: @grid-gutter-width;
+  }
+}
+
+.view-national-library {
+  .more-link {
+    display: none;
+  }
+}
+
+.page-header,
+.block-title {
+  display: flex;
+
+  i {
+    width: 60px;
+  }
+}
+
+/*
+ * Node formatting
+ */
+
+.block-system {
+  .node,
+  .view {
+    max-width: 720px;
+  }
+
+  .node {
+    .field-name-field-in-activity,
+    .blog_usernames_blog {
+      display: none;
+    }
+
+    .field-name-field-image,
+    .field-name-field-series-image,
+    .field-name-field-add-to-calendar {
+      float: right;
+      clear: right;
+      max-width: 50%;
+      margin-left: floor(@grid-gutter-width/4);
+      padding-left: floor(@grid-gutter-width/4);
+      padding-bottom: floor(@grid-gutter-width/2);
+
+      img {
+        .img-responsive;
+      }
+    }
+
+    .field-name-field-speakers,
+    .field-name-field-bible-reference,
+    .field-name-field-episode-date {
+      .field-label {
+        width: 140px;
+      }
+    }
+
+    .field-name-field-topic,
+    .field-name-field-topics {
+      display: inline;
+
+      .field-label {
+        display: none;
+      }
+
+      .field-items {
+        display: inline;
+      }
+
+      .field-item {
+        .badge;
+        display: inline-block;
+        padding: 5px;
+        margin: 0 5px 5px 0;
+        background: @text-color;
+        color: white;
+      }
+    }
+
+    .field-name-field-date-text {
+      font-weight: bold;
+      font-size: @font-size-large;
+    }
+
+    .field-name-field-date-text,
+    .field-name-field-episode-date,
+    .field-name-body,
+    .field-name-field-content,
+    .field-name-field-addthis {
+      padding-bottom: @grid-gutter-width;
+    }
+
+    .field-name-field-topic + .field-name-body,
+    .field-name-field-topics + .field-name-body {
+      padding-top: @grid-gutter-width;
+    }
+
+    .comment-add,
+    .field-name-field-add-to-calendar .field-item {
+      .badge;
+      width: 280px;
+      max-width: 100%;
+      padding: floor(@grid-gutter-width/2);
+      margin-bottom: @grid-gutter-width;
+      border-radius: @grid-gutter-width;
+      background: @brand-primary;
+
+      a,
+      a:hover,
+      a:focus {
+        // Mobile:
+          font-size: @font-size-base;
+        @media (min-width: @screen-xs-min) {
+          font-size: @font-size-large;
+        }
+        font-weight: bold;
+        color: white;
+      }
+
+      .dropdown a {
+        padding: 0;
+      }
+
+      .dropdown-menu {
+        a,
+        a:hover,
+        a:focus {
+          padding: floor(@grid-gutter-width/4);
+          text-align: left;
+          font-size: @font-size-base;
+          font-weight: normal;
+          color: @brand-primary;
+        }
+      }
+    }
+  }
+}
+
+/*
+ * jPlayer configuration
+ */
+
+@font-size-fplayer-button-large: floor(@font-size-base * 3);
+@font-size-fplayer-button-small: @font-size-large;
+@gray-fplayer-background:        lighten(@text-color, 50%);
+
+.domain-logoslive-org {
+  div.jp-audio {
+    color: @text-color;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+
+    // Mobile:
+      width: 100%;
+    @media (min-width: @screen-xs-min) {
+      width: @screen-xs-min;
+    }
+
+    div.jp-type-playlist {
+      div.jp-interface {
+        height: 80px;
+      }
+
+      div.jp-playlist {
+        a.jp-playlist-current {
+          color: @link-color;
+        }
+
+        a.jp-playlist-current:hover,
+        a.jp-playlist-current:focus {
+          color: @link-hover-color;
+          text-decoration: underline;
+        }
+      }
+
+      a.jp-play,
+      a.jp-pause {
+        left: 20px;
+      }
+
+      div.jp-progress,
+      div.jp-current-time,
+      div.jp-duration {
+        left: 76px;
+        width: 200px;
+      }
+    }
+  }
+
+  div.jp-interface {
+    background-color: inherit;
+    border: 0;
+
+    ul.jp-controls {
+      a {
+        color: @text-color;
+        text-indent: 0;
+      }
+
+      a:hover,
+      a:focus {
+        color: @link-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  div.jp-playlist {
+    background-color: inherit;
+    border-width: 0;
+  }
+
+  div.jp-play-bar,
+  div.jp-volume-bar-value {
+    background: @text-color;
+  }
+
+  div.jp-seek-bar,
+  div.jp-volume-bar {
+    background: @gray-fplayer-background;
+  }
+
+  div.jp-current-time,
+  div.jp-duration {
+    font-size: 0.8em;
+  }
+
+  div.jp-playlist ul,
+  div.jp-playlist div.jp-playlist-comment {
+    font-size: 0.9em;
+  }
+
+  a.jp-next,
+  a.jp-previous,
+  a.jp-stop {
+    display: none;
+  }
+
+  div.jp-volume-bar,
+  a.jp-mute,
+  a.jp-unmute {
+    // Mobile:
+      visibility: hidden;
+    @media (min-width: @screen-xs-min) {
+      visibility: visible;
+    }
+  }
+
+  a.jp-play:before {
+    content: "\f01d";
+    font-size: @font-size-fplayer-button-large;
+  }
+
+  a.jp-pause:before {
+    content: "\f28c";
+    font-size: @font-size-fplayer-button-large;
+  }
+
+  a.jp-mute:before {
+    content: "\f026";
+    font-size: @font-size-fplayer-button-small;
+  }
+
+  a.jp-unmute:before {
+    content: "\f028";
+    font-size: @font-size-fplayer-button-small;
+  }
+
+  a.jp-play,
+  a.jp-pause,
+  a.jp-mute,
+  a.jp-unmute {
+    background: none;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 0;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a.jp-mute,
+  a.jp-unmute {
+    height: 18px;;
+  }
+}

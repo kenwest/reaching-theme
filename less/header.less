@@ -1,0 +1,276 @@
+.navbar.container {
+  margin-top: 0;
+  max-width: 100%;
+  
+  .navbar-brand {
+    margin-left: 0;
+  }
+}
+
+.navbar-default {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: white;
+  width: 100%;
+
+  .navbar-brand,
+  .navbar-brand:hover,
+  .navbar-brand:focus,
+  .lead {
+    color: @brand-primary;
+  }
+
+  .navbar-brand {
+    float: none;
+    line-height: inherit;
+    padding: 0;
+    margin: 0;
+
+    // Mobile and tablet:
+      font-size: @font-size-h2;
+    @media (min-width: @screen-sm-min) {
+      font-size: @font-size-h1;
+    }
+  }
+
+  .lead {
+    // Mobile and tablet:
+      font-size: @font-size-base;
+    @media (min-width: @screen-sm-min) {
+      font-size: floor(@font-size-base * 1.15);
+    }
+  }
+
+  .navbar-collapse {
+    padding: 0;
+    margin: 0;
+  }
+
+  .primary-nav {
+    background-color: @brand-primary;
+    width: 100%;
+    font-size: @font-size-large;
+    margin: 0;
+    float: left;
+
+    .navbar-nav {
+      .container;
+
+      float: none;
+      padding: 0;
+      margin: 0 auto;
+
+      > .leaf {
+        > a,
+        > a:hover,
+        > a:focus {
+          color: white;
+          background-color: @brand-primary;
+          font-weight: bold;
+        }
+      }
+
+      > .active {
+        > a,
+        > a:hover,
+        > a:focus {
+          color: white;
+          background-color: @text-color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .navbar-header {
+    .container;
+
+    float: none;
+    padding-bottom: @grid-gutter-width;
+
+    .logo {
+
+      // Mobile:
+        max-width: 35%;
+        padding-left: 0;
+      @media (min-width: @screen-xs-min) {
+        width: 180px;
+        padding-right: @grid-gutter-width;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.front {
+  .region-header {
+    /* The focus point of this image is a man's face at the 70% / 70% place */
+    background: rgba(0, 0, 0, 0) url("/sites/default/files/images/melbourne/logoslive/logos-live-audience.jpg") repeat scroll 70% 70%;
+    background-size: cover;
+    padding: 5px 0;
+
+    section {
+      .container;
+
+      margin-top: @grid-gutter-width;
+      margin-bottom: @grid-gutter-width;
+    }
+
+    .logos-live-links {
+       .btn {
+        // Mobile:
+          width: 100%;
+        @media (min-width: @screen-xs-min) {
+          width: 50%;
+        }
+      }
+    }
+
+    .menu.nav {
+      .btn-group;
+
+      // Mobile:
+        width: 100%;
+      @media (min-width: @screen-xs-min) {
+        width: 50%;
+      }
+
+      li {
+        /* Assumes the classes "btn btn-default" are added by the Menu Attributes module */
+        width: 50%;
+
+        a {
+          font-size: @font-size-large;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+
+      /* Needed since .btn-group is not a mixin */
+      li:not(:first-child) {
+        .border-left-radius(0);
+      }
+
+      /* Needed since .btn-group is not a mixin */
+      li:not(:last-child) {
+        .border-right-radius(0);
+      }
+    }
+    
+    .content-search {
+      // Mobile:
+        width: 100%;
+      @media (min-width: @screen-xs-min) {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.not-front {
+  .region-header {
+    form#search-block-form {
+      // Mobile:
+        width: 100%;
+      @media (min-width: @screen-xs-min) {
+        float: right;
+        width: 280px;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+.logos-live-links {
+  .podcasts {
+    margin-bottom: @grid-gutter-width;
+    background: @text-color;
+    color: white;
+    border-color: #888888;
+    list-style: none;
+    white-space: inherit;
+  }
+
+  .broadcasts {
+    background: white;
+    color: @text-color;
+    border-color: #cccccc;
+    list-style: none;
+    white-space: inherit;
+  }
+
+  .title {
+    padding-top: floor(@grid-gutter-width / 2);
+    font-weight: bold;
+  }
+
+  .contents {
+  }
+
+  .feeds {
+    list-style: none;
+    padding: floor(@grid-gutter-width / 2);
+  }
+
+  .stations {
+    list-style: none;
+    padding: floor(@grid-gutter-width / 2);
+  }
+
+  .itunes,
+  .rss,
+  .stitcher,
+  .lightdigital,
+  .lifefm {
+    font-size: 32px;
+    display: inline-block;
+    margin-right: floor(@grid-gutter-width / 2);
+  }
+
+  .itunes {
+    a,
+    a:hover,
+    a:focus {
+      color: #aaaaaa;
+      text-decoration: none;
+    }
+  }
+
+  .rss {
+    a,
+    a:hover,
+    a:focus {
+      color: #fca600;
+      text-decoration: none;
+    }
+  }
+
+  .stitcher,
+  .lightdigital,
+  .lifefm {
+    img {
+      .img-responsive;
+    }
+  }
+
+  .stitcher,
+  .lightdigital {
+    img {
+      max-width: 200px;
+    }
+  }
+
+  .lifefm {
+    img {
+      max-width: 100px;
+    }
+  }
+}
+
+.block-search {
+  .container;
+}
