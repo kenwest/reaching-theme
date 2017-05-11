@@ -7508,12 +7508,6 @@ table .checkbox input[type="checkbox"] {
   width: 100%;
   height: 600px;
 }
-.front .region-header {
-  background: rgba(0, 0, 0, 0) url("/sites/default/files/images/melbourne/logoslive/logos-live-audience-2.jpg") repeat scroll 50% 50%;
-  background-size: cover;
-  padding: 1px 0;
-  margin: 0 0 20px;
-}
 .front .region-header section {
   margin-right: auto;
   margin-left: auto;
@@ -7549,66 +7543,6 @@ table .checkbox input[type="checkbox"] {
     margin-left: 0;
   }
 }
-.front .region-header .logos-live-buttons .menu.nav {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  /* Needed since .btn-group is not a mixin */
-  /* Needed since .btn-group is not a mixin */
-}
-.front .region-header .logos-live-buttons .menu.nav > .btn {
-  position: relative;
-  float: left;
-}
-.front .region-header .logos-live-buttons .menu.nav > .btn:hover,
-.front .region-header .logos-live-buttons .menu.nav > .btn:focus,
-.front .region-header .logos-live-buttons .menu.nav > .btn:active,
-.front .region-header .logos-live-buttons .menu.nav > .btn.active {
-  z-index: 2;
-}
-.front .region-header .logos-live-buttons .menu.nav .btn + .btn,
-.front .region-header .logos-live-buttons .menu.nav .btn + .btn-group,
-.front .region-header .logos-live-buttons .menu.nav .btn-group + .btn,
-.front .region-header .logos-live-buttons .menu.nav .btn-group + .btn-group {
-  margin-left: -1px;
-}
-@media (min-width: 768px) {
-  .front .region-header .logos-live-buttons .menu.nav {
-    width: 50%;
-  }
-}
-.front .region-header .logos-live-buttons .menu.nav li {
-  /* Assumes the classes "btn btn-default" are added by the Menu Attributes module */
-  width: 50%;
-  padding: 0;
-}
-.front .region-header .logos-live-buttons .menu.nav li a {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 60px;
-  padding: 9px 0;
-  /* 1px border */
-}
-.front .region-header .logos-live-buttons .menu.nav li:not(:first-child) {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-}
-.front .region-header .logos-live-buttons .menu.nav li:not(:last-child) {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-}
-.front .region-header .logos-live-links .podcasts,
-.front .region-header .logos-live-links .broadcasts {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .front .region-header .logos-live-links .podcasts,
-  .front .region-header .logos-live-links .broadcasts {
-    width: 50%;
-  }
-}
 .front .region-header .content-search {
   width: 100%;
 }
@@ -7626,87 +7560,6 @@ table .checkbox input[type="checkbox"] {
     float: right;
     width: 280px;
   }
-}
-.logos-live-links .podcasts,
-.logos-live-links .broadcasts {
-  padding: 19px 15px;
-  /* 1px border */
-  list-style: none;
-  white-space: inherit;
-  border: 1px solid;
-  border-radius: 4px;
-}
-.logos-live-links .podcasts {
-  margin-bottom: 40px;
-  background: #333333;
-  color: white;
-  border-color: #888888;
-}
-.logos-live-links .broadcasts {
-  margin-bottom: 0;
-  background: white;
-  color: #333333;
-  border-color: #cccccc;
-}
-.logos-live-links .title {
-  padding: 10px 0;
-  text-align: center;
-  font-weight: bold;
-}
-.logos-live-links .contents {
-  padding: 10px 0;
-}
-.logos-live-links .feeds,
-.logos-live-links .stations {
-  list-style: none;
-  padding: 0;
-  margin: 0 -15px;
-  text-align: center;
-}
-.logos-live-links .itunes,
-.logos-live-links .rss,
-.logos-live-links .stitcher,
-.logos-live-links .lightdigital,
-.logos-live-links .lifefm {
-  font-size: 28px;
-  line-height: 40px;
-  display: inline-block;
-  margin: 0 15px;
-}
-.logos-live-links .itunes a,
-.logos-live-links .itunes a:hover,
-.logos-live-links .itunes a:focus {
-  color: #aaaaaa;
-  text-decoration: none;
-}
-.logos-live-links .rss a,
-.logos-live-links .rss a:hover,
-.logos-live-links .rss a:focus {
-  color: #fca600;
-  text-decoration: none;
-}
-.logos-live-links .stitcher img,
-.logos-live-links .lightdigital img,
-.logos-live-links .lifefm img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-}
-.logos-live-links .stitcher img {
-  max-width: 200px;
-}
-.logos-live-links .lightdigital {
-  height: 60px;
-}
-.logos-live-links .lightdigital img {
-  max-width: 200px;
-}
-.logos-live-links .lifefm {
-  height: 80px;
-}
-.logos-live-links .lifefm img {
-  max-width: 100px;
 }
 .block-search {
   margin-right: auto;

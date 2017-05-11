@@ -179,63 +179,12 @@
   }
 
   .region-header {
-    background: rgba(0, 0, 0, 0) url("/sites/default/files/images/melbourne/logoslive/logos-live-audience-2.jpg") repeat scroll 50% 50%;
-    background-size: cover;
-    padding: 1px 0;
-    margin: 0 0 @line-height-computed;
 
     section {
       .container;
 
       margin-top: (2*@line-height-computed);
       margin-bottom: (2*@line-height-computed);
-    }
-
-    .logos-live-buttons {
-      .menu.nav {
-        .btn-group;
-
-        // Mobile:
-          width: 100%;
-        @media (min-width: @screen-sm-min) {
-          width: 50%;
-        }
-
-        li {
-          /* Assumes the classes "btn btn-default" are added by the Menu Attributes module */
-          width: 50%;
-          padding: 0;
-
-          a {
-            font-size: @font-size-h3;
-            font-weight: bold;
-            text-align: center;
-            line-height: (3*@line-height-computed);
-            padding: (floor(@line-height-computed/2) - 1) 0; /* 1px border */
-          }
-        }
-
-        /* Needed since .btn-group is not a mixin */
-        li:not(:first-child) {
-          .border-left-radius(0);
-        }
-
-        /* Needed since .btn-group is not a mixin */
-        li:not(:last-child) {
-          .border-right-radius(0);
-        }
-      }
-    }
-    
-    .logos-live-links {
-      .podcasts,
-      .broadcasts {
-        // Mobile:
-          width: 100%;
-        @media (min-width: @screen-sm-min) {
-          width: 50%;
-        }
-      }
     }
 
     .content-search {
@@ -258,110 +207,6 @@
         float: right;
         width: 280px;
       }
-    }
-  }
-}
-
-.logos-live-links {
-  .podcasts,
-  .broadcasts {
-    padding: (@line-height-computed - 1) floor(@grid-gutter-width / 2); /* 1px border */
-    list-style: none;
-    white-space: inherit;
-    border: 1px solid;
-    border-radius: 4px;
-  }
-
-  .podcasts {
-    margin-bottom: (2*@line-height-computed);
-    background: @text-color;
-    color: white;
-    border-color: #888888;
-  }
-
-  .broadcasts {
-    margin-bottom: 0;
-    background: white;
-    color: @text-color;
-    border-color: #cccccc;
-  }
-
-  .title {
-    padding: floor(@line-height-computed/2) 0;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  .contents {
-    padding: floor(@line-height-computed/2) 0;
-  }
-
-  .feeds,
-  .stations {
-    list-style: none;
-    padding: 0;
-    margin: 0 floor(-@grid-gutter-width/2);
-    text-align: center;
-  }
-
-  .itunes,
-  .rss,
-  .stitcher,
-  .lightdigital,
-  .lifefm {
-    font-size: (2*@font-size-base);
-    line-height: (2*@line-height-computed);
-    display: inline-block;
-    margin: 0 floor(@grid-gutter-width/2);
-  }
-
-  .itunes {
-    a,
-    a:hover,
-    a:focus {
-      color: #aaaaaa;
-      text-decoration: none;
-    }
-  }
-
-  .rss {
-    a,
-    a:hover,
-    a:focus {
-      color: #fca600;
-      text-decoration: none;
-    }
-  }
-
-  .stitcher,
-  .lightdigital,
-  .lifefm {
-    img {
-      .img-responsive;
-
-      display: inline-block;
-    }
-  }
-
-  .stitcher {
-    img {
-      max-width: 200px;
-    }
-  }
-
-  .lightdigital {
-    height: (3*@line-height-computed);
-
-    img {
-      max-width: 200px;
-    }
-  }
-
-  .lifefm {
-    height: (4*@line-height-computed);
-
-    img {
-      max-width: 100px;
     }
   }
 }
