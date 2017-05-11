@@ -6477,8 +6477,6 @@ button.close {
 .modal-footer:after,
 .navbar-default .primary-nav .navbar-nav:before,
 .navbar-default .primary-nav .navbar-nav:after,
-.navbar-default .navbar-header:before,
-.navbar-default .navbar-header:after,
 .front .region-header section:before,
 .front .region-header section:after,
 .block-search:before,
@@ -6503,7 +6501,6 @@ button.close {
 .modal-header:after,
 .modal-footer:after,
 .navbar-default .primary-nav .navbar-nav:after,
-.navbar-default .navbar-header:after,
 .front .region-header section:after,
 .block-search:after {
   clear: both;
@@ -7338,7 +7335,7 @@ table .checkbox input[type="checkbox"] {
 .navbar-default {
   margin: 0;
   border: 0;
-  padding: 20px 0 0;
+  padding: 0;
   background-color: white;
   width: 100%;
 }
@@ -7384,6 +7381,13 @@ table .checkbox input[type="checkbox"] {
 .navbar-default .navbar-collapse {
   padding: 0;
   margin: 0;
+  position: absolute;
+  background-color: white;
+  width: 320px;
+  top: 80px;
+  right: 0;
+  opacity: .8;
+  z-index: 100;
 }
 .navbar-default .primary-nav {
   background-color: #df0000;
@@ -7457,39 +7461,8 @@ table .checkbox input[type="checkbox"] {
   padding-bottom: 20px;
 }
 .navbar-default .navbar-header {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   float: none;
-  padding-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .navbar-default .navbar-header {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .navbar-default .navbar-header {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .navbar-default .navbar-header {
-    width: 1170px;
-  }
-}
-.navbar-default .navbar-header > .navbar-header,
-.navbar-default .navbar-header > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-@media (min-width: 4096px) {
-  .navbar-default .navbar-header > .navbar-header,
-  .navbar-default .navbar-header > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-  }
+  padding: 20px 0;
 }
 .navbar-default .navbar-header .logo {
   margin-top: 0;

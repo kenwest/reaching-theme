@@ -10,7 +10,7 @@
 .navbar-default {
   margin: 0;
   border: 0;
-  padding: @line-height-computed 0 0;
+  padding: 0;
   background-color: white;
   width: 100%;
 
@@ -56,6 +56,13 @@
   .navbar-collapse {
     padding: 0;
     margin: 0;
+    position: absolute;
+    background-color: white;
+    width: 320px;
+    top: 80px;
+    right: 0;
+    opacity: .8;
+    z-index: 100;
   }
 
   .primary-nav {
@@ -117,10 +124,9 @@
   }
 
   .navbar-header {
-    .container;
 
     float: none;
-    padding-bottom: @line-height-computed;
+    padding: @line-height-computed 0;
 
     .logo {
       margin-top: 0;
