@@ -59,10 +59,10 @@
     position: absolute;
     background-color: white;
     width: 320px;
-    top: 80px;
+    top: 0;
     right: 0;
     opacity: .8;
-    z-index: 100;
+    z-index: 2;
   }
 
   .primary-nav {
@@ -162,10 +162,22 @@
 
   .navbar-toggle {
     margin: 0;
+    z-index: 3;
   }
 }
 
 .front {
+  .hero {
+    background: rgba(0, 0, 0, 0) url("/sites/all/themes/reaching/IMG-20140407-130438-1600x900.jpg") repeat scroll 50% 50%;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+  }
+
   .region-header {
     background: rgba(0, 0, 0, 0) url("/sites/default/files/images/melbourne/logoslive/logos-live-audience-2.jpg") repeat scroll 50% 50%;
     background-size: cover;

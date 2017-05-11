@@ -73,6 +73,11 @@
  * @ingroup templates
  */
 ?>
+<?php if ($is_front): ?>
+  <div class="hero">
+    &ensp;
+  </div>
+<?php endif; ?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="container">
     <div class="navbar-header">
