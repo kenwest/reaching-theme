@@ -7375,7 +7375,6 @@ table .checkbox input[type="checkbox"] {
   top: 0;
   right: 0;
   opacity: .8;
-  z-index: 1;
 }
 .navbar-default .primary-nav {
   background-color: #df0000;
@@ -7484,7 +7483,7 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-default .navbar-toggle {
   margin: 0;
-  z-index: 2;
+  z-index: 1;
   background-color: white;
 }
 .front .hero {
@@ -7495,6 +7494,7 @@ table .checkbox input[type="checkbox"] {
   left: 0;
   width: 100%;
   height: 600px;
+  z-index: -1;
 }
 .front .region-header section {
   margin-right: auto;
