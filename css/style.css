@@ -6477,8 +6477,12 @@ button.close {
 .modal-footer:after,
 .navbar-default .primary-nav .navbar-nav:before,
 .navbar-default .primary-nav .navbar-nav:after,
-.front .region-header section:before,
-.front .region-header section:after {
+.front .lead:before,
+.front .lead:after,
+.front .region-header .block-menu:before,
+.front .region-header .block-menu:after,
+.front .region-header .block-menu ul:before,
+.front .region-header .block-menu ul:after {
   content: " ";
   display: table;
 }
@@ -6499,7 +6503,9 @@ button.close {
 .modal-header:after,
 .modal-footer:after,
 .navbar-default .primary-nav .navbar-nav:after,
-.front .region-header section:after {
+.front .lead:after,
+.front .region-header .block-menu:after,
+.front .region-header .block-menu ul:after {
   clear: both;
 }
 .center-block {
@@ -7333,8 +7339,7 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .lead {
+.navbar-default .navbar-brand:focus {
   color: #df0000;
 }
 .navbar-default .navbar-brand {
@@ -7353,18 +7358,6 @@ table .checkbox input[type="checkbox"] {
     line-height: 35px;
     /* Line up site name with name in logo */
     height: 50px;
-  }
-}
-.navbar-default .lead {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  .navbar-default .lead {
-    font-size: 16px;
-    line-height: 22px;
-    /*Line up tag line with name in logo */
-    height: 30px;
-    /* .navbar-brand + .lead = .logo */
   }
 }
 .navbar-default .navbar-collapse {
@@ -7448,23 +7441,31 @@ table .checkbox input[type="checkbox"] {
   padding-bottom: 20px;
 }
 .navbar-default .navbar-header {
-  float: none;
   padding: 20px 0;
 }
 .navbar-default .navbar-header .logo {
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 60%;
-  padding-left: 0;
+  float: left;
+  width: 75%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 80px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .navbar-default .navbar-header .logo {
-    width: 180px;
-    padding-right: 30px;
-    height: 80px;
+    float: left;
+    width: 50%;
   }
 }
-.navbar-default .navbar-header .logo img {
+@media (min-width: 992px) {
+  .navbar-default .navbar-header .logo {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.navbar-default .navbar-header .logo img,
+.navbar-default .navbar-header .logo object {
   width: 100%;
 }
 .navbar-default .navbar-header-name {
@@ -7496,40 +7497,99 @@ table .checkbox input[type="checkbox"] {
   height: 600px;
   z-index: -1;
 }
-.front .region-header section {
+.front .lead {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
-  .front .region-header section {
+  .front .lead {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .front .region-header section {
+  .front .lead {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .front .region-header section {
+  .front .lead {
     width: 1170px;
   }
 }
-.front .region-header section > .navbar-header,
-.front .region-header section > .navbar-collapse {
+.front .lead > .navbar-header,
+.front .lead > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
 @media (min-width: 4096px) {
-  .front .region-header section > .navbar-header,
-  .front .region-header section > .navbar-collapse {
+  .front .lead > .navbar-header,
+  .front .lead > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
+}
+.front .region-header .block-menu {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .front .region-header .block-menu {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .front .region-header .block-menu {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .front .region-header .block-menu {
+    width: 1170px;
+  }
+}
+.front .region-header .block-menu > .navbar-header,
+.front .region-header .block-menu > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 4096px) {
+  .front .region-header .block-menu > .navbar-header,
+  .front .region-header .block-menu > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.front .region-header .block-menu ul {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.front .region-header .block-menu ul li {
+  float: left;
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .front .region-header .block-menu ul li {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .front .region-header .block-menu ul li {
+    float: left;
+    width: 14.28571429%;
+  }
+}
+.front .region-header .block-menu ul li a {
+  text-align: center;
+  background: #ffffff;
 }
 .front .region-header .content-search {
   width: 100%;
