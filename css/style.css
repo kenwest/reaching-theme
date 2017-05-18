@@ -7908,9 +7908,6 @@ ul {
   line-height: 40px;
   width: 60px;
 }
-.block-views {
-  max-width: 720px;
-}
 .views-row + .views-row {
   padding-top: 20px;
 }
