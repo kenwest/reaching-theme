@@ -7577,6 +7577,7 @@ table .checkbox input[type="checkbox"] {
 .front .region-header .block-menu ul li a {
   text-align: center;
   background: #ffffff;
+  margin-bottom: 20px;
 }
 .front .region-header .content-search {
   width: 100%;
@@ -8323,6 +8324,14 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
   line-height: 20px;
   padding: 0 0 0 15px;
   border: 0;
+}
+/*
+ * jCarousel configuration
+ */
+.jcarousel-skin-default .jcarousel-item {
+  width: 640px;
+  height: auto;
+  border: 0px;
 }
 .footer {
   background-color: #333333;
