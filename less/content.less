@@ -182,6 +182,15 @@ ul {
 }
 
 /*
+ * Block formatting
+ */
+.block {
+  &.promotional-video {
+    .container;
+  }
+}
+
+/*
  * Node formatting
  */
 
@@ -400,6 +409,10 @@ ul {
  * jCarousel configuration
  */
 .jcarousel-skin-default {
+  .jcarousel-container-horizontal {
+    height: (20 * @line-height-computed); /* displays 640px wide item as 16:9 plus some spacing */
+  }
+
   .jcarousel-item {
     width: 640px;
     height: auto;
