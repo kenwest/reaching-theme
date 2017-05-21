@@ -7333,6 +7333,7 @@ table .checkbox input[type="checkbox"] {
   padding: 0;
   background-color: transparent;
   width: 100%;
+  height: 320px;
 }
 .navbar-default p {
   margin: 0;
@@ -7341,24 +7342,6 @@ table .checkbox input[type="checkbox"] {
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #02426f;
-}
-.navbar-default .navbar-brand {
-  float: none;
-  line-height: inherit;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  font-size: 30px;
-  display: none;
-}
-@media (min-width: 768px) {
-  .navbar-default .navbar-brand {
-    display: inline-block;
-    font-size: 36px;
-    line-height: 35px;
-    /* Line up site name with name in logo */
-    height: 50px;
-  }
 }
 .navbar-default .navbar-collapse {
   padding: 0;
@@ -7442,7 +7425,7 @@ table .checkbox input[type="checkbox"] {
   padding-bottom: 20px;
 }
 .navbar-default .navbar-header {
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 .navbar-default .navbar-header .logo {
   float: left;
@@ -7451,6 +7434,7 @@ table .checkbox input[type="checkbox"] {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0;
   height: 80px;
 }
 @media (min-width: 768px) {
@@ -7481,121 +7465,8 @@ table .checkbox input[type="checkbox"] {
   top: 0;
   left: 0;
   width: 100%;
-  height: 600px;
+  height: 520px;
   z-index: -1;
-}
-.front .lead {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .front .lead {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .front .lead {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .front .lead {
-    width: 1170px;
-  }
-}
-.front .lead > .navbar-header,
-.front .lead > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-@media (min-width: 4096px) {
-  .front .lead > .navbar-header,
-  .front .lead > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-.front .region-header .block-menu {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .front .region-header .block-menu {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .front .region-header .block-menu {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .front .region-header .block-menu {
-    width: 1170px;
-  }
-}
-.front .region-header .block-menu > .navbar-header,
-.front .region-header .block-menu > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-@media (min-width: 4096px) {
-  .front .region-header .block-menu > .navbar-header,
-  .front .region-header .block-menu > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-.front .region-header .block-menu ul {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.front .region-header .block-menu ul li {
-  float: left;
-  width: 50%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .front .region-header .block-menu ul li {
-    float: left;
-    width: 25%;
-  }
-}
-@media (min-width: 992px) {
-  .front .region-header .block-menu ul li {
-    float: left;
-    width: 14.28571429%;
-  }
-}
-.front .region-header .block-menu ul li a {
-  text-align: center;
-  background: #ffffff;
-  margin-bottom: 20px;
-}
-.front .region-header .content-search {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .front .region-header .content-search {
-    width: 50%;
-  }
-}
-.not-front .region-header form#search-block-form {
-  margin: 20px 0;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .not-front .region-header form#search-block-form {
-    float: right;
-    width: 280px;
-  }
 }
 .block-search .form-control {
   height: 40px;
@@ -7891,9 +7762,6 @@ ul {
 .page-node .tabs--primary.nav-tabs {
   display: none;
 }
-.main-container {
-  padding-top: 20px;
-}
 .page-header,
 .block-title,
 .views-field-title {
@@ -7934,6 +7802,124 @@ ul {
 }
 .views-field-body {
   clear: both;
+}
+.front .lead {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 0;
+  height: 140px;
+}
+@media (min-width: 768px) {
+  .front .lead {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .front .lead {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .front .lead {
+    width: 1170px;
+  }
+}
+.front .lead > .navbar-header,
+.front .lead > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 4096px) {
+  .front .lead > .navbar-header,
+  .front .lead > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.front .region-header .block-menu {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .front .region-header .block-menu {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .front .region-header .block-menu {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .front .region-header .block-menu {
+    width: 1170px;
+  }
+}
+.front .region-header .block-menu > .navbar-header,
+.front .region-header .block-menu > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 4096px) {
+  .front .region-header .block-menu > .navbar-header,
+  .front .region-header .block-menu > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.front .region-header .block-menu ul {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.front .region-header .block-menu ul li {
+  float: left;
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 120px;
+}
+@media (min-width: 768px) {
+  .front .region-header .block-menu ul li {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .front .region-header .block-menu ul li {
+    float: left;
+    width: 14.28571429%;
+  }
+}
+.front .region-header .block-menu ul li a {
+  background: yellow;
+  margin-bottom: 20px;
+  padding: 40px 0;
+  line-height: 40px;
+  text-align: center;
+}
+.front .region-header .content-search {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .front .region-header .content-search {
+    width: 50%;
+  }
+}
+.not-front .region-header form#search-block-form {
+  margin: 20px 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .not-front .region-header form#search-block-form {
+    float: right;
+    width: 280px;
+  }
 }
 .not-front .region-content .views-field-body {
   display: block;

@@ -13,6 +13,7 @@
   padding: 0;
   background-color: transparent;
   width: 100%;
+  height: (16 * @line-height-computed);
 
   p {
     margin: 0;
@@ -22,24 +23,6 @@
   .navbar-brand:hover,
   .navbar-brand:focus {
     color: @brand-primary;
-  }
-
-  .navbar-brand {
-    float: none;
-    line-height: inherit;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-
-    // Mobile and tablet:
-      font-size: @font-size-h2;
-      display: none;
-    @media (min-width: @screen-sm-min) {
-      display: inline-block;
-      font-size: @font-size-h1;
-      line-height: 35px;                           /* Line up site name with name in logo */
-      height: 50px;
-    }
   }
 
   .navbar-collapse {
@@ -113,17 +96,15 @@
 
   .navbar-header {
 
-    padding: @line-height-computed 0;
+    padding: @line-height-computed 0 0;
 
     .logo {
       .make-xs-column(9);
       .make-sm-column(6);
       .make-md-column(4);
 
-      // // Mobile:
-      // @media (min-width: @screen-xs-min) {
-        height: (4*@line-height-computed);
-      // }
+      margin: 0;
+      height: (4 * @line-height-computed);
 
       img,
       object {
@@ -147,64 +128,15 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 600px;
+    height: (26 * @line-height-computed);
     z-index: -1;
-  }
-
-  .lead {
-    .container;
-  }
-
-  .region-header {
-
-    .block-menu {
-      .container;
-
-      ul {
-        .make-row();
-
-        li {
-          .make-xs-column(6);
-          .make-sm-column(3);
-          .make-md-column(12/7);
-
-          a {
-            text-align: center;
-            background: #ffffff;
-            margin-bottom: @line-height-computed;
-          }
-        }
-      }
-    }
-
-    .content-search {
-      // Mobile:
-        width: 100%;
-      @media (min-width: @screen-sm-min) {
-        width: 50%;
-      }
-    }
-  }
-}
-
-.not-front {
-  .region-header {
-    form#search-block-form {
-      // Mobile:
-        margin: @line-height-computed 0;
-        width: 100%;
-      @media (min-width: @screen-sm-min) {
-        float: right;
-        width: 280px;
-      }
-    }
   }
 }
 
 .block-search {
 
   .form-control {
-    height: (2*@line-height-computed);
+    height: (2 * @line-height-computed);
     padding: (floor(@line-height-computed/2) - 1) floor(@grid-gutter-width / 2); /* 1px border */
   }
 

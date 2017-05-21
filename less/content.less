@@ -17,21 +17,17 @@ ul {
   }
 }
 
-.main-container {
-  padding-top: @line-height-computed;
-}
-
 .page-header,
 .block-title,
 .views-field-title {
-  line-height: 2*@line-height-computed;
+  line-height: (2 * @line-height-computed);
   padding: 0;
   border: 0;
   margin: 0 0 @line-height-computed;
   display: flex;
 
   i {
-    line-height: 2*@line-height-computed;
+    line-height: (2 * @line-height-computed);
     width: 60px;
   }
 }
@@ -74,7 +70,63 @@ ul {
   clear: both;
 }
 
+.front {
+  .lead {
+    .container;
+
+    margin-bottom: 0;
+    height: (7 * @line-height-computed);
+  }
+
+  .region-header {
+
+    .block-menu {
+      .container;
+
+      ul {
+        .make-row();
+
+        li {
+          .make-xs-column(6);
+          .make-sm-column(3);
+          .make-md-column(12/7);
+
+          height: (6 * @line-height-computed);
+
+          a {
+            background: yellow;
+            margin-bottom: @line-height-computed;
+            padding: (2 * @line-height-computed) 0;
+            line-height: (2 * @line-height-computed);
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .content-search {
+      // Mobile:
+        width: 100%;
+      @media (min-width: @screen-sm-min) {
+        width: 50%;
+      }
+    }
+  }
+}
+
 .not-front {
+  .region-header {
+    form#search-block-form {
+      // Mobile:
+        margin: @line-height-computed 0;
+        width: 100%;
+      @media (min-width: @screen-sm-min) {
+        float: right;
+        width: 280px;
+      }
+    }
+  }
+
   .region-content {
     .views-field-body {
       display: block;
@@ -212,7 +264,7 @@ ul {
 
     .field-name-field-addthis {
       a.at300b {
-        height: (2*@line-height-computed);
+        height: (2 * @line-height-computed);
         margin: 0;
       }
 
@@ -262,7 +314,7 @@ ul {
         a:hover,
         a:focus {
           padding: floor(@grid-gutter-width/4);
-          height: 2*@line-height-computed;
+          height: (2 * @line-height-computed);
           text-align: left;
           font-size: @font-size-base;
           font-weight: normal;
