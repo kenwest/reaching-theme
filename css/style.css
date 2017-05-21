@@ -7814,6 +7814,9 @@ ul {
   padding-right: 15px;
   margin-bottom: 0;
   height: 140px;
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
 }
 @media (min-width: 768px) {
   .front .lead {
