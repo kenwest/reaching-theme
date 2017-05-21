@@ -7890,6 +7890,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   height: 120px;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .front .region-header .block-menu ul li {
@@ -7905,7 +7906,6 @@ ul {
 }
 .front .region-header .block-menu ul li a {
   background: yellow;
-  margin-bottom: 20px;
   padding: 40px 0;
   line-height: 40px;
   text-align: center;
