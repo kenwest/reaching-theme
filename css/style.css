@@ -7352,6 +7352,7 @@ table .checkbox input[type="checkbox"] {
   right: 0;
   opacity: .8;
   z-index: 1;
+  overflow-y: unset;
 }
 .navbar-default .primary-nav {
   background-color: #02426f;
