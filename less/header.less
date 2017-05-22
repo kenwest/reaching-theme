@@ -26,7 +26,7 @@
   }
 
   .navbar-collapse {
-    padding: 0;
+    padding: (3 * @line-height-computed) 0 @line-height-computed;
     margin: 0;
     position: absolute;
     background-color: white;
@@ -35,29 +35,14 @@
     opacity: .8;
     z-index: 1;
     overflow-y: unset;
-  }
-
-  .primary-nav {
-    background-color: @brand-primary;
-    width: 100%;
-    font-size: @font-size-large;
-    margin: 0;
-    float: left;
 
     .navbar-nav {
-      .container;
-
-      float: none;
-      padding: 0;
-      margin: 0 auto;
+      margin: 0;
 
       > .leaf {
         > a,
         > a:hover,
         > a:focus {
-          color: white;
-          background-color: @brand-primary;
-          font-weight: bold;
         }
       }
 
@@ -65,19 +50,16 @@
         > a,
         > a:hover,
         > a:focus {
-          color: white;
-          background-color: @text-color;
           font-weight: bold;
         }
       }
 
       > .leaf {
         > a {
-          // Mobile and tablet:
-            padding: floor(@line-height-computed/2) floor(@grid-gutter-width/2);
-          @media (min-width: @screen-sm-min) {
-            padding: @line-height-computed floor(@grid-gutter-width/2);
-          }
+          padding: 0 floor(@grid-gutter-width/2);
+          line-height: (2 * @line-height-computed);
+          font-size: @font-size-h4;
+          text-transform: uppercase;
         }
       }
 
@@ -89,7 +71,6 @@
 
       > .leaf.last {
         > a {
-          padding-bottom: @line-height-computed;
         }
       }
     }
@@ -115,15 +96,21 @@
   }
 
   .navbar-toggle {
-    margin: 0;
+    margin: 0 floor(@grid-gutter-width / 2);
+    /* 2 * 1px border + 2 * padding + i.height = 3 * @line-height-computed */
+    padding: (floor(3 * @line-height-computed / 4) - 1) (floor(@grid-gutter-width / 2) - 1);
     z-index: 2;
     background-color: white;
+
+    i {
+      font-size: (3 * @line-height-computed / 2);
+    }
   }
 }
 
 .front {
   .hero {
-    background: rgba(0, 0, 0, 0) url("/sites/all/themes/reaching/20170512-090200-1600x900.jpg") repeat scroll 50% 50%;
+    background: thistle;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -135,14 +122,16 @@
 }
 
 .block-search {
+  margin: 0;
+  padding-top: @line-height-computed;
 
   .form-control {
     height: (2 * @line-height-computed);
-    padding: (floor(@line-height-computed/2) - 1) floor(@grid-gutter-width / 2); /* 1px border */
+    padding: (floor(@line-height-computed / 2) - 1) floor(@grid-gutter-width / 2); /* 1px border */
   }
 
   .btn {
-    padding: (floor(@line-height-computed/2) - 1) floor(@grid-gutter-width / 2); /* 1px border */
+    padding: (floor(@line-height-computed / 2) - 1) floor(@grid-gutter-width / 2); /* 1px border */
   }
 
   .form-group {

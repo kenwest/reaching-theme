@@ -6475,8 +6475,6 @@ button.close {
 .modal-header:after,
 .modal-footer:before,
 .modal-footer:after,
-.navbar-default .primary-nav .navbar-nav:before,
-.navbar-default .primary-nav .navbar-nav:after,
 .front .lead:before,
 .front .lead:after,
 .front .region-header .block-menu:before,
@@ -6504,7 +6502,6 @@ button.close {
 .panel-body:after,
 .modal-header:after,
 .modal-footer:after,
-.navbar-default .primary-nav .navbar-nav:after,
 .front .lead:after,
 .front .region-header .block-menu:after,
 .front .region-header .block-menu ul:after,
@@ -7347,7 +7344,7 @@ table .checkbox input[type="checkbox"] {
   color: #02426f;
 }
 .navbar-default .navbar-collapse {
-  padding: 0;
+  padding: 60px 0 20px;
   margin: 0;
   position: absolute;
   background-color: white;
@@ -7357,76 +7354,22 @@ table .checkbox input[type="checkbox"] {
   z-index: 1;
   overflow-y: unset;
 }
-.navbar-default .primary-nav {
-  background-color: #02426f;
-  width: 100%;
-  font-size: 18px;
+.navbar-default .navbar-collapse .navbar-nav {
   margin: 0;
-  float: left;
 }
-.navbar-default .primary-nav .navbar-nav {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  float: none;
-  padding: 0;
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .navbar-default .primary-nav .navbar-nav {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .navbar-default .primary-nav .navbar-nav {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .navbar-default .primary-nav .navbar-nav {
-    width: 1170px;
-  }
-}
-.navbar-default .primary-nav .navbar-nav > .navbar-header,
-.navbar-default .primary-nav .navbar-nav > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-@media (min-width: 4096px) {
-  .navbar-default .primary-nav .navbar-nav > .navbar-header,
-  .navbar-default .primary-nav .navbar-nav > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-.navbar-default .primary-nav .navbar-nav > .leaf > a,
-.navbar-default .primary-nav .navbar-nav > .leaf > a:hover,
-.navbar-default .primary-nav .navbar-nav > .leaf > a:focus {
-  color: white;
-  background-color: #02426f;
+.navbar-default .navbar-collapse .navbar-nav > .active > a,
+.navbar-default .navbar-collapse .navbar-nav > .active > a:hover,
+.navbar-default .navbar-collapse .navbar-nav > .active > a:focus {
   font-weight: bold;
 }
-.navbar-default .primary-nav .navbar-nav > .active > a,
-.navbar-default .primary-nav .navbar-nav > .active > a:hover,
-.navbar-default .primary-nav .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #333333;
-  font-weight: bold;
+.navbar-default .navbar-collapse .navbar-nav > .leaf > a {
+  padding: 0 15px;
+  line-height: 40px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
-.navbar-default .primary-nav .navbar-nav > .leaf > a {
-  padding: 10px 15px;
-}
-@media (min-width: 768px) {
-  .navbar-default .primary-nav .navbar-nav > .leaf > a {
-    padding: 20px 15px;
-  }
-}
-.navbar-default .primary-nav .navbar-nav > .leaf.first > a {
+.navbar-default .navbar-collapse .navbar-nav > .leaf.first > a {
   padding-top: 20px;
-}
-.navbar-default .primary-nav .navbar-nav > .leaf.last > a {
-  padding-bottom: 20px;
 }
 .navbar-default .navbar-header {
   padding: 20px 0 0;
@@ -7458,12 +7401,17 @@ table .checkbox input[type="checkbox"] {
   width: 100%;
 }
 .navbar-default .navbar-toggle {
-  margin: 0;
+  margin: 0 15px;
+  /* 2 * 1px border + 2 * padding + i.height = 3 * @line-height-computed */
+  padding: 14px 14px;
   z-index: 2;
   background-color: white;
 }
+.navbar-default .navbar-toggle i {
+  font-size: 30px;
+}
 .front .hero {
-  background: rgba(0, 0, 0, 0) url("/sites/all/themes/reaching/20170512-090200-1600x900.jpg") repeat scroll 50% 50%;
+  background: thistle;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -7471,6 +7419,10 @@ table .checkbox input[type="checkbox"] {
   width: 100%;
   height: 520px;
   z-index: -1;
+}
+.block-search {
+  margin: 0;
+  padding-top: 20px;
 }
 .block-search .form-control {
   height: 40px;
@@ -7905,7 +7857,7 @@ ul {
   }
 }
 .front .region-header .block-menu ul li a {
-  background: yellow;
+  background: wheat;
   padding: 40px 0;
   line-height: 40px;
   text-align: center;
