@@ -30,6 +30,7 @@
     margin: 0;
     position: absolute;
     background-color: white;
+    width: (9 * @grid-gutter-width);
     top: 0;
     right: 0;
     opacity: .8;
@@ -56,7 +57,7 @@
 
       > .leaf {
         > a {
-          padding: 0 floor(@grid-gutter-width/2);
+          padding: 0 floor(@grid-gutter-width / 2);
           line-height: (2 * @line-height-computed);
           font-size: @font-size-h4;
           text-transform: uppercase;
@@ -122,7 +123,8 @@
 }
 
 .block-search {
-  margin: 0;
+  float: none;
+  margin: 0 floor(@grid-gutter-width / 2);
   padding-top: @line-height-computed;
 
   .form-control {

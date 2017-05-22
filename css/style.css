@@ -6895,18 +6895,6 @@ p:last-child {
 .region-help .block {
   overflow: hidden;
 }
-form#search-block-form {
-  margin: 0;
-}
-.navbar #block-search-form {
-  float: none;
-  margin: 5px 0 5px 5px;
-}
-@media screen and (min-width: 992px) {
-  .navbar #block-search-form {
-    float: right;
-  }
-}
 .navbar-search .control-group {
   margin-bottom: 0px;
 }
@@ -7348,6 +7336,7 @@ table .checkbox input[type="checkbox"] {
   margin: 0;
   position: absolute;
   background-color: white;
+  width: 270px;
   top: 0;
   right: 0;
   opacity: .8;
@@ -7421,7 +7410,8 @@ table .checkbox input[type="checkbox"] {
   z-index: -1;
 }
 .block-search {
-  margin: 0;
+  float: none;
+  margin: 0 15px;
   padding-top: 20px;
 }
 .block-search .form-control {
