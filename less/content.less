@@ -115,6 +115,10 @@ ul {
       }
     }
   }
+
+  h1.page-header {
+    display: none;
+  }
 }
 
 .not-front {
@@ -413,12 +417,33 @@ ul {
  */
 .jcarousel-skin-default {
   .jcarousel-container-horizontal {
+    width: 100%;
     height: (20 * @line-height-computed); /* displays 640px wide item as 16:9 plus some spacing */
+    padding: 0 @grid-gutter-width;
+  }
+
+  .jcarousel-clip-horizontal {
+    width: 100%;
   }
 
   .jcarousel-item {
-    width: 640px;
+    width: 640px !important;
     height: auto;
     border: 0px;
+
+    .views-field-title {
+      margin: 0;
+      font-size: @font-size-h3;
+    }
+  }
+
+  .jcarousel-prev-horizontal {
+    top: 160px;
+    left: 0;
+  }
+
+  .jcarousel-next-horizontal {
+    top: 160px;
+    right: 0;
   }
 }

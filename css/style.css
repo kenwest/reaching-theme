@@ -7860,6 +7860,9 @@ ul {
     width: 50%;
   }
 }
+.front h1.page-header {
+  display: none;
+}
 .not-front .region-header form#search-block-form {
   margin: 20px 0;
   width: 100%;
@@ -8300,13 +8303,30 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
  * jCarousel configuration
  */
 .jcarousel-skin-default .jcarousel-container-horizontal {
+  width: 100%;
   height: 400px;
   /* displays 640px wide item as 16:9 plus some spacing */
+  padding: 0 30px;
+}
+.jcarousel-skin-default .jcarousel-clip-horizontal {
+  width: 100%;
 }
 .jcarousel-skin-default .jcarousel-item {
-  width: 640px;
+  width: 640px !important;
   height: auto;
   border: 0px;
+}
+.jcarousel-skin-default .jcarousel-item .views-field-title {
+  margin: 0;
+  font-size: 24px;
+}
+.jcarousel-skin-default .jcarousel-prev-horizontal {
+  top: 160px;
+  left: 0;
+}
+.jcarousel-skin-default .jcarousel-next-horizontal {
+  top: 160px;
+  right: 0;
 }
 .footer {
   background-color: #333333;
