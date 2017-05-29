@@ -11,9 +11,8 @@
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: transparent;
   width: 100%;
-  height: (16 * @line-height-computed);
+  background-color: @header-bg;
 
   p {
     margin: 0;
@@ -119,6 +118,11 @@
     width: 100%;
     height: (26 * @line-height-computed);
     z-index: -1;
+  }
+
+  .navbar-default {
+    background-color: transparent;
+    height: (16 * @line-height-computed);
   }
 }
 
