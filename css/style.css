@@ -7881,15 +7881,8 @@ ul {
 .front h1.page-header {
   display: none;
 }
-.not-front .region-header form#search-block-form {
-  margin: 20px 0;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .not-front .region-header form#search-block-form {
-    float: right;
-    width: 280px;
-  }
+.not-front .lead {
+  display: none;
 }
 .not-front .region-content .views-field-body {
   display: block;
