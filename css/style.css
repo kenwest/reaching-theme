@@ -7443,6 +7443,16 @@ table .checkbox input[type="checkbox"] {
 .view .view-empty .views-exposed-form {
   padding: 0 !important;
 }
+.view .view-grouping .view-grouping-header {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.view .views-table caption {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+}
 /*
  * Common fields formatting
  */
