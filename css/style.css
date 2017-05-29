@@ -7803,6 +7803,9 @@ ul {
     margin-left: 0;
   }
 }
+.front .lead span {
+  display: inline-block;
+}
 .front .region-header .block-menu {
   margin-right: auto;
   margin-left: auto;
