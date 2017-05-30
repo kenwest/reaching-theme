@@ -7389,6 +7389,7 @@ table .checkbox input[type="checkbox"] {
 .navbar-default .navbar-header .logo img,
 .navbar-default .navbar-header .logo object {
   width: 100%;
+  pointer-events: none;
 }
 .navbar-default .navbar-toggle {
   margin: 0 15px;
