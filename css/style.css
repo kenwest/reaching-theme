@@ -7738,6 +7738,9 @@ ul {
   line-height: 40px;
   width: 60px;
 }
+.breadcrumb {
+  background-color: transparent;
+}
 .views-row + .views-row {
   padding-top: 20px;
 }
@@ -7886,6 +7889,25 @@ ul {
 }
 .not-front .region-content .views-field-body {
   display: block;
+}
+/*
+ * City pages
+ */
+.page-city-sydney .breadcrumb,
+.page-city-canberra .breadcrumb,
+.page-city-melbourne .breadcrumb,
+.page-city-brisbane .breadcrumb,
+.page-city-perth .breadcrumb,
+.page-city-adelaide .breadcrumb,
+.page-city-hobart .breadcrumb,
+.page-city-sydney .page-header,
+.page-city-canberra .page-header,
+.page-city-melbourne .page-header,
+.page-city-brisbane .page-header,
+.page-city-perth .page-header,
+.page-city-adelaide .page-header,
+.page-city-hobart .page-header {
+  display: none;
 }
 .view-national-blog .views-field-field-speakers,
 .view-activity-to-event .views-field-field-speakers,

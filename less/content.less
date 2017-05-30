@@ -32,6 +32,10 @@ ul {
   }
 }
 
+.breadcrumb {
+  background-color: transparent;
+}
+
 .views-row + .views-row {
   padding-top: @line-height-computed;
 }
@@ -134,6 +138,22 @@ ul {
     .views-field-body {
       display: block;
     }
+  }
+}
+
+/*
+ * City pages
+ */
+.page-city-sydney,
+.page-city-canberra,
+.page-city-melbourne,
+.page-city-brisbane,
+.page-city-perth,
+.page-city-adelaide,
+.page-city-hobart {
+  .breadcrumb,
+  .page-header {
+    display: none;
   }
 }
 
