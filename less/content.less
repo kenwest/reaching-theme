@@ -74,6 +74,9 @@ ul {
   clear: both;
 }
 
+/*
+ * Front page
+ */
 .front {
   .lead {
     .container;
@@ -133,12 +136,6 @@ ul {
   .lead {
     display: none;
   }
-
-  .region-content {
-    .views-field-body {
-      display: block;
-    }
-  }
 }
 
 /*
@@ -157,6 +154,45 @@ ul {
   }
 }
 
+/*
+ * Regions and blocks
+ */
+.region-content {
+  .make-row();
+
+  .block {
+    .make-xs-column(12);
+
+    &#block-views-city-to-event-block,
+    &#block-views-city-to-recent-block {
+      .make-sm-column(6);
+    }
+  }
+
+  .block-views {
+    .block-title {
+      margin: 0 floor(@grid-gutter-width/2);
+      border: 1px @block-border-colour solid;
+      padding: (@line-height-computed - 1) (floor(@grid-gutter-width / 2) - 1) @line-height-computed;
+      border-bottom-width: 0px;
+    }
+
+    .view {
+      margin: 0 floor(@grid-gutter-width / 2) (2 * @line-height-computed);
+      border: 1px @block-border-colour solid;
+      padding: (@line-height-computed - 1) (floor(@grid-gutter-width / 2) - 1);
+    }
+
+    .block-title + .view {
+      padding-top: @line-height-computed;
+      border-top-width: 0px;
+    }
+  }
+}
+
+/*
+ * Views and fields
+ */
 .view-national-blog,
 .view-activity-to-event,
 .view-national-news,
@@ -205,18 +241,8 @@ ul {
 }
 
 /*
- * Block formatting
- */
-.block {
-  &.promotional-video {
-    .container;
-  }
-}
-
-/*
  * Node formatting
  */
-
 .block-system {
   margin-bottom: (2*@line-height-computed);
 
