@@ -80,7 +80,7 @@
     padding: @line-height-computed 0 0;
 
     .logo {
-      .make-xs-column(9);
+      .make-xs-column(8);
       .make-sm-column(6);
       .make-md-column(4);
 
@@ -119,14 +119,25 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: (26 * @line-height-computed);
     z-index: -1;
+
+    // Mobile:
+      height: (28 * @line-height-computed);
+    @media (min-width: @screen-sm-min) {
+      height: (26 * @line-height-computed);
+    }
+
   }
 
   .navbar-default {
     margin: 0;
     background-color: transparent;
-    height: (16 * @line-height-computed);
+
+    // Mobile:
+      height: (10 * @line-height-computed);
+    @media (min-width: @screen-sm-min) {
+      height: (16 * @line-height-computed);
+    }
   }
 }
 
