@@ -7746,12 +7746,26 @@ ul {
   border: 0;
   margin: 0 0 20px;
   display: flex;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .page-header,
+  .block-title,
+  .views-field-title {
+    font-size: 24px;
+  }
 }
 .page-header i,
 .block-title i,
 .views-field-title i {
   line-height: 40px;
   width: 60px;
+}
+@media (min-width: 992px) {
+  .page-header,
+  .block-title {
+    font-size: 30px;
+  }
 }
 .breadcrumb {
   background-color: transparent;
@@ -7791,6 +7805,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 0;
+  max-width: 768px;
   line-height: 40px;
   font-weight: bold;
   height: 220px;
@@ -8398,6 +8413,12 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
 }
 @media (min-width: 768px) {
   .jcarousel-skin-default .jcarousel-container-horizontal {
+    height: 240px;
+    /* displays 320px wide item as 16:9 plus some spacing */
+  }
+}
+@media (min-width: 992px) {
+  .jcarousel-skin-default .jcarousel-container-horizontal {
     height: 400px;
     /* displays 640px wide item as 16:9 plus some spacing */
   }
@@ -8412,6 +8433,11 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
 }
 @media (min-width: 768px) {
   .jcarousel-skin-default .jcarousel-item {
+    width: 320px !important;
+  }
+}
+@media (min-width: 992px) {
+  .jcarousel-skin-default .jcarousel-item {
     width: 640px !important;
   }
 }
@@ -8420,6 +8446,11 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
   font-size: 14px;
 }
 @media (min-width: 768px) {
+  .jcarousel-skin-default .jcarousel-item .views-field-title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
   .jcarousel-skin-default .jcarousel-item .views-field-title {
     font-size: 24px;
   }
@@ -8435,6 +8466,12 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
   top: 80px;
 }
 @media (min-width: 768px) {
+  .jcarousel-skin-default .jcarousel-prev-horizontal,
+  .jcarousel-skin-default .jcarousel-next-horizontal {
+    top: 100px;
+  }
+}
+@media (min-width: 992px) {
   .jcarousel-skin-default .jcarousel-prev-horizontal,
   .jcarousel-skin-default .jcarousel-next-horizontal {
     top: 160px;
