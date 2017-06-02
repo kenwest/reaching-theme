@@ -7389,9 +7389,6 @@ table .checkbox input[type="checkbox"] {
 .navbar-default .navbar-header .logo img,
 .navbar-default .navbar-header .logo object {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   pointer-events: none;
 }
 .navbar-default .navbar-toggle {
@@ -7770,32 +7767,6 @@ ul {
 .breadcrumb {
   background-color: transparent;
 }
-.views-row + .views-row {
-  padding-top: 20px;
-}
-.views-field-field-thumbnail-image,
-.views-field-field-in-activity,
-.views-field-field-is-audio,
-.views-field-field-is-text,
-.views-field-field-is-video {
-  display: none;
-}
-.views-field-field-speakers,
-.views-field-field-date-text {
-  width: 50%;
-  margin: 0 0 20px;
-  font-weight: bold;
-}
-.views-field-field-speakers {
-  float: left;
-}
-.views-field-field-date-text {
-  float: right;
-  text-align: right;
-}
-.views-field-body {
-  clear: both;
-}
 /*
  * Front page
  */
@@ -8012,55 +7983,11 @@ ul {
 /*
  * Views and fields
  */
-.view-national-blog .views-field-field-speakers,
-.view-activity-to-event .views-field-field-speakers,
-.view-national-news .views-field-field-speakers,
-.region-sidebar-second .views-field-field-speakers {
-  margin: 0;
+.views-row + .views-row {
+  padding-top: 20px;
 }
-.view-national-blog .views-field-field-speakers,
-.view-activity-to-event .views-field-field-speakers,
-.view-national-news .views-field-field-speakers,
-.region-sidebar-second .views-field-field-speakers,
-.view-national-blog .views-field-field-date-text,
-.view-activity-to-event .views-field-field-date-text,
-.view-national-news .views-field-field-date-text,
-.region-sidebar-second .views-field-field-date-text {
-  float: none;
-  text-align: inherit;
-  width: auto;
-}
-.view-national-blog .views-field-field-thumbnail-image,
-.view-activity-to-event .views-field-field-thumbnail-image,
-.view-national-news .views-field-field-thumbnail-image {
-  display: block;
+.views-field-field-thumbnail-image {
   float: left;
-}
-.view-national-blog .views-field-title,
-.view-activity-to-event .views-field-title,
-.view-national-news .views-field-title,
-.view-national-blog .views-field-field-date-text,
-.view-activity-to-event .views-field-field-date-text,
-.view-national-news .views-field-field-date-text,
-.view-national-blog .views-field-body,
-.view-activity-to-event .views-field-body,
-.view-national-news .views-field-body {
-  margin-left: 60px;
-}
-.view-national-blog .views-field-body,
-.view-activity-to-event .views-field-body,
-.view-national-news .views-field-body {
-  display: inherit;
-  margin-bottom: 20px;
-}
-.view-national-blog .views-field-taxonomy-vocabulary-1,
-.view-activity-to-event .views-field-taxonomy-vocabulary-1,
-.view-national-news .views-field-taxonomy-vocabulary-1 {
-  display: none;
-}
-.view-national-library .more-link,
-.view-national-news .more-link {
-  display: none;
 }
 /*
  * Node formatting
