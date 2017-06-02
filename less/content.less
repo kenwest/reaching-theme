@@ -1,3 +1,10 @@
+/*
+ * Constants
+ */
+@view-thumbnail-width:  (2 * @grid-gutter-width);                                  // ~60px
+@view-thumbnail-height: (3 * @line-height-computed);                               // ~60px
+@view-thumbnail-gutter: (@view-thumbnail-width + floor(@grid-gutter-width / 2));   // ~75px
+
 h1, h2, h3, h4, h5, h6 {
   color: @brand-primary;
 }
@@ -10,17 +17,22 @@ ul {
   margin-bottom: 0;
 }
 
-// Use contextual links for actions on Nodes. Affects staff only.
+/*
+ * Use contextual links for actions on Nodes. Only affects staff.
+ */
 .page-node {
   .tabs--primary.nav-tabs {
     display: none;
   }
 }
 
+/*
+ * Titles, which may be prepended with an <i> icon
+ */
 .page-header,
 .block-title,
-.views-field-title {
-  line-height: (2 * @line-height-computed);
+.views-field-title,
+.view-content > h3 {
   padding: 0;
   border: 0;
   margin: 0 0 @line-height-computed;
@@ -30,11 +42,16 @@ ul {
     font-size: @font-size-h4;
   @media (min-width: @screen-sm-min) {
     font-size: @font-size-h3;
+    line-height: (2 * @line-height-computed);
   }
 
   i {
-    line-height: (2 * @line-height-computed);
-    width: 60px;
+    width: @view-thumbnail-width;
+    margin-right: floor(@grid-gutter-width / 2);
+
+    @media (min-width: @screen-sm-min) {
+      line-height: (2 * @line-height-computed);
+    }
   }
 }
 
@@ -47,44 +64,6 @@ ul {
 
 .breadcrumb {
   background-color: transparent;
-}
-
-.views-row + .views-row {
-  padding-top: @line-height-computed;
-}
-
-.views-field-field-thumbnail-image,
-.views-field-field-in-activity,
-.views-field-field-is-audio,
-.views-field-field-is-text,
-.views-field-field-is-video {
-  display: none;
-}
-
-.views-field-body,
-.views-field-nid {
-  .field-content {
-  }
-}
-
-.views-field-field-speakers,
-.views-field-field-date-text {
-  width: 50%;
-  margin: 0 0 @line-height-computed;
-  font-weight: bold;
-}
-
-.views-field-field-speakers {
-  float: left;
-}
-
-.views-field-field-date-text {
-  float: right;
-  text-align: right;
-}
-
-.views-field-body {
-  clear: both;
 }
 
 /*
@@ -230,53 +209,66 @@ ul {
 }
 
 /*
- * Views and fields
+ * Views
  */
-.view-national-blog,
-.view-activity-to-event,
-.view-national-news,
-.region-sidebar-second {
-  .views-field-field-speakers {
-    margin: 0;
-  }
+.views-row + .views-row {
+  padding-top: @line-height-computed;
+}
 
-  .views-field-field-speakers,
-  .views-field-field-date-text {
-    float: none;
-    text-align: inherit;
-    width: auto;
+.view-content > h3 {
+  color: @brand-secondary;
+}
+/*
+ * Views fields
+ */
+.views-field-field-thumbnail-image,
+.views-field-field-is-audio,  
+.views-field-field-is-text,  
+.views-field-field-is-video {
+  float: left;
+  clear: left;
+  width: @view-thumbnail-width;
+  height: @view-thumbnail-height;
+
+  i {
+    width: @view-thumbnail-width;
+    height: @view-thumbnail-height;
+    font-size: (@view-thumbnail-height - @line-height-computed);
+
+    @media (min-width: @screen-sm-min) {
+      padding-top: (@line-height-computed / 2); // Middle the icon when title line-height increases
+    }
   }
 }
 
-.view-national-blog,
-.view-activity-to-event,
-.view-national-news {
-  .views-field-field-thumbnail-image {
-    display: block;
-    float: left;
-  }
-
-  .views-field-title,
-  .views-field-field-date-text,
-  .views-field-body {
-    margin-left: 60px;
-  }
-
-  .views-field-body {
-    display: inherit;
-    margin-bottom: @line-height-computed;
-  }
-
-  .views-field-taxonomy-vocabulary-1 {
-    display: none;
-  }
+.views-field-title,
+.views-field-field-in-activity,
+.views-field-field-speakers,
+.views-field-field-date-text,
+.views-field-body {
+  margin-left: @view-thumbnail-gutter;
 }
 
-.view-national-library,
-.view-national-news {
-  .more-link {
-    display: none;
-  }
+.views-field-field-in-activity {
+  margin-bottom: @line-height-computed;
+}
+
+.views-field + .views-field-body {
+  margin-top: @line-height-computed;
+}
+
+.views-field-field-in-activity {
+  font-size: @font-size-large;
+  line-height: @line-height-computed;
+}
+
+.views-field-field-date-text {
+  font-size: @font-size-small;
+  line-height: @line-height-computed;
+}
+
+.views-field-field-date-text {
+  font-style: italic;
 }
 
 /*

@@ -7718,6 +7718,9 @@ table .checkbox input[type="checkbox"] {
 #ui-datepicker-div {
   z-index: 99 !important;
 }
+/*
+ * Constants
+ */
 h1,
 h2,
 h3,
@@ -7732,13 +7735,19 @@ p {
 ul {
   margin-bottom: 0;
 }
+/*
+ * Use contextual links for actions on Nodes. Only affects staff.
+ */
 .page-node .tabs--primary.nav-tabs {
   display: none;
 }
+/*
+ * Titles, which may be prepended with an <i> icon
+ */
 .page-header,
 .block-title,
-.views-field-title {
-  line-height: 40px;
+.views-field-title,
+.view-content > h3 {
   padding: 0;
   border: 0;
   margin: 0 0 20px;
@@ -7748,15 +7757,26 @@ ul {
 @media (min-width: 768px) {
   .page-header,
   .block-title,
-  .views-field-title {
+  .views-field-title,
+  .view-content > h3 {
     font-size: 24px;
+    line-height: 40px;
   }
 }
 .page-header i,
 .block-title i,
-.views-field-title i {
-  line-height: 40px;
+.views-field-title i,
+.view-content > h3 i {
   width: 60px;
+  margin-right: 15px;
+}
+@media (min-width: 768px) {
+  .page-header i,
+  .block-title i,
+  .views-field-title i,
+  .view-content > h3 i {
+    line-height: 40px;
+  }
 }
 @media (min-width: 992px) {
   .page-header,
@@ -7981,13 +8001,65 @@ ul {
   border-top-width: 0px;
 }
 /*
- * Views and fields
+ * Views
  */
 .views-row + .views-row {
   padding-top: 20px;
 }
-.views-field-field-thumbnail-image {
+.view-content > h3 {
+  color: #1e9dd8;
+}
+/*
+ * Views fields
+ */
+.views-field-field-thumbnail-image,
+.views-field-field-is-audio,
+.views-field-field-is-text,
+.views-field-field-is-video {
   float: left;
+  clear: left;
+  width: 60px;
+  height: 60px;
+}
+.views-field-field-thumbnail-image i,
+.views-field-field-is-audio i,
+.views-field-field-is-text i,
+.views-field-field-is-video i {
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  .views-field-field-thumbnail-image i,
+  .views-field-field-is-audio i,
+  .views-field-field-is-text i,
+  .views-field-field-is-video i {
+    padding-top: 10px;
+  }
+}
+.views-field-title,
+.views-field-field-in-activity,
+.views-field-field-speakers,
+.views-field-field-date-text,
+.views-field-body {
+  margin-left: 75px;
+}
+.views-field-field-in-activity {
+  margin-bottom: 20px;
+}
+.views-field + .views-field-body {
+  margin-top: 20px;
+}
+.views-field-field-in-activity {
+  font-size: 18px;
+  line-height: 20px;
+}
+.views-field-field-date-text {
+  font-size: 12px;
+  line-height: 20px;
+}
+.views-field-field-date-text {
+  font-style: italic;
 }
 /*
  * Node formatting
