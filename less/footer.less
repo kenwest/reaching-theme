@@ -5,6 +5,7 @@
 
   a {
     color: white;
+    font-weight: normal;
   }
 }
 
@@ -17,11 +18,13 @@
 
     margin-bottom: (2 * @line-height-computed);
 
-    .block-title {
+    .block-title,
+    .nav > li > a {
       color: white;
       font-size: @font-size-base;
+      line-height: @line-height-computed;
       margin: 0;
-      padding: 0 (@grid-gutter-width/2);
+      padding: floor(@line-height-computed / 2) floor(@grid-gutter-width / 2);
     }
 
     a:hover {
