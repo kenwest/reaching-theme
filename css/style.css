@@ -8006,6 +8006,9 @@ ul {
 .views-row + .views-row {
   padding-top: 20px;
 }
+.views-row + h3 {
+  padding-top: 40px;
+}
 .view-content > h3 {
   color: #1e9dd8;
 }
@@ -8483,6 +8486,7 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
 }
 .footer a {
   color: white;
+  font-weight: normal;
 }
 .region-footer {
   margin-left: -15px;
@@ -8503,11 +8507,13 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
     width: 25%;
   }
 }
-.region-footer .footer-column .block-title {
+.region-footer .footer-column .block-title,
+.region-footer .footer-column .nav > li > a {
   color: white;
   font-size: 14px;
+  line-height: 20px;
   margin: 0;
-  padding: 0 15px;
+  padding: 10px 15px;
 }
 .region-footer .footer-column a:hover {
   color: #333333;
