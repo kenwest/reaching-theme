@@ -74,7 +74,6 @@ ul {
     .container;
 
     margin-bottom: 0;
-    max-width: @screen-sm;
     line-height: (2 * @line-height-computed);
     font-weight: bold;
 
@@ -84,6 +83,9 @@ ul {
     @media (min-width: @screen-sm-min) {
       height: (7 * @line-height-computed);
       font-size: @font-size-h2;
+    }
+    @media (min-width: @screen-sm-min) {
+      padding-right: 25%;
     }
 
     span {

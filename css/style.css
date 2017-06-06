@@ -7796,7 +7796,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 0;
-  max-width: 768px;
   line-height: 40px;
   font-weight: bold;
   height: 220px;
@@ -7833,6 +7832,11 @@ ul {
   .front .lead {
     height: 140px;
     font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .front .lead {
+    padding-right: 25%;
   }
 }
 .front .lead span {
