@@ -8519,7 +8519,7 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
   margin: 0;
   padding: 10px 15px;
 }
-.region-footer .footer-column a:hover {
+.region-footer .footer-column .nav > li > a:hover {
   color: #333333;
 }
 .region-footer .copyright {
