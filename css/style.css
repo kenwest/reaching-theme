@@ -7409,7 +7409,7 @@ table .checkbox input[type="checkbox"] {
   left: 0;
   width: 100%;
   z-index: -1;
-  height: 560px;
+  height: 500px;
 }
 @media (min-width: 768px) {
   .front .hero {
@@ -7887,7 +7887,7 @@ ul {
 }
 .front .region-header .block-menu ul li {
   float: left;
-  width: 100%;
+  width: 50%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -7924,7 +7924,27 @@ ul {
   .front .region-header .block-menu ul li a {
     background: wheat;
     padding: 40px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .front .region-header .block-menu ul li a {
     font-size: 24px;
+  }
+}
+.front .region-header .block-menu ul li:nth-child(odd) {
+  padding-right: 0;
+}
+@media (min-width: 768px) {
+  .front .region-header .block-menu ul li:nth-child(odd) {
+    padding-right: 15px;
+  }
+}
+.front .region-header .block-menu ul li:nth-child(even) {
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .front .region-header .block-menu ul li:nth-child(even) {
+    padding-left: 15px;
   }
 }
 .front .region-header .content-search {
