@@ -8481,6 +8481,9 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
     font-size: 24px;
   }
 }
+.jcarousel-skin-default .jcarousel-item-horizontal {
+  margin: 0;
+}
 .jcarousel-skin-default .jcarousel-prev-horizontal {
   left: 0;
 }
