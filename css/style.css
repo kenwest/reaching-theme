@@ -8433,7 +8433,7 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
 }
 .jcarousel-skin-default .jcarousel-container-horizontal {
   width: 100%;
-  padding: 0 30px;
+  padding: 0;
   height: 200px;
   /* displays 240px wide item as 16:9 plus some spacing */
 }
@@ -8489,18 +8489,18 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
 }
 .jcarousel-skin-default .jcarousel-prev-horizontal,
 .jcarousel-skin-default .jcarousel-next-horizontal {
-  top: 80px;
+  top: 40px;
 }
 @media (min-width: 768px) {
   .jcarousel-skin-default .jcarousel-prev-horizontal,
   .jcarousel-skin-default .jcarousel-next-horizontal {
-    top: 100px;
+    top: 60px;
   }
 }
 @media (min-width: 992px) {
   .jcarousel-skin-default .jcarousel-prev-horizontal,
   .jcarousel-skin-default .jcarousel-next-horizontal {
-    top: 160px;
+    top: 140px;
   }
 }
 .footer {
