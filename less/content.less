@@ -56,6 +56,15 @@ ul {
   }
 }
 
+.views-field-title {
+  .field-content {
+    @media (min-width: @screen-sm-min) {
+      margin-top: floor(@font-size-h3 * @line-height-base) - (2 * @line-height-computed);
+      margin-bottom: (2 * @line-height-computed) - floor(@font-size-h3 * @line-height-base);
+    }
+  }
+}
+
 .page-header,
 .block-title {
   @media (min-width: @screen-md-min) {

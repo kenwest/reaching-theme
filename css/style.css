@@ -7809,6 +7809,12 @@ ul {
     line-height: 40px;
   }
 }
+@media (min-width: 768px) {
+  .views-field-title .field-content {
+    margin-top: -6px;
+    margin-bottom: 6px;
+  }
+}
 @media (min-width: 992px) {
   .page-header,
   .block-title {
