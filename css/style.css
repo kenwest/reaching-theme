@@ -6475,6 +6475,8 @@ button.close {
 .modal-header:after,
 .modal-footer:before,
 .modal-footer:after,
+.stack:before,
+.stack:after,
 .front .lead:before,
 .front .lead:after,
 .front .region-header .block-menu:before,
@@ -6504,6 +6506,7 @@ button.close {
 .panel-body:after,
 .modal-header:after,
 .modal-footer:after,
+.stack:after,
 .front .lead:after,
 .front .region-header .block-menu:after,
 .front .region-header .block-menu ul:after,
@@ -7444,6 +7447,27 @@ table .checkbox input[type="checkbox"] {
   margin: 0;
 }
 /*
+ * Common node formatting
+ */
+.stack {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.stack .box {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .stack .box {
+    float: left;
+    width: 50%;
+  }
+}
+/*
  * Common views formatting
  */
 .view {
@@ -7770,7 +7794,7 @@ ul {
 .views-field-title i,
 .block-block > h3 i,
 .view-content > h3 i {
-  width: 60px;
+  min-width: 60px;
   margin-right: 15px;
 }
 @media (min-width: 768px) {
@@ -8079,7 +8103,7 @@ ul {
 .views-field-field-is-audio i,
 .views-field-field-is-text i,
 .views-field-field-is-video i {
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   font-size: 40px;
 }

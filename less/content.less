@@ -47,7 +47,7 @@ ul {
   }
 
   i {
-    width: @view-thumbnail-width;
+    min-width: @view-thumbnail-width;
     margin-right: floor(@grid-gutter-width / 2);
 
     @media (min-width: @screen-sm-min) {
@@ -269,7 +269,7 @@ ul {
   height: @view-thumbnail-height;
 
   i {
-    width: @view-thumbnail-width;
+    min-width: @view-thumbnail-width;
     height: @view-thumbnail-height;
     font-size: (@view-thumbnail-height - @line-height-computed);
 
