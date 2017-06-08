@@ -7747,6 +7747,7 @@ ul {
 .page-header,
 .block-title,
 .views-field-title,
+.block-block > h3,
 .view-content > h3 {
   padding: 0;
   border: 0;
@@ -7758,6 +7759,7 @@ ul {
   .page-header,
   .block-title,
   .views-field-title,
+  .block-block > h3,
   .view-content > h3 {
     font-size: 24px;
     line-height: 40px;
@@ -7766,6 +7768,7 @@ ul {
 .page-header i,
 .block-title i,
 .views-field-title i,
+.block-block > h3 i,
 .view-content > h3 i {
   width: 60px;
   margin-right: 15px;
@@ -7774,6 +7777,7 @@ ul {
   .page-header i,
   .block-title i,
   .views-field-title i,
+  .block-block > h3 i,
   .view-content > h3 i {
     line-height: 40px;
   }
@@ -8023,6 +8027,29 @@ ul {
 .region-content .block-views .block-title + .view {
   padding-top: 20px;
   border-top-width: 0px;
+}
+.region-sidebar-second .block {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .region-sidebar-second .block {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .region-sidebar-second .block {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.block {
+  margin-bottom: 40px;
 }
 /*
  * Views
