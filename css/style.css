@@ -8126,15 +8126,18 @@ ul {
 .views-field-field-in-activity,
 .views-field-field-speakers,
 .views-field-field-date-text,
+.views-field-taxonomy-vocabulary-1,
 .views-field-body {
   margin-left: 75px;
 }
+.views-field-taxonomy-vocabulary-1,
 .views-field-field-in-activity {
   margin-bottom: 20px;
 }
 .views-field + .views-field-body {
   margin-top: 20px;
 }
+.views-field-taxonomy-vocabulary-1,
 .views-field-field-in-activity {
   font-size: 18px;
   line-height: 20px;
