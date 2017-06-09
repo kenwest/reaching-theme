@@ -8014,6 +8014,18 @@ ul {
 /*
  * Regions and blocks
  */
+.col-sm-12 .region-content .block {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .col-sm-12 .region-content .block {
+    float: left;
+    width: 66.66666667%;
+  }
+}
 .region-content {
   margin-left: -15px;
   margin-right: -15px;
@@ -8199,16 +8211,30 @@ ul {
 /*
  * Node formatting
  */
-.block-system {
-  margin-bottom: 40px;
-}
-.block-system .node,
-.block-system .view {
-  max-width: 720px;
-}
-.block-system .node .field-name-field-in-activity,
 .block-system .node .blog_usernames_blog {
   display: none;
+}
+.block-system .node .field-name-field-in-activity {
+  padding-bottom: 20px;
+  line-height: 40px;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .block-system .node .field-name-field-in-activity {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+.block-system .node .field-name-field-image,
+.block-system .node .field-name-field-series-image {
+  width: 285px;
+  padding-bottom: 20px;
+}
+.block-system .node .field-name-field-image img,
+.block-system .node .field-name-field-series-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .block-system .node .field-name-field-image,
 .block-system .node .field-name-field-series-image,
@@ -8219,15 +8245,6 @@ ul {
   max-width: 50%;
   margin-left: 15px;
   padding-left: 15px;
-  padding-bottom: 20px;
-}
-.block-system .node .field-name-field-image img,
-.block-system .node .field-name-field-series-image img,
-.block-system .node .field-name-field-civievent img,
-.block-system .node .field-name-field-add-to-calendar img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 .block-system .node .field-name-field-civievent + .field-name-field-add-to-calendar {
   display: none;
@@ -8336,9 +8353,6 @@ a.block-system .node .field-name-field-topics .field-item:focus {
     clear: none;
   }
 }
-.block-system .node .comment-add {
-  margin-bottom: 20px;
-}
 .block-system .node .comment-add,
 .block-system .node .field-name-field-civievent .field-item,
 .block-system .node .field-name-field-add-to-calendar .field-item {
@@ -8354,9 +8368,10 @@ a.block-system .node .field-name-field-topics .field-item:focus {
   text-align: center;
   background-color: #777777;
   border-radius: 10px;
-  width: 280px;
+  width: 270px;
   max-width: 100%;
   padding: 20px 15px;
+  margin-bottom: 20px;
   border-radius: 30px;
   background: #02426f;
 }

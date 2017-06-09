@@ -202,6 +202,15 @@ ul {
 /*
  * Regions and blocks
  */
+.col-sm-12 {
+  .region-content {
+    .block {
+      // Prevent super-wide content if there is no primary sidebar content
+      .make-md-column(8);
+    }
+  }
+}
+
 .region-content {
   .make-row();
 
@@ -378,17 +387,31 @@ ul {
  * Node formatting
  */
 .block-system {
-  margin-bottom: (2*@line-height-computed);
-
-  .node,
-  .view {
-    max-width: 720px;
-  }
-
   .node {
-    .field-name-field-in-activity,
     .blog_usernames_blog {
       display: none;
+    }
+
+    .field-name-field-in-activity {
+      padding-bottom: @line-height-computed;
+      line-height: (2 * @line-height-computed);
+
+      // Mobile:
+        font-size: @font-size-h4;
+      @media (min-width: @screen-sm-min) {
+        font-size: @font-size-h3;
+        line-height: (2 * @line-height-computed);
+      }
+    }
+
+    .field-name-field-image,
+    .field-name-field-series-image {
+      width: (9 * @grid-gutter-width) + floor(@grid-gutter-width/2);
+      padding-bottom: @line-height-computed;
+
+      img {
+        .img-responsive;
+      }
     }
 
     .field-name-field-image,
@@ -400,11 +423,6 @@ ul {
       max-width: 50%;
       margin-left: floor(@grid-gutter-width/2);
       padding-left: floor(@grid-gutter-width/2);
-      padding-bottom: @line-height-computed;
-
-      img {
-        .img-responsive;
-      }
     }
 
     .field-name-field-civievent + .field-name-field-add-to-calendar {
@@ -469,17 +487,14 @@ ul {
       }
     }
 
-    .comment-add {
-      margin-bottom: @line-height-computed;
-    }
-
     .comment-add,
     .field-name-field-civievent .field-item,
     .field-name-field-add-to-calendar .field-item {
       .badge;
-      width: 280px;
+      width: (9 * @grid-gutter-width);
       max-width: 100%;
       padding: @line-height-computed floor(@grid-gutter-width/2);
+      margin-bottom: @line-height-computed;
       border-radius: @grid-gutter-width;
       background: @brand-primary;
 
