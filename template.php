@@ -14,3 +14,23 @@ function reaching_node_view_alter(&$build) {
     $build['#contextual_links']['node'] = array('node', array($build['#node']->nid));
   }
 }
+
+/*
+ * Limit the height of blocks
+ */
+function reaching_preprocess_page(&$variables) {
+  $script = '
+    jQuery(document).ready(function(){
+      jQuery(".block").each(function() {
+        if(jQuery(this).height() >= 400) {
+          jQuery(this).toggleClass("bounded");
+          jQuery("<div class=\"block-header\"></div>").prependTo(jQuery(this));
+          jQuery("<div class=\"block-footer\"><i class=\"fa fa-fw fa-chevron-down\"></div>").appendTo(jQuery(this)).click(function() {
+            jQuery(this).parent().toggleClass("open");
+            jQuery(this).find("i").toggleClass("fa-rotate-180");
+          });
+        }
+      });
+    });';
+  drupal_add_js($script, 'inline');
+ }
