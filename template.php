@@ -21,8 +21,8 @@ function reaching_node_view_alter(&$build) {
 function reaching_preprocess_page(&$variables) {
   $script = '
     jQuery(document).ready(function(){
-      jQuery(".block").each(function() {
-        if(jQuery(this).height() >= 400) {
+      jQuery(".region-content, .region-sidebar-first, .region-sidebar-second").find(".block-views, .block-block").each(function() {
+        if(jQuery(this).height() >= 400 && !jQuery(this).hasClass("unbounded")) {
           jQuery(this).toggleClass("bounded");
           jQuery("<div class=\"block-header\"></div>").prependTo(jQuery(this));
           jQuery("<div class=\"block-footer\"><i class=\"fa fa-fw fa-chevron-down\"></div>").appendTo(jQuery(this)).click(function() {
