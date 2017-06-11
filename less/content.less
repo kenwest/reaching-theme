@@ -181,6 +181,15 @@ ul {
   .lead {
     display: none;
   }
+
+  /* Prevent super-wide content if there is no primary sidebar content */
+  .col-sm-12 {
+    .region-content {
+      .block {
+        .make-md-column(8);
+      }
+    }
+  }
 }
 
 /*
@@ -202,15 +211,6 @@ ul {
 /*
  * Regions and blocks
  */
-.col-sm-12 {
-  .region-content {
-    .block {
-      // Prevent super-wide content if there is no primary sidebar content
-      .make-md-column(8);
-    }
-  }
-}
-
 .region-content {
   .make-row();
 
@@ -223,23 +223,52 @@ ul {
     }
   }
 
-  .block-views {
+  .block.block-views {
     .block-title {
       margin: 0 floor(@grid-gutter-width/2);
       border: 1px @block-border-colour solid;
-      padding: (@line-height-computed - 1) (floor(@grid-gutter-width / 2) - 1) @line-height-computed;
       border-bottom-width: 0px;
+      padding: (@line-height-computed - 1) (floor(@grid-gutter-width / 2) - 1) @line-height-computed;
     }
 
     .view {
-      margin: 0 floor(@grid-gutter-width / 2) (2 * @line-height-computed);
+      margin: 0 floor(@grid-gutter-width / 2) 0;
       border: 1px @block-border-colour solid;
-      padding: (@line-height-computed - 1) (floor(@grid-gutter-width / 2) - 1);
+      border-bottom-width: 0px;
+      padding: (@line-height-computed - 1) (floor(@grid-gutter-width / 2) - 1) @line-height-computed;
+    }
+
+    .view:last-child {
+      border-bottom-width: 1px;
+      padding-bottom: (@line-height-computed - 1);
     }
 
     .block-title + .view {
+      border-top-width: 0;
       padding-top: @line-height-computed;
-      border-top-width: 0px;
+    }
+
+    &.bounded .block-header {
+      padding: 0 (@grid-gutter-width + 1); // Do not overlay the 1px border
+    }
+
+    &.bounded .block-footer {
+      padding: 0 @grid-gutter-width;
+
+      i {
+        border: 1px @block-border-colour solid;
+        border-top-width: 0;
+      }
+    }
+
+    &.bounded.open .block-footer {
+      padding: 0 floor(@grid-gutter-width / 2);
+
+      i {
+        // The js rotates the I element when the .bounded .block is .open, so change the border side
+        border-top-width: 1px;
+        border-bottom-width: 0;
+      }
     }
   }
 }
@@ -264,15 +293,22 @@ ul {
 
     .block-header {
       width: 100%;
-      height: @block-fade-height;
       position: absolute;
       left: 0;
       bottom: @block-footer-height;
+      padding: 0 floor(@grid-gutter-width / 2);
       pointer-events: none;
-      background: -webkit-linear-gradient(transparent, white);
-      background: -o-linear-gradient(transparent, white);
-      background: -moz-linear-gradient(transparent, white);
-      background: linear-gradient(transparent, white);
+
+      &::before {
+        content: " ";
+        display: block;
+        width: 100%;
+        height: @block-fade-height;
+        background: -webkit-linear-gradient(transparent, white);
+        background: -o-linear-gradient(transparent, white);
+        background: -moz-linear-gradient(transparent, white);
+        background: linear-gradient(transparent, white);
+      }
     }
 
     .more-link {
@@ -281,16 +317,22 @@ ul {
 
     .block-footer {
       width: 100%;
-      height: @block-footer-height;
-      line-height: @block-footer-height;
       position: absolute;
       left: 0;
       bottom: 0;
-      text-align: center;
-      font-size: @font-size-h3;
-      color: @brand-primary;
-      background-color: white;
+      padding: 0 floor(@grid-gutter-width / 2);
       cursor: pointer;
+
+      i {
+        display: block;
+        width: 100%;
+        height: @block-footer-height;
+        line-height: @block-footer-height;
+        font-size: @font-size-h3;
+        text-align: center;
+        color: @brand-primary;
+        background-color: @header-bg;
+      }
     }
 
     &.open {
@@ -308,6 +350,7 @@ ul {
         position: relative;
         left: initial;
         bottom: initial;
+        padding: initial;
       }
     }
   }
