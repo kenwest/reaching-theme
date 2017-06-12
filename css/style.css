@@ -6485,6 +6485,8 @@ button.close {
 .front .region-header .block-menu ul:after,
 .region-content:before,
 .region-content:after,
+.region-sidebar-first:before,
+.region-sidebar-first:after,
 .region-sidebar-second:before,
 .region-sidebar-second:after,
 .region-footer:before,
@@ -6513,6 +6515,7 @@ button.close {
 .front .region-header .block-menu:after,
 .front .region-header .block-menu ul:after,
 .region-content:after,
+.region-sidebar-first:after,
 .region-sidebar-second:after,
 .region-footer:after {
   clear: both;
@@ -8091,6 +8094,18 @@ ul {
 .region-content .block.block-views.bounded.open .block-footer i {
   border-top-width: 1px;
   border-bottom-width: 0;
+}
+.region-sidebar-first {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.region-sidebar-first .block {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .region-sidebar-second {
   margin-left: -15px;
