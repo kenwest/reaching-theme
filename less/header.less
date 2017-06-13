@@ -97,20 +97,29 @@
 
   .navbar-toggle {
     margin: 0 floor(@grid-gutter-width / 2);
-    /* 2 * 1px border + 2 * padding + i.height = 3 * @line-height-computed */
-    padding: (floor(3 * @line-height-computed / 4) - 1) (floor(@grid-gutter-width / 2) - 1);
+    /* 2 * padding + i.height = 3 * @line-height-computed */
+    width: (2 * @grid-gutter-width);
+    padding: floor(@line-height-computed / 2) 0;
     z-index: 2;
-    background-color: white;
+    color: @brand-primary;
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 0;
+
+    &:hover,
+    &:focus {
+      background-color: white;
+    }
 
     i {
-      font-size: (3 * @line-height-computed / 2);
+      font-size: (2 * @line-height-computed);
     }
   }
 }
 
 .front {
   .hero {
-    background: thistle;
+    background: url('/sites/all/themes/reaching/images/hero.jpg') repeat scroll 50% 50%;
     background-size: cover;
     position: absolute;
     top: 0;
