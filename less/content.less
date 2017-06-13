@@ -712,15 +712,37 @@ ul {
   }
 
   .jcarousel-prev-horizontal {
-    left: 0;
+    left: floor(@grid-gutter-width / 2);
+
+    &::before {
+      content: "\f137";
+    }
   }
 
   .jcarousel-next-horizontal {
-    right: 0;
+    right: floor(@grid-gutter-width / 2);
+
+    &::before {
+      content: "\f138";
+    }
   }
 
   .jcarousel-prev-horizontal,
   .jcarousel-next-horizontal {
+    display: block;
+    height: (3 * @line-height-computed);
+    width: (2 * @grid-gutter-width);
+    border-radius: 50%;
+    background: white;
+    opacity: 0.8;
+
+    text-align: center;
+    text-decoration: none;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
 
     // Mobile and tablet:
       top: (2 * @line-height-computed);
@@ -729,6 +751,11 @@ ul {
     }
     @media (min-width: @screen-md-min) {
       top: (7 * @line-height-computed);
+    }
+
+    &::before {
+      font-size: floor(5 * @line-height-computed / 2);
+      line-height: (3 * @line-height-computed);
     }
   }
 }

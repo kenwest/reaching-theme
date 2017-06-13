@@ -8671,13 +8671,31 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
   margin: 0;
 }
 .jcarousel-skin-default .jcarousel-prev-horizontal {
-  left: 0;
+  left: 15px;
+}
+.jcarousel-skin-default .jcarousel-prev-horizontal::before {
+  content: "\f137";
 }
 .jcarousel-skin-default .jcarousel-next-horizontal {
-  right: 0;
+  right: 15px;
+}
+.jcarousel-skin-default .jcarousel-next-horizontal::before {
+  content: "\f138";
 }
 .jcarousel-skin-default .jcarousel-prev-horizontal,
 .jcarousel-skin-default .jcarousel-next-horizontal {
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.8;
+  text-align: center;
+  text-decoration: none;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   top: 40px;
 }
 @media (min-width: 768px) {
@@ -8691,6 +8709,11 @@ a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
   .jcarousel-skin-default .jcarousel-next-horizontal {
     top: 140px;
   }
+}
+.jcarousel-skin-default .jcarousel-prev-horizontal::before,
+.jcarousel-skin-default .jcarousel-next-horizontal::before {
+  font-size: 50px;
+  line-height: 60px;
 }
 .footer {
   background-color: #333333;
