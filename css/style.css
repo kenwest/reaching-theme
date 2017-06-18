@@ -8416,6 +8416,9 @@ a.block-system .field-name-field-topics .field-item:focus {
     clear: none;
   }
 }
+.block-system .entity-property-label {
+  display: none;
+}
 .block-system .comment-add,
 .block-system .field-name-field-civievent .field-item,
 .block-system .field-name-field-add-to-calendar .field-item {
