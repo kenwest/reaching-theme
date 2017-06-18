@@ -436,150 +436,148 @@ ul {
 }
 
 /*
- * Node formatting
+ * Node and entity formatting
  */
 .block-system {
-  .node {
-    .blog_usernames_blog {
+  .blog_usernames_blog {
+    display: none;
+  }
+
+  .field-name-field-in-activity {
+    padding-bottom: @line-height-computed;
+    line-height: (2 * @line-height-computed);
+
+    // Mobile:
+      font-size: @font-size-h4;
+    @media (min-width: @screen-sm-min) {
+      font-size: @font-size-h3;
+      line-height: (2 * @line-height-computed);
+    }
+  }
+
+  .field-name-field-image,
+  .field-name-field-series-image {
+    width: (9 * @grid-gutter-width) + floor(@grid-gutter-width/2);
+    padding-bottom: @line-height-computed;
+
+    img {
+      .img-responsive;
+    }
+  }
+
+  .field-name-field-image,
+  .field-name-field-series-image,
+  .field-name-field-civievent,
+  .field-name-field-add-to-calendar {
+    float: right;
+    clear: right;
+    max-width: 50%;
+    margin-left: floor(@grid-gutter-width/2);
+    padding-left: floor(@grid-gutter-width/2);
+  }
+
+  .field-name-field-civievent + .field-name-field-add-to-calendar {
+    display: none; // Hide Add to calendar if there is a CiviEvent
+  }
+
+  .field-name-field-speakers,
+  .field-name-field-bible-reference,
+  .field-name-field-episode-date {
+    .field-label {
+      width: 140px;
+    }
+  }
+
+  .field-name-field-topic,
+  .field-name-field-topics {
+    display: inline;
+
+    .field-label {
       display: none;
     }
 
-    .field-name-field-in-activity {
-      padding-bottom: @line-height-computed;
-      line-height: (2 * @line-height-computed);
-
-      // Mobile:
-        font-size: @font-size-h4;
-      @media (min-width: @screen-sm-min) {
-        font-size: @font-size-h3;
-        line-height: (2 * @line-height-computed);
-      }
-    }
-
-    .field-name-field-image,
-    .field-name-field-series-image {
-      width: (9 * @grid-gutter-width) + floor(@grid-gutter-width/2);
-      padding-bottom: @line-height-computed;
-
-      img {
-        .img-responsive;
-      }
-    }
-
-    .field-name-field-image,
-    .field-name-field-series-image,
-    .field-name-field-civievent,
-    .field-name-field-add-to-calendar {
-      float: right;
-      clear: right;
-      max-width: 50%;
-      margin-left: floor(@grid-gutter-width/2);
-      padding-left: floor(@grid-gutter-width/2);
-    }
-
-    .field-name-field-civievent + .field-name-field-add-to-calendar {
-      display: none; // Hide Add to calendar if there is a CiviEvent
-    }
-
-    .field-name-field-speakers,
-    .field-name-field-bible-reference,
-    .field-name-field-episode-date {
-      .field-label {
-        width: 140px;
-      }
-    }
-
-    .field-name-field-topic,
-    .field-name-field-topics {
+    .field-items {
       display: inline;
-
-      .field-label {
-        display: none;
-      }
-
-      .field-items {
-        display: inline;
-      }
-
-      .field-item {
-        .badge;
-        display: inline-block;
-        padding: floor((@line-height-computed - 12px)/2) floor(@grid-gutter-width/3);
-        margin: 0 floor(@grid-gutter-width/3) @line-height-computed 0;
-        background: @text-color;
-        color: white;
-      }
     }
 
-    .field-name-field-date-text {
-      font-weight: bold;
-      font-size: @font-size-large;
-    }
-
-    .field-name-field-date-text,
-    .field-name-field-episode-date,
-    .field-name-body,
-    .field-name-field-content,
-    .field-name-field-addthis {
-      margin: 0 0 @line-height-computed;
-    }
-
-    .field-name-field-addthis {
-      a.at300b {
-        height: (2 * @line-height-computed);
-        margin: 0;
-      }
-
-      a.addthis_button_facebook {
-        // Mobile:
-          clear: left;
-        @media (min-width: @screen-xs-min) {
-          clear: none;
-        }
-      }
-    }
-
-    .comment-add,
-    .field-name-field-civievent .field-item,
-    .field-name-field-add-to-calendar .field-item {
+    .field-item {
       .badge;
-      width: (9 * @grid-gutter-width);
-      max-width: 100%;
-      padding: @line-height-computed floor(@grid-gutter-width/2);
-      margin-bottom: @line-height-computed;
-      border-radius: @grid-gutter-width;
-      background: @brand-primary;
+      display: inline-block;
+      padding: floor((@line-height-computed - 12px)/2) floor(@grid-gutter-width/3);
+      margin: 0 floor(@grid-gutter-width/3) @line-height-computed 0;
+      background: @text-color;
+      color: white;
+    }
+  }
 
+  .field-name-field-date-text {
+    font-weight: bold;
+    font-size: @font-size-large;
+  }
+
+  .field-name-field-date-text,
+  .field-name-field-episode-date,
+  .field-name-body,
+  .field-name-field-content,
+  .field-name-field-addthis {
+    margin: 0 0 @line-height-computed;
+  }
+
+  .field-name-field-addthis {
+    a.at300b {
+      height: (2 * @line-height-computed);
+      margin: 0;
+    }
+
+    a.addthis_button_facebook {
+      // Mobile:
+        clear: left;
+      @media (min-width: @screen-xs-min) {
+        clear: none;
+      }
+    }
+  }
+
+  .comment-add,
+  .field-name-field-civievent .field-item,
+  .field-name-field-add-to-calendar .field-item {
+    .badge;
+    width: (9 * @grid-gutter-width);
+    max-width: 100%;
+    padding: @line-height-computed floor(@grid-gutter-width/2);
+    margin-bottom: @line-height-computed;
+    border-radius: @grid-gutter-width;
+    background: @brand-primary;
+
+    a,
+    a:hover,
+    a:focus {
+      // Mobile:
+        font-size: @font-size-base;
+      @media (min-width: @screen-xs-min) {
+        font-size: @font-size-large;
+      }
+      font-weight: bold;
+      color: white;
+      background: @brand-primary;
+    }
+
+    .dropdown a {
+      padding: 0;
+      height: @line-height-computed;
+    }
+
+    .dropdown-menu {
       a,
       a:hover,
       a:focus {
-        // Mobile:
-          font-size: @font-size-base;
-        @media (min-width: @screen-xs-min) {
-          font-size: @font-size-large;
-        }
-        font-weight: bold;
-        color: white;
-        background: @brand-primary;
-      }
-
-      .dropdown a {
-        padding: 0;
-        height: @line-height-computed;
-      }
-
-      .dropdown-menu {
-        a,
-        a:hover,
-        a:focus {
-          padding: floor(@grid-gutter-width/4);
-          height: (2 * @line-height-computed);
-          text-align: left;
-          font-size: @font-size-base;
-          font-weight: normal;
-          color: @brand-primary;
-          background: white;
-        }
+        padding: floor(@grid-gutter-width/4);
+        height: (2 * @line-height-computed);
+        text-align: left;
+        font-size: @font-size-base;
+        font-weight: normal;
+        color: @brand-primary;
+        background: white;
       }
     }
   }

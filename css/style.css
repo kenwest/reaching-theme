@@ -8272,65 +8272,65 @@ ul {
   font-style: italic;
 }
 /*
- * Node formatting
+ * Node and entity formatting
  */
-.block-system .node .blog_usernames_blog {
+.block-system .blog_usernames_blog {
   display: none;
 }
-.block-system .node .field-name-field-in-activity {
+.block-system .field-name-field-in-activity {
   padding-bottom: 20px;
   line-height: 40px;
   font-size: 18px;
 }
 @media (min-width: 768px) {
-  .block-system .node .field-name-field-in-activity {
+  .block-system .field-name-field-in-activity {
     font-size: 24px;
     line-height: 40px;
   }
 }
-.block-system .node .field-name-field-image,
-.block-system .node .field-name-field-series-image {
+.block-system .field-name-field-image,
+.block-system .field-name-field-series-image {
   width: 285px;
   padding-bottom: 20px;
 }
-.block-system .node .field-name-field-image img,
-.block-system .node .field-name-field-series-image img {
+.block-system .field-name-field-image img,
+.block-system .field-name-field-series-image img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.block-system .node .field-name-field-image,
-.block-system .node .field-name-field-series-image,
-.block-system .node .field-name-field-civievent,
-.block-system .node .field-name-field-add-to-calendar {
+.block-system .field-name-field-image,
+.block-system .field-name-field-series-image,
+.block-system .field-name-field-civievent,
+.block-system .field-name-field-add-to-calendar {
   float: right;
   clear: right;
   max-width: 50%;
   margin-left: 15px;
   padding-left: 15px;
 }
-.block-system .node .field-name-field-civievent + .field-name-field-add-to-calendar {
+.block-system .field-name-field-civievent + .field-name-field-add-to-calendar {
   display: none;
 }
-.block-system .node .field-name-field-speakers .field-label,
-.block-system .node .field-name-field-bible-reference .field-label,
-.block-system .node .field-name-field-episode-date .field-label {
+.block-system .field-name-field-speakers .field-label,
+.block-system .field-name-field-bible-reference .field-label,
+.block-system .field-name-field-episode-date .field-label {
   width: 140px;
 }
-.block-system .node .field-name-field-topic,
-.block-system .node .field-name-field-topics {
+.block-system .field-name-field-topic,
+.block-system .field-name-field-topics {
   display: inline;
 }
-.block-system .node .field-name-field-topic .field-label,
-.block-system .node .field-name-field-topics .field-label {
+.block-system .field-name-field-topic .field-label,
+.block-system .field-name-field-topics .field-label {
   display: none;
 }
-.block-system .node .field-name-field-topic .field-items,
-.block-system .node .field-name-field-topics .field-items {
+.block-system .field-name-field-topic .field-items,
+.block-system .field-name-field-topics .field-items {
   display: inline;
 }
-.block-system .node .field-name-field-topic .field-item,
-.block-system .node .field-name-field-topics .field-item {
+.block-system .field-name-field-topic .field-item,
+.block-system .field-name-field-topics .field-item {
   min-width: 10px;
   padding: 3px 7px;
   font-size: 12px;
@@ -8348,77 +8348,77 @@ ul {
   background: #333333;
   color: white;
 }
-.block-system .node .field-name-field-topic .field-item:empty,
-.block-system .node .field-name-field-topics .field-item:empty {
+.block-system .field-name-field-topic .field-item:empty,
+.block-system .field-name-field-topics .field-item:empty {
   display: none;
 }
-.btn .block-system .node .field-name-field-topic .field-item,
-.btn .block-system .node .field-name-field-topics .field-item {
+.btn .block-system .field-name-field-topic .field-item,
+.btn .block-system .field-name-field-topics .field-item {
   position: relative;
   top: -1px;
 }
-.btn-xs .block-system .node .field-name-field-topic .field-item,
-.btn-xs .block-system .node .field-name-field-topics .field-item,
-.btn-group-xs > .btn .block-system .node .field-name-field-topic .field-item,
-.btn-group-xs > .btn .block-system .node .field-name-field-topics .field-item {
+.btn-xs .block-system .field-name-field-topic .field-item,
+.btn-xs .block-system .field-name-field-topics .field-item,
+.btn-group-xs > .btn .block-system .field-name-field-topic .field-item,
+.btn-group-xs > .btn .block-system .field-name-field-topics .field-item {
   top: 0;
   padding: 1px 5px;
 }
-a.block-system .node .field-name-field-topic .field-item:hover,
-a.block-system .node .field-name-field-topics .field-item:hover,
-a.block-system .node .field-name-field-topic .field-item:focus,
-a.block-system .node .field-name-field-topics .field-item:focus {
+a.block-system .field-name-field-topic .field-item:hover,
+a.block-system .field-name-field-topics .field-item:hover,
+a.block-system .field-name-field-topic .field-item:focus,
+a.block-system .field-name-field-topics .field-item:focus {
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
 }
-.list-group-item.active > .block-system .node .field-name-field-topic .field-item,
-.list-group-item.active > .block-system .node .field-name-field-topics .field-item,
-.nav-pills > .active > a > .block-system .node .field-name-field-topic .field-item,
-.nav-pills > .active > a > .block-system .node .field-name-field-topics .field-item {
+.list-group-item.active > .block-system .field-name-field-topic .field-item,
+.list-group-item.active > .block-system .field-name-field-topics .field-item,
+.nav-pills > .active > a > .block-system .field-name-field-topic .field-item,
+.nav-pills > .active > a > .block-system .field-name-field-topics .field-item {
   color: #02426f;
   background-color: #ffffff;
 }
-.list-group-item > .block-system .node .field-name-field-topic .field-item,
-.list-group-item > .block-system .node .field-name-field-topics .field-item {
+.list-group-item > .block-system .field-name-field-topic .field-item,
+.list-group-item > .block-system .field-name-field-topics .field-item {
   float: right;
 }
-.list-group-item > .block-system .node .field-name-field-topic .field-item + .block-system .node .field-name-field-topic .field-item,
-.list-group-item > .block-system .node .field-name-field-topic .field-item + .block-system .node .field-name-field-topics .field-item,
-.list-group-item > .block-system .node .field-name-field-topics .field-item + .block-system .node .field-name-field-topic .field-item,
-.list-group-item > .block-system .node .field-name-field-topics .field-item + .block-system .node .field-name-field-topics .field-item {
+.list-group-item > .block-system .field-name-field-topic .field-item + .block-system .field-name-field-topic .field-item,
+.list-group-item > .block-system .field-name-field-topic .field-item + .block-system .field-name-field-topics .field-item,
+.list-group-item > .block-system .field-name-field-topics .field-item + .block-system .field-name-field-topic .field-item,
+.list-group-item > .block-system .field-name-field-topics .field-item + .block-system .field-name-field-topics .field-item {
   margin-right: 5px;
 }
-.nav-pills > li > a > .block-system .node .field-name-field-topic .field-item,
-.nav-pills > li > a > .block-system .node .field-name-field-topics .field-item {
+.nav-pills > li > a > .block-system .field-name-field-topic .field-item,
+.nav-pills > li > a > .block-system .field-name-field-topics .field-item {
   margin-left: 3px;
 }
-.block-system .node .field-name-field-date-text {
+.block-system .field-name-field-date-text {
   font-weight: bold;
   font-size: 18px;
 }
-.block-system .node .field-name-field-date-text,
-.block-system .node .field-name-field-episode-date,
-.block-system .node .field-name-body,
-.block-system .node .field-name-field-content,
-.block-system .node .field-name-field-addthis {
+.block-system .field-name-field-date-text,
+.block-system .field-name-field-episode-date,
+.block-system .field-name-body,
+.block-system .field-name-field-content,
+.block-system .field-name-field-addthis {
   margin: 0 0 20px;
 }
-.block-system .node .field-name-field-addthis a.at300b {
+.block-system .field-name-field-addthis a.at300b {
   height: 40px;
   margin: 0;
 }
-.block-system .node .field-name-field-addthis a.addthis_button_facebook {
+.block-system .field-name-field-addthis a.addthis_button_facebook {
   clear: left;
 }
 @media (min-width: 480px) {
-  .block-system .node .field-name-field-addthis a.addthis_button_facebook {
+  .block-system .field-name-field-addthis a.addthis_button_facebook {
     clear: none;
   }
 }
-.block-system .node .comment-add,
-.block-system .node .field-name-field-civievent .field-item,
-.block-system .node .field-name-field-add-to-calendar .field-item {
+.block-system .comment-add,
+.block-system .field-name-field-civievent .field-item,
+.block-system .field-name-field-add-to-calendar .field-item {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
@@ -8438,108 +8438,108 @@ a.block-system .node .field-name-field-topics .field-item:focus {
   border-radius: 30px;
   background: #02426f;
 }
-.block-system .node .comment-add:empty,
-.block-system .node .field-name-field-civievent .field-item:empty,
-.block-system .node .field-name-field-add-to-calendar .field-item:empty {
+.block-system .comment-add:empty,
+.block-system .field-name-field-civievent .field-item:empty,
+.block-system .field-name-field-add-to-calendar .field-item:empty {
   display: none;
 }
-.btn .block-system .node .comment-add,
-.btn .block-system .node .field-name-field-civievent .field-item,
-.btn .block-system .node .field-name-field-add-to-calendar .field-item {
+.btn .block-system .comment-add,
+.btn .block-system .field-name-field-civievent .field-item,
+.btn .block-system .field-name-field-add-to-calendar .field-item {
   position: relative;
   top: -1px;
 }
-.btn-xs .block-system .node .comment-add,
-.btn-xs .block-system .node .field-name-field-civievent .field-item,
-.btn-xs .block-system .node .field-name-field-add-to-calendar .field-item,
-.btn-group-xs > .btn .block-system .node .comment-add,
-.btn-group-xs > .btn .block-system .node .field-name-field-civievent .field-item,
-.btn-group-xs > .btn .block-system .node .field-name-field-add-to-calendar .field-item {
+.btn-xs .block-system .comment-add,
+.btn-xs .block-system .field-name-field-civievent .field-item,
+.btn-xs .block-system .field-name-field-add-to-calendar .field-item,
+.btn-group-xs > .btn .block-system .comment-add,
+.btn-group-xs > .btn .block-system .field-name-field-civievent .field-item,
+.btn-group-xs > .btn .block-system .field-name-field-add-to-calendar .field-item {
   top: 0;
   padding: 1px 5px;
 }
-a.block-system .node .comment-add:hover,
-a.block-system .node .field-name-field-civievent .field-item:hover,
-a.block-system .node .field-name-field-add-to-calendar .field-item:hover,
-a.block-system .node .comment-add:focus,
-a.block-system .node .field-name-field-civievent .field-item:focus,
-a.block-system .node .field-name-field-add-to-calendar .field-item:focus {
+a.block-system .comment-add:hover,
+a.block-system .field-name-field-civievent .field-item:hover,
+a.block-system .field-name-field-add-to-calendar .field-item:hover,
+a.block-system .comment-add:focus,
+a.block-system .field-name-field-civievent .field-item:focus,
+a.block-system .field-name-field-add-to-calendar .field-item:focus {
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
 }
-.list-group-item.active > .block-system .node .comment-add,
-.list-group-item.active > .block-system .node .field-name-field-civievent .field-item,
-.list-group-item.active > .block-system .node .field-name-field-add-to-calendar .field-item,
-.nav-pills > .active > a > .block-system .node .comment-add,
-.nav-pills > .active > a > .block-system .node .field-name-field-civievent .field-item,
-.nav-pills > .active > a > .block-system .node .field-name-field-add-to-calendar .field-item {
+.list-group-item.active > .block-system .comment-add,
+.list-group-item.active > .block-system .field-name-field-civievent .field-item,
+.list-group-item.active > .block-system .field-name-field-add-to-calendar .field-item,
+.nav-pills > .active > a > .block-system .comment-add,
+.nav-pills > .active > a > .block-system .field-name-field-civievent .field-item,
+.nav-pills > .active > a > .block-system .field-name-field-add-to-calendar .field-item {
   color: #02426f;
   background-color: #ffffff;
 }
-.list-group-item > .block-system .node .comment-add,
-.list-group-item > .block-system .node .field-name-field-civievent .field-item,
-.list-group-item > .block-system .node .field-name-field-add-to-calendar .field-item {
+.list-group-item > .block-system .comment-add,
+.list-group-item > .block-system .field-name-field-civievent .field-item,
+.list-group-item > .block-system .field-name-field-add-to-calendar .field-item {
   float: right;
 }
-.list-group-item > .block-system .node .comment-add + .block-system .node .comment-add,
-.list-group-item > .block-system .node .comment-add + .block-system .node .field-name-field-civievent .field-item,
-.list-group-item > .block-system .node .comment-add + .block-system .node .field-name-field-add-to-calendar .field-item,
-.list-group-item > .block-system .node .field-name-field-civievent .field-item + .block-system .node .comment-add,
-.list-group-item > .block-system .node .field-name-field-civievent .field-item + .block-system .node .field-name-field-civievent .field-item,
-.list-group-item > .block-system .node .field-name-field-civievent .field-item + .block-system .node .field-name-field-add-to-calendar .field-item,
-.list-group-item > .block-system .node .field-name-field-add-to-calendar .field-item + .block-system .node .comment-add,
-.list-group-item > .block-system .node .field-name-field-add-to-calendar .field-item + .block-system .node .field-name-field-civievent .field-item,
-.list-group-item > .block-system .node .field-name-field-add-to-calendar .field-item + .block-system .node .field-name-field-add-to-calendar .field-item {
+.list-group-item > .block-system .comment-add + .block-system .comment-add,
+.list-group-item > .block-system .comment-add + .block-system .field-name-field-civievent .field-item,
+.list-group-item > .block-system .comment-add + .block-system .field-name-field-add-to-calendar .field-item,
+.list-group-item > .block-system .field-name-field-civievent .field-item + .block-system .comment-add,
+.list-group-item > .block-system .field-name-field-civievent .field-item + .block-system .field-name-field-civievent .field-item,
+.list-group-item > .block-system .field-name-field-civievent .field-item + .block-system .field-name-field-add-to-calendar .field-item,
+.list-group-item > .block-system .field-name-field-add-to-calendar .field-item + .block-system .comment-add,
+.list-group-item > .block-system .field-name-field-add-to-calendar .field-item + .block-system .field-name-field-civievent .field-item,
+.list-group-item > .block-system .field-name-field-add-to-calendar .field-item + .block-system .field-name-field-add-to-calendar .field-item {
   margin-right: 5px;
 }
-.nav-pills > li > a > .block-system .node .comment-add,
-.nav-pills > li > a > .block-system .node .field-name-field-civievent .field-item,
-.nav-pills > li > a > .block-system .node .field-name-field-add-to-calendar .field-item {
+.nav-pills > li > a > .block-system .comment-add,
+.nav-pills > li > a > .block-system .field-name-field-civievent .field-item,
+.nav-pills > li > a > .block-system .field-name-field-add-to-calendar .field-item {
   margin-left: 3px;
 }
-.block-system .node .comment-add a,
-.block-system .node .field-name-field-civievent .field-item a,
-.block-system .node .field-name-field-add-to-calendar .field-item a,
-.block-system .node .comment-add a:hover,
-.block-system .node .field-name-field-civievent .field-item a:hover,
-.block-system .node .field-name-field-add-to-calendar .field-item a:hover,
-.block-system .node .comment-add a:focus,
-.block-system .node .field-name-field-civievent .field-item a:focus,
-.block-system .node .field-name-field-add-to-calendar .field-item a:focus {
+.block-system .comment-add a,
+.block-system .field-name-field-civievent .field-item a,
+.block-system .field-name-field-add-to-calendar .field-item a,
+.block-system .comment-add a:hover,
+.block-system .field-name-field-civievent .field-item a:hover,
+.block-system .field-name-field-add-to-calendar .field-item a:hover,
+.block-system .comment-add a:focus,
+.block-system .field-name-field-civievent .field-item a:focus,
+.block-system .field-name-field-add-to-calendar .field-item a:focus {
   font-size: 14px;
   font-weight: bold;
   color: white;
   background: #02426f;
 }
 @media (min-width: 480px) {
-  .block-system .node .comment-add a,
-  .block-system .node .field-name-field-civievent .field-item a,
-  .block-system .node .field-name-field-add-to-calendar .field-item a,
-  .block-system .node .comment-add a:hover,
-  .block-system .node .field-name-field-civievent .field-item a:hover,
-  .block-system .node .field-name-field-add-to-calendar .field-item a:hover,
-  .block-system .node .comment-add a:focus,
-  .block-system .node .field-name-field-civievent .field-item a:focus,
-  .block-system .node .field-name-field-add-to-calendar .field-item a:focus {
+  .block-system .comment-add a,
+  .block-system .field-name-field-civievent .field-item a,
+  .block-system .field-name-field-add-to-calendar .field-item a,
+  .block-system .comment-add a:hover,
+  .block-system .field-name-field-civievent .field-item a:hover,
+  .block-system .field-name-field-add-to-calendar .field-item a:hover,
+  .block-system .comment-add a:focus,
+  .block-system .field-name-field-civievent .field-item a:focus,
+  .block-system .field-name-field-add-to-calendar .field-item a:focus {
     font-size: 18px;
   }
 }
-.block-system .node .comment-add .dropdown a,
-.block-system .node .field-name-field-civievent .field-item .dropdown a,
-.block-system .node .field-name-field-add-to-calendar .field-item .dropdown a {
+.block-system .comment-add .dropdown a,
+.block-system .field-name-field-civievent .field-item .dropdown a,
+.block-system .field-name-field-add-to-calendar .field-item .dropdown a {
   padding: 0;
   height: 20px;
 }
-.block-system .node .comment-add .dropdown-menu a,
-.block-system .node .field-name-field-civievent .field-item .dropdown-menu a,
-.block-system .node .field-name-field-add-to-calendar .field-item .dropdown-menu a,
-.block-system .node .comment-add .dropdown-menu a:hover,
-.block-system .node .field-name-field-civievent .field-item .dropdown-menu a:hover,
-.block-system .node .field-name-field-add-to-calendar .field-item .dropdown-menu a:hover,
-.block-system .node .comment-add .dropdown-menu a:focus,
-.block-system .node .field-name-field-civievent .field-item .dropdown-menu a:focus,
-.block-system .node .field-name-field-add-to-calendar .field-item .dropdown-menu a:focus {
+.block-system .comment-add .dropdown-menu a,
+.block-system .field-name-field-civievent .field-item .dropdown-menu a,
+.block-system .field-name-field-add-to-calendar .field-item .dropdown-menu a,
+.block-system .comment-add .dropdown-menu a:hover,
+.block-system .field-name-field-civievent .field-item .dropdown-menu a:hover,
+.block-system .field-name-field-add-to-calendar .field-item .dropdown-menu a:hover,
+.block-system .comment-add .dropdown-menu a:focus,
+.block-system .field-name-field-civievent .field-item .dropdown-menu a:focus,
+.block-system .field-name-field-add-to-calendar .field-item .dropdown-menu a:focus {
   padding: 7px;
   height: 40px;
   text-align: left;
