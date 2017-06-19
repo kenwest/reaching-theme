@@ -423,7 +423,7 @@ ul {
 .views-field-taxonomy-vocabulary-1,
 .views-field-field-in-activity {
   font-size: @font-size-large;
-  line-height: @line-height-computed;
+  line-height: (2 * @line-height-computed);
 }
 
 .views-field-field-date-text {
@@ -512,14 +512,21 @@ ul {
 
   .field-name-field-date-text {
     font-weight: bold;
+  }
+
+  .field-name-field-date-text,
+  .entity-property-summary {
     font-size: @font-size-large;
+    line-height: (2 * @line-height-computed);
   }
 
   .field-name-field-date-text,
   .field-name-field-episode-date,
   .field-name-body,
   .field-name-field-content,
-  .field-name-field-addthis {
+  .field-name-field-addthis,
+  .entity-property-summary,
+  .entity-property-description {
     margin: 0 0 @line-height-computed;
   }
 

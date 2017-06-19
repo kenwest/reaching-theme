@@ -8262,7 +8262,7 @@ ul {
 .views-field-taxonomy-vocabulary-1,
 .views-field-field-in-activity {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 40px;
 }
 .views-field-field-date-text {
   font-size: 12px;
@@ -8395,13 +8395,19 @@ a.block-system .field-name-field-topics .field-item:focus {
 }
 .block-system .field-name-field-date-text {
   font-weight: bold;
+}
+.block-system .field-name-field-date-text,
+.block-system .entity-property-summary {
   font-size: 18px;
+  line-height: 40px;
 }
 .block-system .field-name-field-date-text,
 .block-system .field-name-field-episode-date,
 .block-system .field-name-body,
 .block-system .field-name-field-content,
-.block-system .field-name-field-addthis {
+.block-system .field-name-field-addthis,
+.block-system .entity-property-summary,
+.block-system .entity-property-description {
   margin: 0 0 20px;
 }
 .block-system .field-name-field-addthis a.at300b {
