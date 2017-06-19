@@ -8724,6 +8724,17 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
   font-size: 50px;
   line-height: 60px;
 }
+/*
+ * GMap configuration
+ */
+.gmap {
+  width: 100% !important;
+}
+.gmap .gmap-popup .views-field {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
 .footer {
   background-color: #333333;
   color: white;
