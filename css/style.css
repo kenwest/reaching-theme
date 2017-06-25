@@ -8683,13 +8683,13 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
   left: 15px;
 }
 .jcarousel-skin-default .jcarousel-prev-horizontal::before {
-  content: "\f137";
+  content: "\f060";
 }
 .jcarousel-skin-default .jcarousel-next-horizontal {
   right: 15px;
 }
 .jcarousel-skin-default .jcarousel-next-horizontal::before {
-  content: "\f138";
+  content: "\f061";
 }
 .jcarousel-skin-default .jcarousel-prev-horizontal,
 .jcarousel-skin-default .jcarousel-next-horizontal {
@@ -8721,7 +8721,7 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
 }
 .jcarousel-skin-default .jcarousel-prev-horizontal::before,
 .jcarousel-skin-default .jcarousel-next-horizontal::before {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 60px;
 }
 /*
