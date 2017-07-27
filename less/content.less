@@ -430,6 +430,7 @@ ul {
 .view-content > h3 {
   color: @brand-secondary;
 }
+
 /*
  * Views fields
  */
@@ -484,6 +485,33 @@ ul {
 
 .views-field-field-date-text {
   font-style: italic;
+}
+
+/*
+ * Specific view formatting
+ */
+.view-reaching-city-civicrm-event-price {
+  h3 {
+    margin: 0;
+
+    .Radio,
+    .CheckBox,
+    .Text {
+      display: none;
+    }
+
+    .Select {
+      padding-top: @line-height-computed;
+    }
+  }
+
+  .views-row {
+    padding-top: @line-height-computed;
+  }
+
+  .views-row + h3 {
+    padding: 0;
+  }
 }
 
 /*

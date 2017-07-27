@@ -8370,6 +8370,26 @@ a.page-civicrm-event .views-field-id:focus {
   font-style: italic;
 }
 /*
+ * Specific view formatting
+ */
+.view-reaching-city-civicrm-event-price h3 {
+  margin: 0;
+}
+.view-reaching-city-civicrm-event-price h3 .Radio,
+.view-reaching-city-civicrm-event-price h3 .CheckBox,
+.view-reaching-city-civicrm-event-price h3 .Text {
+  display: none;
+}
+.view-reaching-city-civicrm-event-price h3 .Select {
+  padding-top: 20px;
+}
+.view-reaching-city-civicrm-event-price .views-row {
+  padding-top: 20px;
+}
+.view-reaching-city-civicrm-event-price .views-row + h3 {
+  padding: 0;
+}
+/*
  * Node and entity formatting
  */
 .block-system .blog_usernames_blog {
