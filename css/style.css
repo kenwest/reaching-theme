@@ -7740,6 +7740,10 @@ table .checkbox input[type="checkbox"] {
 .block .crm-container.crm-public .select2-container .select2-choice {
   height: auto !important;
 }
+.block .crm-container .credit_card_type-section .crm-credit_card_type-icons a {
+  width: 52px;
+  height: 33px;
+}
 .progress.payment {
   width: 100%;
   height: auto;
