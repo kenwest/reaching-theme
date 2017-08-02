@@ -7833,6 +7833,9 @@ form .webform-component input.email {
   display: inline-block;
   width: auto;
 }
+form .captcha {
+  margin: 20px 0;
+}
 div.token-input-dropdown {
   font-size: initial !important;
   font-family: inherit !important;
