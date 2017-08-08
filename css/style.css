@@ -8406,6 +8406,7 @@ a.page-civicrm-event .views-field-id:focus {
 /*
  * Views
  */
+.view-header + .view-content,
 .views-row + .views-row {
   padding-top: 20px;
 }
@@ -8448,6 +8449,7 @@ a.page-civicrm-event .views-field-id:focus {
 .views-field-field-speakers,
 .views-field-field-date-text,
 .views-field-taxonomy-vocabulary-1,
+.views-field-field-staff-contact,
 .views-field-body {
   margin-left: 75px;
 }
