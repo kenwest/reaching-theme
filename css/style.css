@@ -8406,6 +8406,9 @@ a.page-civicrm-event .views-field-id:focus {
 /*
  * Views
  */
+.view-header {
+  margin-left: 75px;
+}
 .view-header + .view-content,
 .views-row + .views-row {
   padding-top: 20px;
