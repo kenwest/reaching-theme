@@ -8641,6 +8641,9 @@ a.block-system .field-name-field-topics .field-item:focus {
 .block-system .entity-property-description {
   margin: 0 0 20px;
 }
+.block-system .field-name-field-addthis {
+  clear: both;
+}
 .block-system .field-name-field-addthis a.at300b {
   height: 40px;
   margin: 0;
