@@ -8522,7 +8522,6 @@ a.page-civicrm-event .views-field-id:focus {
 .block-system .field-name-field-image,
 .block-system .field-name-field-series-image {
   width: 285px;
-  padding-bottom: 20px;
 }
 .block-system .field-name-field-image img,
 .block-system .field-name-field-series-image img {
@@ -8539,6 +8538,12 @@ a.page-civicrm-event .views-field-id:focus {
   max-width: 50%;
   margin-left: 15px;
   padding-left: 15px;
+}
+.block-system .field-name-field-image .field-item,
+.block-system .field-name-field-series-image .field-item,
+.block-system .field-name-field-civievent .field-item,
+.block-system .field-name-field-add-to-calendar .field-item {
+  margin-bottom: 20px;
 }
 .block-system .field-name-field-civievent + .field-name-field-add-to-calendar {
   display: none;
@@ -8659,6 +8664,9 @@ a.block-system .field-name-field-topics .field-item:focus {
 .block-system .entity-property-label {
   display: none;
 }
+.block-system .comment-add {
+  margin-bottom: 20px;
+}
 .block-system .comment-add,
 .block-system .field-name-field-civievent .field-item,
 .block-system .field-name-field-add-to-calendar .field-item {
@@ -8677,7 +8685,6 @@ a.block-system .field-name-field-topics .field-item:focus {
   width: 270px;
   max-width: 100%;
   padding: 20px 15px;
-  margin-bottom: 20px;
   border-radius: 30px;
   background: #02426f;
 }

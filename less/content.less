@@ -544,7 +544,6 @@ ul {
   .field-name-field-image,
   .field-name-field-series-image {
     width: (9 * @grid-gutter-width) + floor(@grid-gutter-width/2);
-    padding-bottom: @line-height-computed;
 
     img {
       .img-responsive;
@@ -560,6 +559,10 @@ ul {
     max-width: 50%;
     margin-left: floor(@grid-gutter-width/2);
     padding-left: floor(@grid-gutter-width/2);
+
+    .field-item {
+      margin-bottom: @line-height-computed;
+    }
   }
 
   .field-name-field-civievent + .field-name-field-add-to-calendar {
@@ -637,6 +640,10 @@ ul {
     display: none;
   }
 
+  .comment-add {
+    margin-bottom: @line-height-computed;
+  }
+
   .comment-add,
   .field-name-field-civievent .field-item,
   .field-name-field-add-to-calendar .field-item {
@@ -644,7 +651,6 @@ ul {
     width: (9 * @grid-gutter-width);
     max-width: 100%;
     padding: @line-height-computed floor(@grid-gutter-width/2);
-    margin-bottom: @line-height-computed;
     border-radius: @grid-gutter-width;
     background: @brand-primary;
 
