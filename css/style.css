@@ -7570,6 +7570,14 @@ a.link-button:focus {
   line-height: 40px;
 }
 /*
+ * Common block formatting
+ */
+.block-system,
+.block-views,
+.block-block {
+  margin-bottom: 40px;
+}
+/*
  * Common fields formatting
  */
 .block {
