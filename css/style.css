@@ -7870,6 +7870,17 @@ div.token-input-dropdown {
   background-color: #047ed3;
 }
 /*
+ * GMap configuration
+ */
+.gmap {
+  width: 100% !important;
+}
+.gmap .gmap-popup .views-field {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+/*
  * Common IFRAME formatting
  */
 iframe {
@@ -8972,17 +8983,6 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
 .jcarousel-skin-default .jcarousel-next-horizontal::before {
   font-size: 40px;
   line-height: 60px;
-}
-/*
- * GMap configuration
- */
-.gmap {
-  width: 100% !important;
-}
-.gmap .gmap-popup .views-field {
-  margin: 0;
-  font-size: 14px;
-  line-height: 20px;
 }
 .footer {
   background-color: #333333;
