@@ -15,6 +15,12 @@ function reaching_node_view_alter(&$build) {
   }
 }
 
+
+function reaching_preprocess_html(&$variables) {
+	return cbf_preprocess_html($variables);
+}
+
+
 /*
  * Limit the height of blocks
  */
@@ -35,10 +41,10 @@ function reaching_preprocess_page(&$variables) {
   drupal_add_js($script, 'inline');
  }
 
+ 
 /*
  * An implementation of theme_entity_property()
  */
 function reaching_entity_property($variables) {
   return cbf_entity_property($variables);
 }
-

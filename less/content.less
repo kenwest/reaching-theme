@@ -183,7 +183,7 @@ ul {
     display: none;
   }
 
-  /* Prevent super-wide content if there is no primary sidebar content */
+  /* Prevent full-width content if there is no primary sidebar content */
   .col-sm-12 {
     .region-content {
       .block {
@@ -206,6 +206,17 @@ ul {
   .breadcrumb,
   .page-header {
     display: none;
+  }
+
+  /* Allow full-width content */
+  &.not-front {
+    .col-sm-12 {
+      .region-content {
+        .block {
+          .make-md-column(12);
+        }
+      }
+    }
   }
 }
 

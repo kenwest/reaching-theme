@@ -8138,7 +8138,7 @@ ul {
   display: none;
 }
 .not-front {
-  /* Prevent super-wide content if there is no primary sidebar content */
+  /* Prevent full-width content if there is no primary sidebar content */
 }
 .not-front .lead {
   display: none;
@@ -8158,6 +8158,15 @@ ul {
 /*
  * City pages
  */
+.page-city-sydney,
+.page-city-canberra,
+.page-city-melbourne,
+.page-city-brisbane,
+.page-city-perth,
+.page-city-adelaide,
+.page-city-hobart {
+  /* Allow full-width content */
+}
 .page-city-sydney .breadcrumb,
 .page-city-canberra .breadcrumb,
 .page-city-melbourne .breadcrumb,
@@ -8173,6 +8182,30 @@ ul {
 .page-city-adelaide .page-header,
 .page-city-hobart .page-header {
   display: none;
+}
+.page-city-sydney.not-front .col-sm-12 .region-content .block,
+.page-city-canberra.not-front .col-sm-12 .region-content .block,
+.page-city-melbourne.not-front .col-sm-12 .region-content .block,
+.page-city-brisbane.not-front .col-sm-12 .region-content .block,
+.page-city-perth.not-front .col-sm-12 .region-content .block,
+.page-city-adelaide.not-front .col-sm-12 .region-content .block,
+.page-city-hobart.not-front .col-sm-12 .region-content .block {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .page-city-sydney.not-front .col-sm-12 .region-content .block,
+  .page-city-canberra.not-front .col-sm-12 .region-content .block,
+  .page-city-melbourne.not-front .col-sm-12 .region-content .block,
+  .page-city-brisbane.not-front .col-sm-12 .region-content .block,
+  .page-city-perth.not-front .col-sm-12 .region-content .block,
+  .page-city-adelaide.not-front .col-sm-12 .region-content .block,
+  .page-city-hobart.not-front .col-sm-12 .region-content .block {
+    float: left;
+    width: 100%;
+  }
 }
 /*
  * CiviCRM Event entity pages
