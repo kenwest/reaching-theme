@@ -122,7 +122,7 @@
 
 .front {
   .hero {
-    background: url('/sites/all/themes/reaching/images/hero.jpg') repeat scroll 50% 50%;
+    background: url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 50% 50%;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -140,7 +140,11 @@
 
   .navbar-default {
     margin: 0;
-    background-color: transparent;
+    background: transparent;
+    background: -webkit-linear-gradient(white, transparent);
+    background: -o-linear-gradient(white, transparent);
+    background: -moz-linear-gradient(white, transparent);
+    background: linear-gradient(white, transparent);
 
     // Mobile:
       height: (10 * @line-height-computed);

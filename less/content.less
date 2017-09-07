@@ -86,7 +86,7 @@ ul + p {
     margin-bottom: 0;
     line-height: (2 * @line-height-computed);
     font-weight: bold;
-    color: @brand-primary;
+    color: white;
 
     // Mobile:
       height: (11 * @line-height-computed);
@@ -141,8 +141,37 @@ ul + p {
               padding: 0;
               font-size: @font-size-h4;
             @media (min-width: @screen-sm-min) {
-              background: wheat;
-              padding: (2 * @line-height-computed) 0;
+              color: white;
+              background-size: cover;
+              padding: floor(@line-height-computed/2) 0 floor(7 * @line-height-computed/2);
+
+              &.menu-adelaide {
+                background: url('/sites/all/themes/reaching/images/menu/adelaide.jpg') repeat scroll 50% 50%;
+              }
+
+              &.menu-brisbane {
+                background: url('/sites/all/themes/reaching/images/menu/brisbane.jpg') repeat scroll 50% 50%;
+              }
+
+              &.menu-canberra {
+                background: url('/sites/all/themes/reaching/images/menu/canberra.jpg') repeat scroll 50% 50%;
+              }
+
+              &.menu-hobart {
+                background: url('/sites/all/themes/reaching/images/menu/hobart.jpg') repeat scroll 50% 50%;
+              }
+
+              &.menu-melbourne {
+                background: url('/sites/all/themes/reaching/images/menu/melbourne.jpg') repeat scroll 50% 50%;
+              }
+
+              &.menu-perth {
+                background: url('/sites/all/themes/reaching/images/menu/perth.jpg') repeat scroll 50% 50%;
+              }
+
+              &.menu-sydney {
+                background: url('/sites/all/themes/reaching/images/menu/sydney.jpg') repeat scroll 50% 50%;
+              }
             }
             @media (min-width: @screen-lg-min) {
               font-size: @font-size-h3;

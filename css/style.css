@@ -7421,7 +7421,7 @@ table .checkbox input[type="checkbox"] {
   font-size: 40px;
 }
 .front .hero {
-  background: url('/sites/all/themes/reaching/images/hero.jpg') repeat scroll 50% 50%;
+  background: url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 50% 50%;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -7437,7 +7437,11 @@ table .checkbox input[type="checkbox"] {
 }
 .front .navbar-default {
   margin: 0;
-  background-color: transparent;
+  background: transparent;
+  background: -webkit-linear-gradient(#ffffff, transparent);
+  background: -o-linear-gradient(#ffffff, transparent);
+  background: -moz-linear-gradient(#ffffff, transparent);
+  background: linear-gradient(#ffffff, transparent);
   height: 200px;
 }
 @media (min-width: 768px) {
@@ -7979,7 +7983,7 @@ ul + p {
   margin-bottom: 0;
   line-height: 40px;
   font-weight: bold;
-  color: #02426f;
+  color: white;
   height: 220px;
   font-size: 24px;
 }
@@ -8104,8 +8108,30 @@ ul + p {
 }
 @media (min-width: 768px) {
   .front .region-header .block-menu ul li a {
-    background: wheat;
-    padding: 40px 0;
+    color: white;
+    background-size: cover;
+    padding: 10px 0 70px;
+  }
+  .front .region-header .block-menu ul li a.menu-adelaide {
+    background: url('/sites/all/themes/reaching/images/menu/adelaide.jpg') repeat scroll 50% 50%;
+  }
+  .front .region-header .block-menu ul li a.menu-brisbane {
+    background: url('/sites/all/themes/reaching/images/menu/brisbane.jpg') repeat scroll 50% 50%;
+  }
+  .front .region-header .block-menu ul li a.menu-canberra {
+    background: url('/sites/all/themes/reaching/images/menu/canberra.jpg') repeat scroll 50% 50%;
+  }
+  .front .region-header .block-menu ul li a.menu-hobart {
+    background: url('/sites/all/themes/reaching/images/menu/hobart.jpg') repeat scroll 50% 50%;
+  }
+  .front .region-header .block-menu ul li a.menu-melbourne {
+    background: url('/sites/all/themes/reaching/images/menu/melbourne.jpg') repeat scroll 50% 50%;
+  }
+  .front .region-header .block-menu ul li a.menu-perth {
+    background: url('/sites/all/themes/reaching/images/menu/perth.jpg') repeat scroll 50% 50%;
+  }
+  .front .region-header .block-menu ul li a.menu-sydney {
+    background: url('/sites/all/themes/reaching/images/menu/sydney.jpg') repeat scroll 50% 50%;
   }
 }
 @media (min-width: 1200px) {
