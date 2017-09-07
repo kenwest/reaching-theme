@@ -8210,13 +8210,6 @@ ul {
 /*
  * CiviCRM Event entity pages
  */
-.page-civicrm-event .views-field-field-date-text {
-  margin-left: 0;
-  line-height: 40px;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 18px;
-}
 .page-civicrm-event .views-field-nothing {
   /* Address */
   color: #333333;
@@ -8525,10 +8518,6 @@ a.page-civicrm-event .views-field-id:focus {
 .views-field-field-in-activity {
   font-size: 18px;
   line-height: 40px;
-}
-.views-field-field-date-text {
-  font-size: 12px;
-  line-height: 20px;
 }
 .views-field-field-date-text {
   font-style: italic;
