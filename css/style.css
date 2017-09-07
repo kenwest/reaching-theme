@@ -7909,6 +7909,9 @@ p {
 ul {
   margin-bottom: 0;
 }
+ul + p {
+  margin-top: 20px;
+}
 /*
  * Use contextual links for actions on Nodes. Only affects staff.
  */
