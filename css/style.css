@@ -8453,6 +8453,10 @@ a.page-civicrm-event .views-field-id:focus {
   bottom: initial;
   padding: initial;
 }
+.region-content .block.block-views.bounded .view:last-child {
+  border-bottom-width: 0;
+  padding-bottom: 20px;
+}
 /*
  * Views
  */
