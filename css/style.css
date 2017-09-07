@@ -8411,7 +8411,7 @@ a.page-civicrm-event .views-field-id:focus {
   content: " ";
   display: block;
   width: 100%;
-  height: 80px;
+  height: 160px;
   background: -webkit-linear-gradient(transparent, #ffffff);
   background: -o-linear-gradient(transparent, #ffffff);
   background: -moz-linear-gradient(transparent, #ffffff);
@@ -8436,7 +8436,7 @@ a.page-civicrm-event .views-field-id:focus {
   font-size: 24px;
   text-align: center;
   color: #02426f;
-  background-color: #f5f5f5;
+  background-color: white;
 }
 .block.bounded.open {
   max-height: unset;
