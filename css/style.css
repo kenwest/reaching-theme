@@ -9151,11 +9151,9 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
     width: 540px !important;
   }
 }
-@media (min-width: 768px) {
-  .views-2-rows .jcarousel-skin-default .jcarousel-prev-horizontal,
-  .views-2-rows .jcarousel-skin-default .jcarousel-next-horizontal {
-    display: none;
-  }
+.views-2-rows .jcarousel-skin-default .jcarousel-prev-horizontal,
+.views-2-rows .jcarousel-skin-default .jcarousel-next-horizontal {
+  display: none;
 }
 .footer {
   background-color: #333333;
