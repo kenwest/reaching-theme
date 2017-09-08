@@ -7422,6 +7422,10 @@ table .checkbox input[type="checkbox"] {
 }
 .front .hero {
   background: url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 50% 50%;
+  background: -webkit-linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 50% 50%;
+  background: -o-linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 50% 50%;
+  background: -moz-linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 50% 50%;
+  background: linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 50% 50%;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -7438,10 +7442,6 @@ table .checkbox input[type="checkbox"] {
 .front .navbar-default {
   margin: 0;
   background: transparent;
-  background: -webkit-linear-gradient(#ffffff, transparent);
-  background: -o-linear-gradient(#ffffff, transparent);
-  background: -moz-linear-gradient(#ffffff, transparent);
-  background: linear-gradient(#ffffff, transparent);
   height: 200px;
 }
 @media (min-width: 768px) {
