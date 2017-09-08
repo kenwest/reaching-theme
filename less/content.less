@@ -899,3 +899,56 @@ ul + p {
     }
   }
 }
+
+.views-1-row {
+  .jcarousel-skin-default {
+    margin: 0 auto;
+
+    // Mobile and tablet:
+      width: 320px;
+    @media (min-width: @screen-sm-min) {
+      width: 640px;
+    }
+
+    .jcarousel-container-horizontal {
+      // Mobile and tablet:
+        width: 320px;
+        height: (12 * @line-height-computed); /* displays 320px wide item as 16:9 plus some spacing */
+      @media (min-width: @screen-sm-min) {
+        width: 640px;
+        height: (20 * @line-height-computed); /* displays 640px wide item as 16:9 plus some spacing */
+      }
+    }
+
+    .jcarousel-clip-horizontal {
+      // Mobile and tablet:
+        width: 320px;
+      @media (min-width: @screen-sm-min) {
+        width: 640px;
+      }
+    }
+
+    .jcarousel-item {
+      // Mobile and tablet:
+        width: 320px !important;
+      @media (min-width: @screen-sm-min) {
+        width: 640px !important;
+      }
+
+      .views-field-title {
+        margin: 0;
+
+        // Mobile and tablet:
+          font-size: @font-size-h4;
+        @media (min-width: @screen-sm-min) {
+          font-size: @font-size-h3;
+        }
+      }
+    }
+
+    .jcarousel-prev-horizontal,
+    .jcarousel-next-horizontal {
+      display: none;
+    }
+  }
+}

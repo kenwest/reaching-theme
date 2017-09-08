@@ -9040,6 +9040,56 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
   font-size: 40px;
   line-height: 60px;
 }
+.views-1-row .jcarousel-skin-default {
+  margin: 0 auto;
+  width: 320px;
+}
+@media (min-width: 768px) {
+  .views-1-row .jcarousel-skin-default {
+    width: 640px;
+  }
+}
+.views-1-row .jcarousel-skin-default .jcarousel-container-horizontal {
+  width: 320px;
+  height: 240px;
+  /* displays 320px wide item as 16:9 plus some spacing */
+}
+@media (min-width: 768px) {
+  .views-1-row .jcarousel-skin-default .jcarousel-container-horizontal {
+    width: 640px;
+    height: 400px;
+    /* displays 640px wide item as 16:9 plus some spacing */
+  }
+}
+.views-1-row .jcarousel-skin-default .jcarousel-clip-horizontal {
+  width: 320px;
+}
+@media (min-width: 768px) {
+  .views-1-row .jcarousel-skin-default .jcarousel-clip-horizontal {
+    width: 640px;
+  }
+}
+.views-1-row .jcarousel-skin-default .jcarousel-item {
+  width: 320px !important;
+}
+@media (min-width: 768px) {
+  .views-1-row .jcarousel-skin-default .jcarousel-item {
+    width: 640px !important;
+  }
+}
+.views-1-row .jcarousel-skin-default .jcarousel-item .views-field-title {
+  margin: 0;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .views-1-row .jcarousel-skin-default .jcarousel-item .views-field-title {
+    font-size: 24px;
+  }
+}
+.views-1-row .jcarousel-skin-default .jcarousel-prev-horizontal,
+.views-1-row .jcarousel-skin-default .jcarousel-next-horizontal {
+  display: none;
+}
 .footer {
   background-color: #333333;
   color: white;
