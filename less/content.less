@@ -936,13 +936,50 @@ ul + p {
       }
 
       .views-field-title {
-        margin: 0;
-
         // Mobile and tablet:
           font-size: @font-size-h4;
         @media (min-width: @screen-sm-min) {
           font-size: @font-size-h3;
         }
+      }
+    }
+
+    .jcarousel-prev-horizontal,
+    .jcarousel-next-horizontal {
+      display: none;
+    }
+  }
+}
+
+.views-2-rows {
+  .jcarousel-skin-default {
+    margin: 0 auto;
+
+    // Mobile and tablet:
+      width: (2*240px);
+    @media (min-width: @screen-sm-min) {
+      width: (2*320px);
+    @media (min-width: @screen-md-min) {
+      width: (2*640px);
+    }
+
+    .jcarousel-container-horizontal {
+      // Mobile and tablet:
+        width: (2*240px);
+      @media (min-width: @screen-sm-min) {
+        width: (2*320px);
+      @media (min-width: @screen-md-min) {
+        width: (2*640px);
+      }
+    }
+
+    .jcarousel-clip-horizontal {
+      // Mobile and tablet:
+        width: (2*240px);
+      @media (min-width: @screen-sm-min) {
+        width: (2*320px);
+      @media (min-width: @screen-md-min) {
+        width: (2*640px);
       }
     }
 
