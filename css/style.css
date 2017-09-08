@@ -7400,25 +7400,41 @@ table .checkbox input[type="checkbox"] {
   width: 100%;
   pointer-events: none;
 }
-.navbar-default .navbar-toggle {
+.navbar-default .navbar-toggles {
   margin: 0 15px;
-  /* 2 * padding + i.height = 3 * @line-height-computed */
-  width: 60px;
-  padding: 10px 0;
-  z-index: 2;
   color: #02426f;
   background-color: transparent;
+}
+.navbar-default .navbar-toggles .navbar-toggle {
+  z-index: 2;
+  padding: 0;
+  margin: 0;
   border-width: 0;
   border-radius: 0;
+  width: 30px;
+  font-size: 24px;
 }
-.navbar-default .navbar-toggle:hover {
+@media (min-width: 480px) {
+  .navbar-default .navbar-toggles .navbar-toggle {
+    width: 45px;
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-toggles .navbar-toggle {
+    width: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-default .navbar-toggles .navbar-toggle {
+    font-size: 36px;
+  }
+}
+.navbar-default .navbar-toggles .navbar-toggle:hover {
   background-color: white;
 }
-.navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-toggles .navbar-toggle:focus {
   background-color: transparent;
-}
-.navbar-default .navbar-toggle i {
-  font-size: 40px;
 }
 .front .hero {
   background: url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
@@ -7449,21 +7465,21 @@ table .checkbox input[type="checkbox"] {
     height: 320px;
   }
 }
-.block-search {
+.block.block-search {
   float: none;
   margin: 0 15px;
   padding-top: 20px;
 }
-.block-search .form-control {
+.block.block-search .form-control {
   height: 40px;
   padding: 9px 15px;
   /* 1px border */
 }
-.block-search .btn {
+.block.block-search .btn {
   padding: 9px 15px;
   /* 1px border */
 }
-.block-search .form-group {
+.block.block-search .form-group {
   margin: 0;
 }
 /*
