@@ -7421,11 +7421,11 @@ table .checkbox input[type="checkbox"] {
   font-size: 40px;
 }
 .front .hero {
-  background: url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 50% 50%;
-  background: -webkit-linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 50% 50%;
-  background: -o-linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 50% 50%;
-  background: -moz-linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 50% 50%;
-  background: linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 50% 50%;
+  background: url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
+  background: -webkit-linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
+  background: -o-linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
+  background: -moz-linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
+  background: linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
   background-size: cover;
   position: absolute;
   top: 0;
