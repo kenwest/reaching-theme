@@ -9089,35 +9089,42 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
 .views-1-row .jcarousel-skin-default .jcarousel-next-horizontal {
   display: none;
 }
-.views-2-rows .jcarousel-skin-default {
-  margin: 0 auto;
-  width: 480px;
-}
 @media (min-width: 768px) {
   .views-2-rows .jcarousel-skin-default {
+    margin: 0 auto;
     width: 640px;
   }
 }
 @media (min-width: 992px) {
   .views-2-rows .jcarousel-skin-default {
-    width: 1280px;
+    width: 840px;
   }
 }
-.views-2-rows .jcarousel-skin-default .jcarousel-container-horizontal {
-  width: 480px;
+@media (min-width: 1200px) {
+  .views-2-rows .jcarousel-skin-default {
+    width: 1080px;
+  }
 }
 @media (min-width: 768px) {
   .views-2-rows .jcarousel-skin-default .jcarousel-container-horizontal {
     width: 640px;
+    height: 240px;
+    /* displays 320px wide item as 16:9 plus some spacing */
   }
 }
 @media (min-width: 992px) {
   .views-2-rows .jcarousel-skin-default .jcarousel-container-horizontal {
-    width: 1280px;
+    width: 840px;
+    height: 300px;
+    /* displays 420px wide item as 16:9 plus some spacing */
   }
 }
-.views-2-rows .jcarousel-skin-default .jcarousel-clip-horizontal {
-  width: 480px;
+@media (min-width: 1200px) {
+  .views-2-rows .jcarousel-skin-default .jcarousel-container-horizontal {
+    width: 1080px;
+    height: 360px;
+    /* displays 540px wide item as 16:9 plus some spacing */
+  }
 }
 @media (min-width: 768px) {
   .views-2-rows .jcarousel-skin-default .jcarousel-clip-horizontal {
@@ -9126,12 +9133,29 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
 }
 @media (min-width: 992px) {
   .views-2-rows .jcarousel-skin-default .jcarousel-clip-horizontal {
-    width: 1280px;
+    width: 840px;
   }
 }
-.views-2-rows .jcarousel-skin-default .jcarousel-prev-horizontal,
-.views-2-rows .jcarousel-skin-default .jcarousel-next-horizontal {
-  display: none;
+@media (min-width: 1200px) {
+  .views-2-rows .jcarousel-skin-default .jcarousel-clip-horizontal {
+    width: 1080px;
+  }
+}
+@media (min-width: 992px) {
+  .views-2-rows .jcarousel-skin-default .jcarousel-item {
+    width: 420px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .views-2-rows .jcarousel-skin-default .jcarousel-item {
+    width: 540px !important;
+  }
+}
+@media (min-width: 768px) {
+  .views-2-rows .jcarousel-skin-default .jcarousel-prev-horizontal,
+  .views-2-rows .jcarousel-skin-default .jcarousel-next-horizontal {
+    display: none;
+  }
 }
 .footer {
   background-color: #333333;
