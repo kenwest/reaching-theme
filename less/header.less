@@ -25,25 +25,18 @@
   }
 
   .navbar-collapse {
-    padding: (3 * @line-height-computed) 0 @line-height-computed;
+    padding: 0;
     margin: 0;
     position: absolute;
+    background-color: white;
     width: (10 * @grid-gutter-width);
     top: 0;
     right: 0;
     z-index: 1;
     overflow-y: unset;
 
-    &.in {
-      background-color: white;
-    }
-
-    &.collapsing {
-      background-color: white;
-
-      .transition-property(~"height, visibility, background");
-      .transition-duration(.35s);
-      .transition-timing-function(ease);
+    .navigation {
+      padding: (3 * @line-height-computed) 0 @line-height-computed;
     }
 
     .navbar-nav {
