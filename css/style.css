@@ -7346,12 +7346,14 @@ table .checkbox input[type="checkbox"] {
   padding: 60px 0 20px;
   margin: 0;
   position: absolute;
-  background-color: white;
   width: 300px;
   top: 0;
   right: 0;
   z-index: 1;
   overflow-y: unset;
+}
+.navbar-default .navbar-collapse.in {
+  background-color: white;
 }
 .navbar-default .navbar-collapse .navbar-nav {
   margin: 0;
