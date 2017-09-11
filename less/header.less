@@ -38,6 +38,12 @@
       background-color: white;
     }
 
+    &.collapsing {
+      .transition-property(~"height, visibility, background");
+      .transition-duration(.35s);
+      .transition-timing-function(ease);
+    }
+
     .navbar-nav {
       margin: 0;
 
