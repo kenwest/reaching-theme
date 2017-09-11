@@ -7353,7 +7353,7 @@ table .checkbox input[type="checkbox"] {
   z-index: 1;
   overflow-y: unset;
 }
-.navbar-default .navbar-collapse .navigation {
+.navbar-default .navbar-collapse nav {
   padding: 60px 0 20px;
 }
 .navbar-default .navbar-collapse .navbar-nav {
