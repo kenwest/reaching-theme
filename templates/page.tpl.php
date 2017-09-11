@@ -93,28 +93,26 @@
         <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
       <?php endif; ?>
 
-      <div class="navbar-toggles">
-        <?php if (!empty($primary_nav)): ?>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-primary">
-            <span class="sr-only"><?php print t('Toggle primary navigation'); ?></span>
-            <i class="fa fa-fw fa-bars"></i>
-          </button>
-        <?php endif; ?>
+      <?php if (!empty($primary_nav)): ?>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-primary">
+          <span class="sr-only"><?php print t('Toggle primary navigation'); ?></span>
+          <i class="fa fa-fw fa-bars"></i>
+        </button>
+      <?php endif; ?>
 
-        <?php if (!empty($secondary_nav)): ?>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-secondary">
-            <span class="sr-only"><?php print t('Toggle city navigation'); ?></span>
-            <i class="fa fa-fw fa-map-marker"></i>
-          </button>
-        <?php endif; ?>
+      <?php if (!empty($secondary_nav)): ?>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-secondary">
+          <span class="sr-only"><?php print t('Toggle city navigation'); ?></span>
+          <i class="fa fa-fw fa-map-marker"></i>
+        </button>
+      <?php endif; ?>
 
-        <?php if (!empty($page['navigation'])): ?>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-search">
-            <span class="sr-only"><?php print t('Toggle search'); ?></span>
-            <i class="fa fa-fw fa-search"></i>
-          </button>
-        <?php endif; ?>
-      </div>
+      <?php if (!empty($page['navigation'])): ?>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-search">
+          <span class="sr-only"><?php print t('Toggle search'); ?></span>
+          <i class="fa fa-fw fa-search"></i>
+        </button>
+      <?php endif; ?>
     </div>
 
     <?php if (!empty($primary_nav)): ?>
