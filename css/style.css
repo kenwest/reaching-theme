@@ -7350,6 +7350,7 @@ table .checkbox input[type="checkbox"] {
   position: absolute;
   background-color: white;
   width: 300px;
+  max-width: 100%;
   top: 0;
   right: 0;
   z-index: 1;
