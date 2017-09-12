@@ -7331,9 +7331,8 @@ table .checkbox input[type="checkbox"] {
   margin-left: 0;
 }
 .navbar-default {
-  margin: 0 0 40px;
+  margin-bottom: 40px;
   border: 0;
-  padding: 0;
   width: 100%;
   background-color: #f5f5f5;
 }
@@ -7417,7 +7416,7 @@ table .checkbox input[type="checkbox"] {
   margin: 0;
   border-width: 0;
   border-radius: 0;
-  width: 30px;
+  width: 35px;
   font-size: 24px;
 }
 @media (min-width: 480px) {

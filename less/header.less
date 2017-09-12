@@ -8,9 +8,8 @@
 }
 
 .navbar-default {
-  margin: 0 0 (2 * @line-height-computed);
+  margin-bottom: (2*@line-height-computed);
   border: 0;
-  padding: 0;
   width: 100%;
   background-color: @header-bg;
 
@@ -111,10 +110,10 @@
     border-radius: 0;
 
     // Mobile:
-      width: @grid-gutter-width;
+      width: floor(7/6 * @grid-gutter-width);
       font-size: @font-size-h3;
     @media (min-width: @screen-xs-min) {
-      width: (3/2 * @grid-gutter-width);
+      width: floor(3/2 * @grid-gutter-width);
       font-size: @font-size-h2;
     }
     @media (min-width: @screen-sm-min) {
