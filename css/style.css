@@ -7800,7 +7800,7 @@ a.link-button:focus {
  */
 .block .crm-container,
 .block .crm-container-snippet {
-  padding: 20px 15px;
+  padding: 0;
 }
 .block .crm-container .crm-section .label,
 .block .crm-container-snippet .crm-section .label {
