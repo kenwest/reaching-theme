@@ -8188,7 +8188,7 @@ ul + p {
   .front .region-header .block-menu ul li a {
     color: white;
     background-size: cover;
-    padding: 10px 0 70px;
+    padding: 0 0 80px;
   }
   .front .region-header .block-menu ul li a.menu-adelaide {
     background: url('/sites/all/themes/reaching/images/menu/adelaide.jpg') repeat scroll 50% 50%;
