@@ -6475,6 +6475,8 @@ button.close {
 .modal-header:after,
 .modal-footer:before,
 .modal-footer:after,
+.navbar-default .navbar-header:before,
+.navbar-default .navbar-header:after,
 .stack:before,
 .stack:after,
 .front .lead:before,
@@ -6510,6 +6512,7 @@ button.close {
 .panel-body:after,
 .modal-header:after,
 .modal-footer:after,
+.navbar-default .navbar-header:after,
 .stack:after,
 .front .lead:after,
 .front .region-header .block-menu:after,
@@ -7374,6 +7377,8 @@ table .checkbox input[type="checkbox"] {
   padding-top: 20px;
 }
 .navbar-default .navbar-header {
+  margin-left: -15px;
+  margin-right: -15px;
   padding: 20px 0 0;
 }
 .navbar-default .navbar-header .logo {
