@@ -7410,12 +7410,24 @@ table .checkbox input[type="checkbox"] {
   pointer-events: none;
 }
 .navbar-default .navbar-header .navbar-toggles {
-  position: relative;
   float: left;
   width: 41.66666667%;
+  position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-header .navbar-toggles {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-default .navbar-header .navbar-toggles {
+    float: left;
+    width: 66.66666667%;
+  }
 }
 .navbar-default .navbar-header .navbar-toggles .navbar-toggle {
   margin: 0 15px;
