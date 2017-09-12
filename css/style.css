@@ -8006,6 +8006,14 @@ ul + p {
     line-height: 40px;
   }
 }
+/*
+ * In order to mix full-width content and contained content
+ * on the same page, it's requirted to put a .container
+ * inside a .container-fluid. Avoid duplicating the padding.
+ */
+.container-fluid > .container {
+  padding-left: 0;
+}
 @media (min-width: 992px) {
   .page-header,
   .block-title {
