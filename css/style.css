@@ -8790,11 +8790,13 @@ a.block-system .field-name-field-topics .field-item:focus {
 .block-system .field-name-field-date-text {
   font-weight: bold;
 }
+.block-system .field-name-field-subtitle,
 .block-system .field-name-field-date-text,
 .block-system .entity-property-summary {
   font-size: 18px;
   line-height: 40px;
 }
+.block-system .field-name-field-subtitle,
 .block-system .field-name-field-date-text,
 .block-system .field-name-field-episode-date,
 .block-system .field-name-body,
