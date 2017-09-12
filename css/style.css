@@ -7382,7 +7382,7 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-default .navbar-header .logo {
   float: left;
-  width: 66.66666667%;
+  width: 58.33333333%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -7408,7 +7408,15 @@ table .checkbox input[type="checkbox"] {
   width: 100%;
   pointer-events: none;
 }
-.navbar-default .navbar-toggle {
+.navbar-default .navbar-header .navbar-toggles {
+  position: relative;
+  float: left;
+  width: 41.66666667%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar-default .navbar-header .navbar-toggles .navbar-toggle {
   margin: 0 15px;
   color: #02426f;
   background-color: transparent;
@@ -7418,28 +7426,28 @@ table .checkbox input[type="checkbox"] {
   border-width: 0;
   border-radius: 0;
   width: 35px;
-  font-size: 24px;
+  font-size: 18px;
 }
 @media (min-width: 480px) {
-  .navbar-default .navbar-toggle {
+  .navbar-default .navbar-header .navbar-toggles .navbar-toggle {
     width: 45px;
     font-size: 30px;
   }
 }
 @media (min-width: 768px) {
-  .navbar-default .navbar-toggle {
+  .navbar-default .navbar-header .navbar-toggles .navbar-toggle {
     width: 60px;
   }
 }
 @media (min-width: 992px) {
-  .navbar-default .navbar-toggle {
+  .navbar-default .navbar-header .navbar-toggles .navbar-toggle {
     font-size: 36px;
   }
 }
-.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-header .navbar-toggles .navbar-toggle:hover {
   background-color: white;
 }
-.navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-header .navbar-toggles .navbar-toggle:focus {
   background-color: transparent;
 }
 .front .hero {
