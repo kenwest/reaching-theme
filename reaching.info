@@ -18,6 +18,8 @@ regions[sidebar_second] = 'Secondary'
 regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
+regions[banner_second]  = 'Second banner'
+regions[content_second] = 'Second content'
 
 
 ;;;;;;;;;;;;;;;;;;;;;

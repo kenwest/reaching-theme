@@ -198,6 +198,18 @@
 
     </div>
   </div>
+
+  <?php if (!empty($page['banner_second'])): ?>
+    <?php print render($page['banner_second']); ?>
+  <?php endif; ?>
+
+  <?php if (!empty($page['content_second'])): ?>
+    <div class="container">
+      <div class="row">
+        <?php print render($page['content_second']); ?>
+      </div>
+    </div>
+  <?php endif; ?>
 </div>
 
 <?php if (!empty($page['footer'])): ?>
