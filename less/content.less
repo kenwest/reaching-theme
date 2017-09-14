@@ -308,14 +308,17 @@ ul + p {
 /*
  * Regions and blocks
  */
-.region-content {
+.region-content,
+.region-content-second {
   .make-row();
 
   .block {
     .make-xs-column(12);
 
     &#block-views-city-to-event-block,
-    &#block-views-city-to-recent-block {
+    &#block-views-city-to-recent-block,
+    &#block-views-d0668354e2c9477b84ce436b821385e0,
+    &#block-views-3b234379a78f2c26c23c8eba0ecc1f46 {
       .make-sm-column(6);
     }
   }
@@ -461,9 +464,12 @@ ul + p {
   }
 }
 
-.region-content .block.block-views.bounded .view:last-child {
-  border-bottom-width: 0;
-  padding-bottom: @line-height-computed;
+.region-content,
+.region-content-second {
+  .block.block-views.bounded .view:last-child {
+    border-bottom-width: 0;
+    padding-bottom: @line-height-computed;
+  }
 }
 
 /*
@@ -515,6 +521,7 @@ ul + p {
 .views-field-field-date-text,
 .views-field-taxonomy-vocabulary-1,
 .views-field-field-staff-contact,
+.views-field-field-subtitle,
 .views-field-body {
   margin-left: @view-thumbnail-gutter;
 }
@@ -524,6 +531,7 @@ ul + p {
   margin-bottom: @line-height-computed;
 }
 
+.views-field + .views-field-field-subtitle,
 .views-field + .views-field-body {
   margin-top: @line-height-computed;
 }

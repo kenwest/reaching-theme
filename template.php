@@ -28,7 +28,7 @@ function reaching_preprocess_html(&$variables) {
 function reaching_preprocess_page(&$variables) {
   $script = '
     jQuery(document).ready(function(){
-      jQuery(".region-content, .region-sidebar-first, .region-sidebar-second").find(".block-views, .block-block").each(function() {
+      jQuery(".region-content, .region-sidebar-first, .region-sidebar-second, .region-content-second").find(".block-views, .block-block").each(function() {
         if (jQuery(this).height() >= 400 && !jQuery(this).hasClass("unbounded")) {
           jQuery(this).toggleClass("bounded");
           jQuery("<div class=\"block-header\"></div>").prependTo(jQuery(this));
