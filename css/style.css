@@ -8258,14 +8258,14 @@ ul + p {
 .not-front .lead {
   display: none;
 }
-.not-front .col-sm-12 .region-content .block {
+.not-front .col-xs-12 .region-content .block {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  .not-front .col-sm-12 .region-content .block {
+  .not-front .col-xs-12 .region-content .block {
     float: left;
     width: 66.66666667%;
   }
@@ -8298,26 +8298,26 @@ ul + p {
 .page-city-hobart .page-header {
   display: none;
 }
-.page-city-sydney.not-front .col-sm-12 .region-content .block,
-.page-city-canberra.not-front .col-sm-12 .region-content .block,
-.page-city-melbourne.not-front .col-sm-12 .region-content .block,
-.page-city-brisbane.not-front .col-sm-12 .region-content .block,
-.page-city-perth.not-front .col-sm-12 .region-content .block,
-.page-city-adelaide.not-front .col-sm-12 .region-content .block,
-.page-city-hobart.not-front .col-sm-12 .region-content .block {
+.page-city-sydney.not-front .col-xs-12 .region-content .block,
+.page-city-canberra.not-front .col-xs-12 .region-content .block,
+.page-city-melbourne.not-front .col-xs-12 .region-content .block,
+.page-city-brisbane.not-front .col-xs-12 .region-content .block,
+.page-city-perth.not-front .col-xs-12 .region-content .block,
+.page-city-adelaide.not-front .col-xs-12 .region-content .block,
+.page-city-hobart.not-front .col-xs-12 .region-content .block {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  .page-city-sydney.not-front .col-sm-12 .region-content .block,
-  .page-city-canberra.not-front .col-sm-12 .region-content .block,
-  .page-city-melbourne.not-front .col-sm-12 .region-content .block,
-  .page-city-brisbane.not-front .col-sm-12 .region-content .block,
-  .page-city-perth.not-front .col-sm-12 .region-content .block,
-  .page-city-adelaide.not-front .col-sm-12 .region-content .block,
-  .page-city-hobart.not-front .col-sm-12 .region-content .block {
+  .page-city-sydney.not-front .col-xs-12 .region-content .block,
+  .page-city-canberra.not-front .col-xs-12 .region-content .block,
+  .page-city-melbourne.not-front .col-xs-12 .region-content .block,
+  .page-city-brisbane.not-front .col-xs-12 .region-content .block,
+  .page-city-perth.not-front .col-xs-12 .region-content .block,
+  .page-city-adelaide.not-front .col-xs-12 .region-content .block,
+  .page-city-hobart.not-front .col-xs-12 .region-content .block {
     float: left;
     width: 100%;
   }
