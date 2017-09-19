@@ -3,6 +3,10 @@
   color: white;
   width: 100%;
 
+  .block {
+    margin-bottom: 0;
+  }
+
   a {
     color: white;
     font-weight: normal;
@@ -33,8 +37,92 @@
   }
 
   .copyright {
-    .make-xs-column(12);
+    .make-xs-column-offset(6);
+    .make-xs-column(6);
+    .make-sm-column-offset(9);
+    .make-sm-column(3);
 
-    text-align: right;
+    p {
+      padding: floor(@line-height-computed / 2) floor(@grid-gutter-width / 2);
+    }
+  }
+
+  .view-reaching-city-city-to-activity {
+    .view-content > .view-grouping {
+
+      > .view-grouping-header {
+        // Audience
+        .make-xs-column(12);
+        .make-sm-column(3);
+
+        font-size: @font-size-base;
+        line-height: @line-height-computed;
+
+        p {
+          padding: floor(@line-height-computed / 2) floor(@grid-gutter-width / 2);
+        }
+      }
+
+      > .view-grouping-content {
+        .make-xs-column(12);
+        .make-sm-column(9);
+
+        > .view-grouping {
+          > .view-grouping-header {
+            // Needs hiding
+            display: none;
+          }
+
+          > .view-grouping-content {
+            .make-row();
+
+            > .view-grouping {
+              > .view-grouping-header {
+                // Needs hiding
+                display: none;
+              }
+
+              > .view-grouping-content {
+                .make-xs-column(6);
+                .make-sm-column(4);
+
+                margin-bottom: (2*@line-height-computed);
+
+                h3 {
+                  // Activity category
+                  margin: 0;
+                  padding: floor(@line-height-computed / 2) floor(@grid-gutter-width / 2);
+                  font-size: @font-size-base;
+                  line-height: @line-height-computed;
+                  color: white;
+                }
+
+                .views-row + .views-row {
+                  padding-top: 0;
+                }
+
+                .views-field-title {
+                  margin: 0;
+                  font-size: @font-size-base;
+                  line-height: @line-height-computed;
+
+                  a {
+                    display: block;
+                    color: white;
+                    padding: floor(@line-height-computed / 2) floor(@grid-gutter-width / 2);
+                  }
+
+                  a:hover {
+                    color: @text-color;
+                    background-color: white;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

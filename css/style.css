@@ -6494,7 +6494,9 @@ button.close {
 .region-sidebar-second:before,
 .region-sidebar-second:after,
 .region-footer:before,
-.region-footer:after {
+.region-footer:after,
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content:before,
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content:after {
   content: " ";
   display: table;
 }
@@ -6523,7 +6525,8 @@ button.close {
 .region-content-second:after,
 .region-sidebar-first:after,
 .region-sidebar-second:after,
-.region-footer:after {
+.region-footer:after,
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content:after {
   clear: both;
 }
 .center-block {
@@ -9280,6 +9283,9 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
   color: white;
   width: 100%;
 }
+.footer .block {
+  margin-bottom: 0;
+}
 .footer a {
   color: white;
   font-weight: normal;
@@ -9315,11 +9321,108 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
   color: #333333;
 }
 .region-footer .copyright {
-  position: relative;
+  margin-left: 50%;
   float: left;
-  width: 100%;
+  width: 50%;
+  position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  text-align: right;
+}
+@media (min-width: 768px) {
+  .region-footer .copyright {
+    margin-left: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .region-footer .copyright {
+    float: left;
+    width: 25%;
+  }
+}
+.region-footer .copyright p {
+  padding: 10px 15px;
+}
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-header {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (min-width: 768px) {
+  .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-header {
+    float: left;
+    width: 25%;
+  }
+}
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-header p {
+  padding: 10px 15px;
+}
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content {
+    float: left;
+    width: 75%;
+  }
+}
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-header {
+  display: none;
+}
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-header {
+  display: none;
+}
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content {
+  float: left;
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content h3 {
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-row + .views-row {
+  padding-top: 0;
+}
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title a {
+  display: block;
+  color: white;
+  padding: 10px 15px;
+}
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title a:hover {
+  color: #333333;
+  background-color: white;
+  text-decoration: none;
 }
