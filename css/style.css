@@ -9350,13 +9350,19 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 40px;
 }
 @media (min-width: 768px) {
   .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-header {
     float: left;
     width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-header {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-header p {
