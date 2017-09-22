@@ -9422,6 +9422,9 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
   font-size: 14px;
   line-height: 20px;
 }
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title .field-content {
+  width: 100%;
+}
 .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title a {
   display: block;
   color: white;
