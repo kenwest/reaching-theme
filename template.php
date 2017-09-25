@@ -29,15 +29,17 @@ function reaching_preprocess_html(&$variables) {
 function reaching_preprocess_page(&$variables) {
   $script = '
     jQuery(document).ready( function() {
-      function standardiseHeight(node) {
-        if ((node.get(0).nodeType == 1 || node.get(0).nodeType == 1) && node.css("font-size") !== "14px" && node.height() % 20 !== 0) {
-          node.css("min-height",  node.height() + 20 - (node.height() % 20) );
-        }
-        else {
-          node.contents().each( function() {
-            standardiseHeight(jQuery(this));
-          });
-        }
+      function standardiseHeight(elements) {
+        elements.each( function() {
+          var height = jQuery(this).height();
+          var fraction = height % 20;
+          if (jQuery(this).css("font-size") !== "14px" && fraction !== 0) {
+            jQuery(this).css("min-height",  height - fraction + 20);
+          }
+          else {
+            standardiseHeight(jQuery(this).children().not("iframe, form"));
+          }
+        });
       };
       standardiseHeight(jQuery(".main-container"));
       jQuery(".no-nothing").filter(function() { return jQuery(this).css("font-size") !== "14px" && jQuery(this).height() % 20 !== 0; }).css("background-color", "red");
