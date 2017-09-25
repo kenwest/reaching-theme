@@ -159,7 +159,7 @@
       <?php if (!empty($page['sidebar_first'])): ?>
         <section class="col-xs-12 col-sm-8">
       <?php else: ?>
-        <section class="col-xs-12">
+        <section class="col-xs-12 col-sm-12">
       <?php endif; ?>
         <?php if (!empty($page['highlighted'])): ?>
           <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>

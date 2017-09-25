@@ -7646,12 +7646,10 @@ a.link-button:focus {
 .view .view-grouping .view-grouping-header {
   font-size: 24px;
   font-weight: bold;
-  line-height: 40px;
 }
 .view .views-table caption {
   font-size: 18px;
   font-weight: bold;
-  line-height: 40px;
 }
 /*
  * Common block formatting
@@ -7992,6 +7990,7 @@ h4,
 h5,
 h6 {
   color: #02426f;
+  line-height: 1.3333333;
 }
 p {
   margin: 0 0 20px;
@@ -8029,7 +8028,6 @@ ul + p {
   .block-block > h3,
   .view-content > h3 {
     font-size: 24px;
-    line-height: 40px;
   }
 }
 .page-header i,
@@ -8267,14 +8265,14 @@ ul + p {
 .not-front .lead {
   display: none;
 }
-.not-front .col-xs-12 .region-content .block {
+.not-front .col-sm-12 .region-content .block {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  .not-front .col-xs-12 .region-content .block {
+  .not-front .col-sm-12 .region-content .block {
     float: left;
     width: 66.66666667%;
   }
@@ -8337,12 +8335,10 @@ ul + p {
 .page-civicrm-event .views-field-nothing {
   /* Address */
   color: #333333;
-  line-height: 20px;
   font-size: 18px;
 }
 .page-civicrm-event .view-content h3 {
   color: #333333;
-  line-height: 20px;
   font-size: 14px;
 }
 .page-civicrm-event .views-field-amount {
@@ -8646,7 +8642,7 @@ a.page-civicrm-event .views-field-id:focus {
   .views-field-field-is-audio i,
   .views-field-field-is-text i,
   .views-field-field-is-video i {
-    padding-top: 10px;
+    margin-top: 10px;
   }
 }
 .views-field-title,
@@ -8659,10 +8655,6 @@ a.page-civicrm-event .views-field-id:focus {
 .views-field-body {
   margin-left: 75px;
 }
-.views-field-taxonomy-vocabulary-1,
-.views-field-field-in-activity {
-  margin-bottom: 20px;
-}
 .views-field + .views-field-field-subtitle,
 .views-field + .views-field-body {
   margin-top: 20px;
@@ -8671,7 +8663,7 @@ a.page-civicrm-event .views-field-id:focus {
 .views-field-field-staff-contact,
 .views-field-field-in-activity {
   font-size: 18px;
-  line-height: 40px;
+  line-height: 1.3333333;
 }
 .views-field-field-date-text {
   font-style: italic;
@@ -8692,7 +8684,7 @@ a.page-civicrm-event .views-field-id:focus {
 }
 .view-reaching-city-civicrm-event-price .views-row {
   padding-top: 20px;
-  line-height: 20px;
+  line-height: 1.3333333;
   font-size: 18px;
 }
 .view-reaching-city-civicrm-event-price .views-row + h3 {
@@ -8706,13 +8698,13 @@ a.page-civicrm-event .views-field-id:focus {
 }
 .block-system .field-name-field-in-activity {
   padding-bottom: 20px;
-  line-height: 40px;
+  line-height: 1.3333333;
   font-size: 18px;
 }
 @media (min-width: 768px) {
   .block-system .field-name-field-in-activity {
     font-size: 24px;
-    line-height: 40px;
+    line-height: 1.3333333;
   }
 }
 .block-system .field-name-field-image,
@@ -8832,7 +8824,7 @@ a.block-system .field-name-field-topics .field-item:focus {
 .block-system .field-name-field-date-text,
 .block-system .entity-property-summary {
   font-size: 18px;
-  line-height: 40px;
+  line-height: 1.3333333;
 }
 .block-system .field-name-field-subtitle,
 .block-system .field-name-field-date-text,

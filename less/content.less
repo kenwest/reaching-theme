@@ -12,6 +12,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   color: @brand-primary;
+  line-height: @line-height-large;
 }
 
 p {
@@ -52,7 +53,6 @@ ul + p {
     font-size: @font-size-h4;
   @media (min-width: @screen-sm-min) {
     font-size: @font-size-h3;
-    line-height: (2 * @line-height-computed);
   }
 
   i {
@@ -227,7 +227,7 @@ ul + p {
   }
 
   /* Prevent full-width content if there is no primary sidebar content */
-  .col-xs-12 {
+  .col-sm-12 {
     .region-content {
       .block {
         .make-md-column(8);
@@ -269,13 +269,11 @@ ul + p {
 .page-civicrm-event {
   .views-field-nothing {    /* Address */
     color: @text-color;
-    line-height: @line-height-computed;
     font-size: @font-size-large;
   }
 
   .view-content h3 {
     color: @text-color;
-    line-height: @line-height-computed;
     font-size: @font-size-base;
   }
 
@@ -510,7 +508,7 @@ ul + p {
     font-size: (@view-thumbnail-height - @line-height-computed);
 
     @media (min-width: @screen-sm-min) {
-      padding-top: (@line-height-computed / 2); // Middle the icon when title line-height increases
+      margin-top: (@line-height-computed / 2); // Middle the icon when title line-height increases
     }
   }
 }
@@ -526,11 +524,6 @@ ul + p {
   margin-left: @view-thumbnail-gutter;
 }
 
-.views-field-taxonomy-vocabulary-1,
-.views-field-field-in-activity {
-  margin-bottom: @line-height-computed;
-}
-
 .views-field + .views-field-field-subtitle,
 .views-field + .views-field-body {
   margin-top: @line-height-computed;
@@ -540,7 +533,7 @@ ul + p {
 .views-field-field-staff-contact,
 .views-field-field-in-activity {
   font-size: @font-size-large;
-  line-height: (2 * @line-height-computed);
+  line-height: @line-height-large;
 }
 
 .views-field-field-date-text {
@@ -567,7 +560,7 @@ ul + p {
 
   .views-row {
     padding-top: @line-height-computed;
-    line-height: @line-height-computed;
+    line-height: @line-height-large;
     font-size: @font-size-large;
   }
 
@@ -586,13 +579,13 @@ ul + p {
 
   .field-name-field-in-activity {
     padding-bottom: @line-height-computed;
-    line-height: (2 * @line-height-computed);
+    line-height: @line-height-large;
 
     // Mobile:
       font-size: @font-size-h4;
     @media (min-width: @screen-sm-min) {
       font-size: @font-size-h3;
-      line-height: (2 * @line-height-computed);
+      line-height: @line-height-large;
     }
   }
 
@@ -662,7 +655,7 @@ ul + p {
   .field-name-field-date-text,
   .entity-property-summary {
     font-size: @font-size-large;
-    line-height: (2 * @line-height-computed);
+    line-height: @line-height-large;
   }
 
   .field-name-field-subtitle,
