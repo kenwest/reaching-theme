@@ -8049,8 +8049,8 @@ ul + p {
 }
 /*
  * In order to mix full-width content and contained content
- * on the same page, it's requirted to put a .container
- * inside a .container-fluid. Avoid duplicating the padding.
+ * on the same page, we put a .container inside a .container-fluid.
+ * Need to avoid duplicating the padding.
  */
 .container-fluid > .container {
   padding-left: 0;
@@ -8265,14 +8265,16 @@ ul + p {
 .not-front .lead {
   display: none;
 }
-.not-front .col-sm-12 .region-content .block {
+.not-front .col-sm-12 .region-content .block,
+.not-front .col-sm-12 .region-content-second .block {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  .not-front .col-sm-12 .region-content .block {
+  .not-front .col-sm-12 .region-content .block,
+  .not-front .col-sm-12 .region-content-second .block {
     float: left;
     width: 66.66666667%;
   }
@@ -8287,7 +8289,7 @@ ul + p {
 .page-city-perth,
 .page-city-adelaide,
 .page-city-hobart {
-  /* Allow full-width content */
+  /* Content on city pages is in two columns */
 }
 .page-city-sydney .breadcrumb,
 .page-city-canberra .breadcrumb,
@@ -8305,28 +8307,61 @@ ul + p {
 .page-city-hobart .page-header {
   display: none;
 }
-.page-city-sydney.not-front .col-xs-12 .region-content .block,
-.page-city-canberra.not-front .col-xs-12 .region-content .block,
-.page-city-melbourne.not-front .col-xs-12 .region-content .block,
-.page-city-brisbane.not-front .col-xs-12 .region-content .block,
-.page-city-perth.not-front .col-xs-12 .region-content .block,
-.page-city-adelaide.not-front .col-xs-12 .region-content .block,
-.page-city-hobart.not-front .col-xs-12 .region-content .block {
+.page-city-sydney.not-front .region-content .block,
+.page-city-canberra.not-front .region-content .block,
+.page-city-melbourne.not-front .region-content .block,
+.page-city-brisbane.not-front .region-content .block,
+.page-city-perth.not-front .region-content .block,
+.page-city-adelaide.not-front .region-content .block,
+.page-city-hobart.not-front .region-content .block,
+.page-city-sydney.not-front .region-content-second .block,
+.page-city-canberra.not-front .region-content-second .block,
+.page-city-melbourne.not-front .region-content-second .block,
+.page-city-brisbane.not-front .region-content-second .block,
+.page-city-perth.not-front .region-content-second .block,
+.page-city-adelaide.not-front .region-content-second .block,
+.page-city-hobart.not-front .region-content-second .block {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 992px) {
-  .page-city-sydney.not-front .col-xs-12 .region-content .block,
-  .page-city-canberra.not-front .col-xs-12 .region-content .block,
-  .page-city-melbourne.not-front .col-xs-12 .region-content .block,
-  .page-city-brisbane.not-front .col-xs-12 .region-content .block,
-  .page-city-perth.not-front .col-xs-12 .region-content .block,
-  .page-city-adelaide.not-front .col-xs-12 .region-content .block,
-  .page-city-hobart.not-front .col-xs-12 .region-content .block {
+@media (min-width: 768px) {
+  .page-city-sydney.not-front .region-content .block,
+  .page-city-canberra.not-front .region-content .block,
+  .page-city-melbourne.not-front .region-content .block,
+  .page-city-brisbane.not-front .region-content .block,
+  .page-city-perth.not-front .region-content .block,
+  .page-city-adelaide.not-front .region-content .block,
+  .page-city-hobart.not-front .region-content .block,
+  .page-city-sydney.not-front .region-content-second .block,
+  .page-city-canberra.not-front .region-content-second .block,
+  .page-city-melbourne.not-front .region-content-second .block,
+  .page-city-brisbane.not-front .region-content-second .block,
+  .page-city-perth.not-front .region-content-second .block,
+  .page-city-adelaide.not-front .region-content-second .block,
+  .page-city-hobart.not-front .region-content-second .block {
     float: left;
-    width: 100%;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .page-city-sydney.not-front .region-content .block,
+  .page-city-canberra.not-front .region-content .block,
+  .page-city-melbourne.not-front .region-content .block,
+  .page-city-brisbane.not-front .region-content .block,
+  .page-city-perth.not-front .region-content .block,
+  .page-city-adelaide.not-front .region-content .block,
+  .page-city-hobart.not-front .region-content .block,
+  .page-city-sydney.not-front .region-content-second .block,
+  .page-city-canberra.not-front .region-content-second .block,
+  .page-city-melbourne.not-front .region-content-second .block,
+  .page-city-brisbane.not-front .region-content-second .block,
+  .page-city-perth.not-front .region-content-second .block,
+  .page-city-adelaide.not-front .region-content-second .block,
+  .page-city-hobart.not-front .region-content-second .block {
+    float: left;
+    width: 50%;
   }
 }
 /*
@@ -8425,32 +8460,6 @@ a.page-civicrm-event .views-field-id:focus {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-}
-.region-content .block#block-views-city-to-event-block,
-.region-content-second .block#block-views-city-to-event-block,
-.region-content .block#block-views-city-to-recent-block,
-.region-content-second .block#block-views-city-to-recent-block,
-.region-content .block#block-views-d0668354e2c9477b84ce436b821385e0,
-.region-content-second .block#block-views-d0668354e2c9477b84ce436b821385e0,
-.region-content .block#block-views-3b234379a78f2c26c23c8eba0ecc1f46,
-.region-content-second .block#block-views-3b234379a78f2c26c23c8eba0ecc1f46 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .region-content .block#block-views-city-to-event-block,
-  .region-content-second .block#block-views-city-to-event-block,
-  .region-content .block#block-views-city-to-recent-block,
-  .region-content-second .block#block-views-city-to-recent-block,
-  .region-content .block#block-views-d0668354e2c9477b84ce436b821385e0,
-  .region-content-second .block#block-views-d0668354e2c9477b84ce436b821385e0,
-  .region-content .block#block-views-3b234379a78f2c26c23c8eba0ecc1f46,
-  .region-content-second .block#block-views-3b234379a78f2c26c23c8eba0ecc1f46 {
-    float: left;
-    width: 50%;
-  }
 }
 .region-content .block.block-views .block-title,
 .region-content-second .block.block-views .block-title {

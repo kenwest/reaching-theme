@@ -67,8 +67,8 @@ ul + p {
 
 /*
  * In order to mix full-width content and contained content
- * on the same page, it's requirted to put a .container
- * inside a .container-fluid. Avoid duplicating the padding.
+ * on the same page, we put a .container inside a .container-fluid.
+ * Need to avoid duplicating the padding.
  */
 .container-fluid > .container {
   padding-left: 0;
@@ -228,7 +228,8 @@ ul + p {
 
   /* Prevent full-width content if there is no primary sidebar content */
   .col-sm-12 {
-    .region-content {
+    .region-content,
+    .region-content-second {
       .block {
         .make-md-column(8);
       }
@@ -251,13 +252,13 @@ ul + p {
     display: none;
   }
 
-  /* Allow full-width content */
+  /* Content on city pages is in two columns */
   &.not-front {
-    .col-xs-12 {
-      .region-content {
-        .block {
-          .make-md-column(12);
-        }
+    .region-content,
+    .region-content-second {
+      .block {
+        .make-sm-column(6);
+        .make-md-column(6);
       }
     }
   }
@@ -312,13 +313,6 @@ ul + p {
 
   .block {
     .make-xs-column(12);
-
-    &#block-views-city-to-event-block,
-    &#block-views-city-to-recent-block,
-    &#block-views-d0668354e2c9477b84ce436b821385e0,
-    &#block-views-3b234379a78f2c26c23c8eba0ecc1f46 {
-      .make-sm-column(6);
-    }
   }
 
   .block.block-views {
