@@ -8462,44 +8462,59 @@ a.page-civicrm-event .views-field-id:focus {
   padding-right: 15px;
 }
 .region-content .block.block-views .block-title,
-.region-content-second .block.block-views .block-title {
+.region-content-second .block.block-views .block-title,
+.region-content .block.block-views .block-panel > .view,
+.region-content-second .block.block-views .block-panel > .view,
+.region-content .block.block-views .block-footer > i,
+.region-content-second .block.block-views .block-footer > i {
   margin: 0 15px;
-  border: 1px #b6b6b6 solid;
-  border-bottom-width: 0px;
-  padding: 19px 14px 20px;
+  border-width: 0 1px;
+  border-color: #b6b6b6;
+  border-style: solid;
+  padding: 20px 14px;
 }
-.region-content .block.block-views .view,
-.region-content-second .block.block-views .view {
-  margin: 0 15px 0;
-  border: 1px #b6b6b6 solid;
-  border-bottom-width: 0px;
-  padding: 19px 14px 20px;
+.region-content .block.block-views .block-title,
+.region-content-second .block.block-views .block-title,
+.region-content .block.block-views .block-panel:first-child > .view,
+.region-content-second .block.block-views .block-panel:first-child > .view {
+  border-top-width: 1px;
+  padding-top: 19px;
 }
-.region-content .block.block-views .view:last-child,
-.region-content-second .block.block-views .view:last-child {
+.region-content .block.block-views .block-panel:last-child > .view,
+.region-content-second .block.block-views .block-panel:last-child > .view,
+.region-content .block.block-views .block-footer > i,
+.region-content-second .block.block-views .block-footer > i {
   border-bottom-width: 1px;
   padding-bottom: 19px;
 }
-.region-content .block.block-views .block-title + .view,
-.region-content-second .block.block-views .block-title + .view {
-  border-top-width: 0;
-  padding-top: 20px;
-}
 .region-content .block.block-views.bounded .block-header,
 .region-content-second .block.block-views.bounded .block-header {
+  /*
+       * When a .bounded block is closed, the header is positioned absolutely
+       * so we need more horizontal padding.
+       * Don't overlay the border (+1).
+       */
   padding: 0 31px;
 }
 .region-content .block.block-views.bounded .block-footer,
 .region-content-second .block.block-views.bounded .block-footer {
+  /*
+       * When a .bounded block is closed, the footer is positioned absolutely
+       * so we need more horizontal padding.
+       */
   padding: 0 30px;
 }
 .region-content .block.block-views.bounded .block-footer i,
 .region-content-second .block.block-views.bounded .block-footer i {
-  border: 1px #b6b6b6 solid;
-  border-top-width: 0;
+  margin: 0;
+  padding: 0;
 }
 .region-content .block.block-views.bounded.open .block-footer,
 .region-content-second .block.block-views.bounded.open .block-footer {
+  /*
+       * When a .bounded block is open, the footer is positioned relatively
+       * so we don't need the extra horizontal padding.
+       */
   padding: 0 15px;
 }
 .region-content .block.block-views.bounded.open .block-footer i,
@@ -8605,8 +8620,8 @@ a.page-civicrm-event .views-field-id:focus {
   bottom: initial;
   padding: initial;
 }
-.region-content .block.block-views.bounded .view:last-child,
-.region-content-second .block.block-views.bounded .view:last-child {
+.region-content .block.block-views.bounded > .block-panel > .view:last-child,
+.region-content-second .block.block-views.bounded > .block-panel > .view:last-child {
   border-bottom-width: 0;
   padding-bottom: 20px;
 }

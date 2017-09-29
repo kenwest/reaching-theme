@@ -316,45 +316,56 @@ ul + p {
   }
 
   .block.block-views {
-    .block-title {
+    .block-title,
+    .block-panel > .view,
+    .block-footer > i {
       margin: 0 floor(@grid-gutter-width/2);
-      border: 1px @block-border-colour solid;
-      border-bottom-width: 0px;
-      padding: (@line-height-computed - 1) (floor(@grid-gutter-width / 2) - 1) @line-height-computed;
+      border-width: 0 1px;
+      border-color: @block-border-colour;
+      border-style: solid;
+      padding: @line-height-computed (floor(@grid-gutter-width/2) - 1);
     }
 
-    .view {
-      margin: 0 floor(@grid-gutter-width / 2) 0;
-      border: 1px @block-border-colour solid;
-      border-bottom-width: 0px;
-      padding: (@line-height-computed - 1) (floor(@grid-gutter-width / 2) - 1) @line-height-computed;
+    .block-title,
+    .block-panel:first-child > .view {
+      border-top-width: 1px;
+      padding-top: (@line-height-computed - 1);
     }
 
-    .view:last-child {
+    .block-panel:last-child > .view,
+    .block-footer > i {
       border-bottom-width: 1px;
       padding-bottom: (@line-height-computed - 1);
     }
 
-    .block-title + .view {
-      border-top-width: 0;
-      padding-top: @line-height-computed;
-    }
-
     &.bounded .block-header {
-      padding: 0 (@grid-gutter-width + 1); // Do not overlay the 1px border
+      /*
+       * When a .bounded block is closed, the header is positioned absolutely
+       * so we need more horizontal padding.
+       * Don't overlay the border (+1).
+       */
+      padding: 0 (@grid-gutter-width + 1);
     }
 
     &.bounded .block-footer {
+      /*
+       * When a .bounded block is closed, the footer is positioned absolutely
+       * so we need more horizontal padding.
+       */
       padding: 0 @grid-gutter-width;
 
       i {
-        border: 1px @block-border-colour solid;
-        border-top-width: 0;
+        margin: 0;
+        padding: 0;
       }
     }
 
     &.bounded.open .block-footer {
-      padding: 0 floor(@grid-gutter-width / 2);
+      /*
+       * When a .bounded block is open, the footer is positioned relatively
+       * so we don't need the extra horizontal padding.
+       */
+      padding: 0 floor(@grid-gutter-width/2);
 
       i {
         // The js rotates the I element when the .bounded .block is .open, so change the border side
@@ -458,7 +469,7 @@ ul + p {
 
 .region-content,
 .region-content-second {
-  .block.block-views.bounded .view:last-child {
+  .block.block-views.bounded > .block-panel > .view:last-child {
     border-bottom-width: 0;
     padding-bottom: @line-height-computed;
   }
