@@ -319,7 +319,7 @@ ul + p {
     .block-title,
     .block-panel > .view,
     .block-footer > i {
-      margin: 0 floor(@grid-gutter-width/2);
+      margin: 0;
       border-width: 0 1px;
       border-color: @block-border-colour;
       border-style: solid;
@@ -344,7 +344,7 @@ ul + p {
        * so we need more horizontal padding.
        * Don't overlay the border (+1).
        */
-      padding: 0 (@grid-gutter-width + 1);
+      padding: 0 (floor(@grid-gutter-width/2) + 1);
     }
 
     &.bounded .block-footer {
@@ -352,7 +352,7 @@ ul + p {
        * When a .bounded block is closed, the footer is positioned absolutely
        * so we need more horizontal padding.
        */
-      padding: 0 @grid-gutter-width;
+      padding: 0 floor(@grid-gutter-width/2);
 
       i {
         margin: 0;
