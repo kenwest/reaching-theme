@@ -919,30 +919,24 @@ ul + p {
 }
 
 .views-1-row {
-  .jcarousel-skin-default {
-    margin: 0 auto;
-
+  .jcarousel-skin-default,
+  .jcarousel-skin-default .jcarousel-container-horizontal,
+  .jcarousel-skin-default .jcarousel-clip-horizontal {
     // Mobile and tablet:
       width: 320px;
     @media (min-width: @screen-sm-min) {
       width: 640px;
     }
+  }
+
+  .jcarousel-skin-default {
+    margin: 0 auto;
 
     .jcarousel-container-horizontal {
       // Mobile and tablet:
-        width: 320px;
         height: (12 * @line-height-computed); /* displays 320px wide item as 16:9 plus some spacing */
       @media (min-width: @screen-sm-min) {
-        width: 640px;
         height: (20 * @line-height-computed); /* displays 640px wide item as 16:9 plus some spacing */
-      }
-    }
-
-    .jcarousel-clip-horizontal {
-      // Mobile and tablet:
-        width: 320px;
-      @media (min-width: @screen-sm-min) {
-        width: 640px;
       }
     }
 
@@ -970,52 +964,47 @@ ul + p {
 }
 
 .views-2-rows {
+  .jcarousel-skin-default,
+  .jcarousel-skin-default .jcarousel-container-horizontal,
+  .jcarousel-skin-default .jcarousel-clip-horizontal {
+    @media (min-width: @screen-sm-min) {
+      width: @container-sm;
+    }
+    @media (min-width: @screen-md-min) {
+      width: @container-md;
+    }
+    @media (min-width: @screen-lg-min) {
+      width: @container-lg;
+    }
+  }
+
   .jcarousel-skin-default {
 
     @media (min-width: @screen-sm-min) {
       margin: 0 auto;
-      width: (2*320px);
-    }
-    @media (min-width: @screen-md-min) {
-      width: (2*420px);
-    }
-    @media (min-width: @screen-lg-min) {
-      width: (2*540px);
     }
 
     .jcarousel-container-horizontal {
       @media (min-width: @screen-sm-min) {
-        width: (2*320px);
         height: (12 * @line-height-computed); /* displays 320px wide item as 16:9 plus some spacing */
       }
       @media (min-width: @screen-md-min) {
-        width: (2*420px);
         height: (14 * @line-height-computed); /* displays 420px wide item as 16:9 plus some spacing */
       }
       @media (min-width: @screen-lg-min) {
-        width: (2*540px);
         height: (18 * @line-height-computed); /* displays 540px wide item as 16:9 plus some spacing */
       }
     }
 
-    .jcarousel-clip-horizontal {
-      @media (min-width: @screen-sm-min) {
-        width: (2*320px);
-      }
-      @media (min-width: @screen-md-min) {
-        width: (2*420px);
-      }
-      @media (min-width: @screen-lg-min) {
-        width: (2*540px);
-      }
-    }
-
     .jcarousel-item {
+      @media (min-width: @screen-sm-min) {
+        width: floor(@container-sm/2) !important;
+      }
       @media (min-width: @screen-md-min) {
-        width: 420px !important;
+        width: floor(@container-md/2) !important;
       }
       @media (min-width: @screen-lg-min) {
-        width: 540px !important;
+        width: floor(@container-lg/2) !important;
       }
     }
 
