@@ -1027,3 +1027,64 @@ ul + p {
     }
   }
 }
+
+.views-3-rows {
+  .jcarousel-skin-default,
+  .jcarousel-skin-default .jcarousel-container-horizontal,
+  .jcarousel-skin-default .jcarousel-clip-horizontal {
+    @media (min-width: @screen-sm-min) {
+      width: @container-sm;
+    }
+    @media (min-width: @screen-md-min) {
+      width: @container-md;
+    }
+    @media (min-width: @screen-lg-min) {
+      width: @container-lg;
+    }
+  }
+
+  .jcarousel-skin-default {
+
+    @media (min-width: @screen-sm-min) {
+      margin: 0 auto;
+    }
+
+    .jcarousel-container-horizontal {
+      @media (min-width: @screen-sm-min) {
+        height: (9 * @line-height-computed);
+      }
+      @media (min-width: @screen-md-min) {
+        height: (12 * @line-height-computed);
+      }
+      @media (min-width: @screen-lg-min) {
+        height: (13 * @line-height-computed);
+      }
+    }
+
+    .jcarousel-item {
+      @media (min-width: @screen-sm-min) {
+        width: floor(@container-sm/3) !important;
+      }
+      @media (min-width: @screen-md-min) {
+        width: floor(@container-md/3) !important;
+      }
+      @media (min-width: @screen-lg-min) {
+        width: floor(@container-lg/3) !important;
+      }
+
+      .views-field-field-highlight,
+      .views-field-title {
+        @media (min-width: @screen-md-min) {
+          font-size: @font-size-h4;
+        }
+      }
+    }
+
+    .jcarousel-prev-horizontal,
+    .jcarousel-next-horizontal {
+      @media (min-width: @screen-sm-min) {
+        display: none;
+      }
+    }
+  }
+}

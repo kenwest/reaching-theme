@@ -9303,6 +9303,74 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
     display: none;
   }
 }
+@media (min-width: 768px) {
+  .views-3-rows .jcarousel-skin-default,
+  .views-3-rows .jcarousel-skin-default .jcarousel-container-horizontal,
+  .views-3-rows .jcarousel-skin-default .jcarousel-clip-horizontal {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .views-3-rows .jcarousel-skin-default,
+  .views-3-rows .jcarousel-skin-default .jcarousel-container-horizontal,
+  .views-3-rows .jcarousel-skin-default .jcarousel-clip-horizontal {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .views-3-rows .jcarousel-skin-default,
+  .views-3-rows .jcarousel-skin-default .jcarousel-container-horizontal,
+  .views-3-rows .jcarousel-skin-default .jcarousel-clip-horizontal {
+    width: 1170px;
+  }
+}
+@media (min-width: 768px) {
+  .views-3-rows .jcarousel-skin-default {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .views-3-rows .jcarousel-skin-default .jcarousel-container-horizontal {
+    height: 180px;
+  }
+}
+@media (min-width: 992px) {
+  .views-3-rows .jcarousel-skin-default .jcarousel-container-horizontal {
+    height: 240px;
+  }
+}
+@media (min-width: 1200px) {
+  .views-3-rows .jcarousel-skin-default .jcarousel-container-horizontal {
+    height: 260px;
+  }
+}
+@media (min-width: 768px) {
+  .views-3-rows .jcarousel-skin-default .jcarousel-item {
+    width: 250px !important;
+  }
+}
+@media (min-width: 992px) {
+  .views-3-rows .jcarousel-skin-default .jcarousel-item {
+    width: 323px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .views-3-rows .jcarousel-skin-default .jcarousel-item {
+    width: 390px !important;
+  }
+}
+@media (min-width: 992px) {
+  .views-3-rows .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
+  .views-3-rows .jcarousel-skin-default .jcarousel-item .views-field-title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .views-3-rows .jcarousel-skin-default .jcarousel-prev-horizontal,
+  .views-3-rows .jcarousel-skin-default .jcarousel-next-horizontal {
+    display: none;
+  }
+}
 .footer {
   background-color: #333333;
   color: white;
