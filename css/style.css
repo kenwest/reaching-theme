@@ -8515,7 +8515,7 @@ a.page-civicrm-event .views-field-id:focus {
        * When a .bounded block is open, the footer is positioned relatively
        * so we don't need the extra horizontal padding.
        */
-  padding: 0 15px;
+  padding: 0;
 }
 .region-content .block.block-views.bounded.open .block-footer i,
 .region-content-second .block.block-views.bounded.open .block-footer i {
