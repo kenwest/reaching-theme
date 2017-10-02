@@ -824,12 +824,12 @@ ul + p {
     padding: 0;
 
     // Mobile and tablet:
-      height: (10 * @line-height-computed); /* displays 240px wide item as 16:9 plus some spacing */
+      height: (7 * @line-height-computed);
     @media (min-width: @screen-sm-min) {
-      height: (12 * @line-height-computed); /* displays 320px wide item as 16:9 plus some spacing */
+      height: (10 * @line-height-computed);
     }
     @media (min-width: @screen-md-min) {
-      height: (20 * @line-height-computed); /* displays 640px wide item as 16:9 plus some spacing */
+      height: (18 * @line-height-computed);
     }
   }
 
@@ -851,6 +851,7 @@ ul + p {
     }
 
 
+    .views-field-field-highlight,
     .views-field-title {
       margin: 0;
 
@@ -934,9 +935,9 @@ ul + p {
 
     .jcarousel-container-horizontal {
       // Mobile and tablet:
-        height: (12 * @line-height-computed); /* displays 320px wide item as 16:9 plus some spacing */
+        height: (10 * @line-height-computed);
       @media (min-width: @screen-sm-min) {
-        height: (20 * @line-height-computed); /* displays 640px wide item as 16:9 plus some spacing */
+        height: (18 * @line-height-computed);
       }
     }
 
@@ -947,6 +948,7 @@ ul + p {
         width: 640px !important;
       }
 
+      .views-field-field-highlight,
       .views-field-title {
         // Mobile and tablet:
           font-size: @font-size-h4;
@@ -967,6 +969,9 @@ ul + p {
   .jcarousel-skin-default,
   .jcarousel-skin-default .jcarousel-container-horizontal,
   .jcarousel-skin-default .jcarousel-clip-horizontal {
+    @media (min-width: @screen-xs-min) {
+      width: (@screen-xs-min - @grid-gutter-width);
+    }
     @media (min-width: @screen-sm-min) {
       width: @container-sm;
     }
@@ -980,23 +985,29 @@ ul + p {
 
   .jcarousel-skin-default {
 
-    @media (min-width: @screen-sm-min) {
+    @media (min-width: @screen-xs-min) {
       margin: 0 auto;
     }
 
     .jcarousel-container-horizontal {
+      @media (min-width: @screen-xs-min) {
+        height: (7 * @line-height-computed);
+      }
       @media (min-width: @screen-sm-min) {
-        height: (12 * @line-height-computed); /* displays 320px wide item as 16:9 plus some spacing */
+        height: (12 * @line-height-computed);
       }
       @media (min-width: @screen-md-min) {
-        height: (14 * @line-height-computed); /* displays 420px wide item as 16:9 plus some spacing */
+        height: (15 * @line-height-computed);
       }
       @media (min-width: @screen-lg-min) {
-        height: (18 * @line-height-computed); /* displays 540px wide item as 16:9 plus some spacing */
+        height: (18 * @line-height-computed);
       }
     }
 
     .jcarousel-item {
+      @media (min-width: @screen-xs-min) {
+        width: floor((@screen-xs-min - @grid-gutter-width)/2) !important;
+      }
       @media (min-width: @screen-sm-min) {
         width: floor(@container-sm/2) !important;
       }
@@ -1010,7 +1021,9 @@ ul + p {
 
     .jcarousel-prev-horizontal,
     .jcarousel-next-horizontal {
-      display: none;
+      @media (min-width: @screen-xs-min) {
+        display: none;
+      }
     }
   }
 }

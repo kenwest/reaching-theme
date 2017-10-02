@@ -9084,19 +9084,16 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
 .jcarousel-skin-default .jcarousel-container-horizontal {
   width: 100%;
   padding: 0;
-  height: 200px;
-  /* displays 240px wide item as 16:9 plus some spacing */
+  height: 140px;
 }
 @media (min-width: 768px) {
   .jcarousel-skin-default .jcarousel-container-horizontal {
-    height: 240px;
-    /* displays 320px wide item as 16:9 plus some spacing */
+    height: 200px;
   }
 }
 @media (min-width: 992px) {
   .jcarousel-skin-default .jcarousel-container-horizontal {
-    height: 400px;
-    /* displays 640px wide item as 16:9 plus some spacing */
+    height: 360px;
   }
 }
 .jcarousel-skin-default .jcarousel-clip-horizontal {
@@ -9117,16 +9114,19 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
     width: 640px !important;
   }
 }
+.jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
 .jcarousel-skin-default .jcarousel-item .views-field-title {
   margin: 0;
   font-size: 14px;
 }
 @media (min-width: 768px) {
+  .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
   .jcarousel-skin-default .jcarousel-item .views-field-title {
     font-size: 18px;
   }
 }
 @media (min-width: 992px) {
+  .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
   .jcarousel-skin-default .jcarousel-item .views-field-title {
     font-size: 24px;
   }
@@ -9195,13 +9195,11 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
   margin: 0 auto;
 }
 .views-1-row .jcarousel-skin-default .jcarousel-container-horizontal {
-  height: 240px;
-  /* displays 320px wide item as 16:9 plus some spacing */
+  height: 200px;
 }
 @media (min-width: 768px) {
   .views-1-row .jcarousel-skin-default .jcarousel-container-horizontal {
-    height: 400px;
-    /* displays 640px wide item as 16:9 plus some spacing */
+    height: 360px;
   }
 }
 .views-1-row .jcarousel-skin-default .jcarousel-item {
@@ -9212,10 +9210,12 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
     width: 640px !important;
   }
 }
+.views-1-row .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
 .views-1-row .jcarousel-skin-default .jcarousel-item .views-field-title {
   font-size: 18px;
 }
 @media (min-width: 768px) {
+  .views-1-row .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
   .views-1-row .jcarousel-skin-default .jcarousel-item .views-field-title {
     font-size: 24px;
   }
@@ -9223,6 +9223,13 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
 .views-1-row .jcarousel-skin-default .jcarousel-prev-horizontal,
 .views-1-row .jcarousel-skin-default .jcarousel-next-horizontal {
   display: none;
+}
+@media (min-width: 480px) {
+  .views-2-rows .jcarousel-skin-default,
+  .views-2-rows .jcarousel-skin-default .jcarousel-container-horizontal,
+  .views-2-rows .jcarousel-skin-default .jcarousel-clip-horizontal {
+    width: 450px;
+  }
 }
 @media (min-width: 768px) {
   .views-2-rows .jcarousel-skin-default,
@@ -9245,27 +9252,34 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
     width: 1170px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .views-2-rows .jcarousel-skin-default {
     margin: 0 auto;
+  }
+}
+@media (min-width: 480px) {
+  .views-2-rows .jcarousel-skin-default .jcarousel-container-horizontal {
+    height: 140px;
   }
 }
 @media (min-width: 768px) {
   .views-2-rows .jcarousel-skin-default .jcarousel-container-horizontal {
     height: 240px;
-    /* displays 320px wide item as 16:9 plus some spacing */
   }
 }
 @media (min-width: 992px) {
   .views-2-rows .jcarousel-skin-default .jcarousel-container-horizontal {
-    height: 280px;
-    /* displays 420px wide item as 16:9 plus some spacing */
+    height: 300px;
   }
 }
 @media (min-width: 1200px) {
   .views-2-rows .jcarousel-skin-default .jcarousel-container-horizontal {
     height: 360px;
-    /* displays 540px wide item as 16:9 plus some spacing */
+  }
+}
+@media (min-width: 480px) {
+  .views-2-rows .jcarousel-skin-default .jcarousel-item {
+    width: 225px !important;
   }
 }
 @media (min-width: 768px) {
@@ -9283,9 +9297,11 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
     width: 585px !important;
   }
 }
-.views-2-rows .jcarousel-skin-default .jcarousel-prev-horizontal,
-.views-2-rows .jcarousel-skin-default .jcarousel-next-horizontal {
-  display: none;
+@media (min-width: 480px) {
+  .views-2-rows .jcarousel-skin-default .jcarousel-prev-horizontal,
+  .views-2-rows .jcarousel-skin-default .jcarousel-next-horizontal {
+    display: none;
+  }
 }
 .footer {
   background-color: #333333;
