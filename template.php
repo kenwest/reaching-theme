@@ -42,7 +42,6 @@ function reaching_preprocess_page(&$variables) {
         });
       };
       standardiseHeight(jQuery(".main-container"));
-      jQuery(".no-nothing").filter(function() { return jQuery(this).css("font-size") !== "14px" && jQuery(this).height() % 20 !== 0; }).css("background-color", "red");
       jQuery(".region-content, .region-sidebar-first, .region-sidebar-second, .region-content-second").find(".block-views, .block-block").each(function() {
         if (jQuery(this).height() >= 400 && !jQuery(this).hasClass("unbounded")) {
           jQuery(this).toggleClass("bounded");
