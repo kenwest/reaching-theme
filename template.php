@@ -66,9 +66,9 @@ function reaching_preprocess_page(&$variables) {
       });
     });';
   drupal_add_js($script, 'inline');
- }
+}
 
- 
+
 /*
  * An implementation of theme_entity_property()
  */
