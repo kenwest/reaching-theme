@@ -9411,6 +9411,9 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
     width: 25%;
   }
 }
+.region-footer .footer-column .nav:first-child {
+  margin-top: 40px;
+}
 .region-footer .footer-column .block-title,
 .region-footer .footer-column .nav > li > a {
   color: white;
