@@ -7638,10 +7638,18 @@ a.link-button:focus {
    * Don't pad nested empty views.
    */
 }
+.view .view-empty {
+  /*
+     * Hide the more-link if the view is empty
+     */
+}
 .view .view-empty .view-content,
 .view .view-empty .view-empty,
 .view .view-empty .views-exposed-form {
   padding: 0 !important;
+}
+.view .view-empty + .more-link {
+  display: none;
 }
 .view .view-grouping .view-grouping-header {
   font-size: 24px;
