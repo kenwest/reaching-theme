@@ -8628,6 +8628,7 @@ a.page-civicrm-event .views-field-id:focus {
   left: initial;
   bottom: initial;
   padding: initial;
+  margin-top: 40px;
 }
 .region-content .block.block-views.bounded > .block-panel > .view:last-child,
 .region-content-second .block.block-views.bounded > .block-panel > .view:last-child {
