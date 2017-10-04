@@ -7649,7 +7649,7 @@ a.link-button:focus {
   padding: 0 !important;
 }
 .view .view-empty + .more-link {
-  display: none;
+  display: none !important;
 }
 .view .view-grouping .view-grouping-header {
   font-size: 24px;
