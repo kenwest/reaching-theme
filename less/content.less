@@ -461,7 +461,7 @@ ul + p {
       }
 
       .more-link {
-        display: initial !important;
+        display: block !important;
       }
 
       .block-footer {
@@ -495,11 +495,31 @@ ul + p {
 }
 
 .views-row + h3 {
-  padding-top: (2 * @line-height-computed);
+  padding-top: (2*@line-height-computed);
 }
 
 .view-content > h3 {
   color: @brand-secondary;
+}
+
+.view .more-link {
+  .badge;
+  display: block;
+  margin: (2*@line-height-computed) 0 0 @view-thumbnail-gutter;
+  padding: floor(@line-height-computed/2) floor(@grid-gutter-width/2);
+  border-radius: @line-height-computed;
+  width: (3*@grid-gutter-width);
+  background: @brand-primary;
+  font-size: @font-size-h4;
+  text-transform: capitalize;
+
+  &.views-field {
+    margin-left: 0;
+  }
+
+  a {
+    color: white;
+  }
 }
 
 /*

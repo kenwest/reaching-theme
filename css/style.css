@@ -8621,7 +8621,7 @@ a.page-civicrm-event .views-field-id:focus {
   display: none;
 }
 .block.bounded.open .more-link {
-  display: initial !important;
+  display: block !important;
 }
 .block.bounded.open .block-footer {
   position: relative;
@@ -8649,6 +8649,66 @@ a.page-civicrm-event .views-field-id:focus {
 }
 .view-content > h3 {
   color: #1e9dd8;
+}
+.view .more-link {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777777;
+  border-radius: 10px;
+  display: block;
+  margin: 40px 0 0 75px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: 90px;
+  background: #02426f;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.view .more-link:empty {
+  display: none;
+}
+.btn .view .more-link {
+  position: relative;
+  top: -1px;
+}
+.btn-xs .view .more-link,
+.btn-group-xs > .btn .view .more-link {
+  top: 0;
+  padding: 1px 5px;
+}
+a.view .more-link:hover,
+a.view .more-link:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.list-group-item.active > .view .more-link,
+.nav-pills > .active > a > .view .more-link {
+  color: #02426f;
+  background-color: #ffffff;
+}
+.list-group-item > .view .more-link {
+  float: right;
+}
+.list-group-item > .view .more-link + .view .more-link {
+  margin-right: 5px;
+}
+.nav-pills > li > a > .view .more-link {
+  margin-left: 3px;
+}
+.view .more-link.views-field {
+  margin-left: 0;
+}
+.view .more-link a {
+  color: white;
 }
 /*
  * Views fields
