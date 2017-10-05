@@ -42,7 +42,7 @@ function reaching_preprocess_page(&$variables) {
     };
     function cbfStandardiseHeights() {
       jQuery(".cbf-standard-height").css("min-height", "").removeClass("cbf-standard-height");
-      cbfStandardiseHeight(jQuery(".main-container, .smith-byline"));
+      cbfStandardiseHeight(jQuery(".main-container, .lead"));
     };
     jQuery(document).ready( function() {
       cbfStandardiseHeights();
