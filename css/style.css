@@ -8957,13 +8957,13 @@ a.block-system .field-name-field-add-to-calendar .field-item:focus {
   color: #02426f;
   background: white;
 }
-.block-system .field-name-field-civievent .field-item a,
-.block-system .field-name-field-add-to-calendar .field-item a {
+.block-system .field-name-field-civievent .field-item,
+.block-system .field-name-field-add-to-calendar .field-item {
   font-size: 14px;
 }
 @media (min-width: 480px) {
-  .block-system .field-name-field-civievent .field-item a,
-  .block-system .field-name-field-add-to-calendar .field-item a {
+  .block-system .field-name-field-civievent .field-item,
+  .block-system .field-name-field-add-to-calendar .field-item {
     font-size: 18px;
   }
 }
