@@ -8416,6 +8416,7 @@ ul + p {
   border-radius: 30px;
   background: #02426f;
   font-size: 18px;
+  line-height: 20px;
 }
 .page-civicrm-event .views-field-id:empty {
   display: none;
@@ -8676,6 +8677,7 @@ a.page-civicrm-event .views-field-id:focus {
   width: 90px;
   background: #02426f;
   font-size: 18px;
+  line-height: 20px;
   text-transform: capitalize;
 }
 .view .more-link:empty {
@@ -8857,6 +8859,7 @@ a.view .more-link:focus {
   border-radius: 30px;
   background: #02426f;
   font-size: 18px;
+  line-height: 20px;
 }
 .block-system .comment-add:empty,
 .block-system .field-name-field-civievent .field-item:empty,
