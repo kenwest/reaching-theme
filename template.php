@@ -36,13 +36,13 @@ function reaching_preprocess_page(&$variables) {
           jQuery(this).css("min-height",  height - fraction + 20).addClass("cbf-standard-height");
         }
         else {
-          cbfStandardiseHeight(jQuery(this).children().not("iframe, form"));
+          cbfStandardiseHeight(jQuery(this).children().not("iframe, form, .lead"));
         }
       });
     };
     function cbfStandardiseHeights() {
       jQuery(".cbf-standard-height").css("min-height", "").removeClass("cbf-standard-height");
-      cbfStandardiseHeight(jQuery(".main-container, .lead"));
+      cbfStandardiseHeight(jQuery(".main-container"));
     };
     jQuery(document).ready( function() {
       cbfStandardiseHeights();
