@@ -295,15 +295,11 @@ ul + p {
     padding: @line-height-computed floor(@grid-gutter-width/2);
     border-radius: @grid-gutter-width;
     background: @brand-primary;
+    font-size: @font-size-large;
 
     a,
     a:hover,
     a:focus {
-      // Mobile:
-        font-size: @font-size-base;
-      @media (min-width: @screen-xs-min) {
-        font-size: @font-size-large;
-      }
       font-weight: bold;
       color: white;
       background: @brand-primary;
@@ -514,7 +510,7 @@ ul + p {
   border-radius: @line-height-computed;
   width: (3*@grid-gutter-width);
   background: @brand-primary;
-  font-size: @font-size-h4;
+  font-size: @font-size-large;
   text-transform: capitalize;
 
   &.views-field {
@@ -523,6 +519,7 @@ ul + p {
 
   a {
     color: white;
+    font-weight: bold;
   }
 }
 
@@ -653,6 +650,62 @@ ul + p {
     display: none; // Hide Add to calendar if there is a CiviEvent
   }
 
+  .comment-add,
+  .field-name-field-civievent .field-item,
+  .field-name-field-add-to-calendar .field-item {
+    .badge;
+    width: (9*@grid-gutter-width);
+    max-width: 100%;
+    padding: @line-height-computed floor(@grid-gutter-width/2);
+    border-radius: @grid-gutter-width;
+    background: @brand-primary;
+    font-size: @font-size-large;
+
+    a,
+    a:hover,
+    a:focus {
+      font-weight: bold;
+      color: white;
+      background: @brand-primary;
+    }
+
+    .dropdown a {
+      padding: 0;
+      height: @line-height-computed;
+    }
+
+    .dropdown-menu {
+      a,
+      a:hover,
+      a:focus {
+        padding: floor(@grid-gutter-width/4);
+        height: (2 * @line-height-computed);
+        text-align: left;
+        font-size: @font-size-base;
+        font-weight: normal;
+        color: @brand-primary;
+        background: white;
+      }
+    }
+  }
+
+  .field-name-field-civievent,
+  .field-name-field-add-to-calendar {
+    .field-item {
+      a {
+        // Mobile:
+          font-size: @font-size-base;
+        @media (min-width: @screen-xs-min) {
+          font-size: @font-size-large;
+        }
+      }
+    }
+  }
+
+  .comment-add {
+    margin-bottom: @line-height-computed;
+  }
+
   .field-name-field-speakers,
   .field-name-field-bible-reference,
   .field-name-field-episode-date {
@@ -724,53 +777,6 @@ ul + p {
 
   .entity-property-label {
     display: none;
-  }
-
-  .comment-add {
-    margin-bottom: @line-height-computed;
-  }
-
-  .comment-add,
-  .field-name-field-civievent .field-item,
-  .field-name-field-add-to-calendar .field-item {
-    .badge;
-    width: (9 * @grid-gutter-width);
-    max-width: 100%;
-    padding: @line-height-computed floor(@grid-gutter-width/2);
-    border-radius: @grid-gutter-width;
-    background: @brand-primary;
-
-    a,
-    a:hover,
-    a:focus {
-      // Mobile:
-        font-size: @font-size-base;
-      @media (min-width: @screen-xs-min) {
-        font-size: @font-size-large;
-      }
-      font-weight: bold;
-      color: white;
-      background: @brand-primary;
-    }
-
-    .dropdown a {
-      padding: 0;
-      height: @line-height-computed;
-    }
-
-    .dropdown-menu {
-      a,
-      a:hover,
-      a:focus {
-        padding: floor(@grid-gutter-width/4);
-        height: (2 * @line-height-computed);
-        text-align: left;
-        font-size: @font-size-base;
-        font-weight: normal;
-        color: @brand-primary;
-        background: white;
-      }
-    }
   }
 }
 

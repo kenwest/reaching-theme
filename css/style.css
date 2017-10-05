@@ -8415,6 +8415,7 @@ ul + p {
   padding: 20px 15px;
   border-radius: 30px;
   background: #02426f;
+  font-size: 18px;
 }
 .page-civicrm-event .views-field-id:empty {
   display: none;
@@ -8451,17 +8452,9 @@ a.page-civicrm-event .views-field-id:focus {
 .page-civicrm-event .views-field-id a,
 .page-civicrm-event .views-field-id a:hover,
 .page-civicrm-event .views-field-id a:focus {
-  font-size: 14px;
   font-weight: bold;
   color: white;
   background: #02426f;
-}
-@media (min-width: 480px) {
-  .page-civicrm-event .views-field-id a,
-  .page-civicrm-event .views-field-id a:hover,
-  .page-civicrm-event .views-field-id a:focus {
-    font-size: 18px;
-  }
 }
 /*
  * Regions and blocks
@@ -8722,6 +8715,7 @@ a.view .more-link:focus {
 }
 .view .more-link a {
   color: white;
+  font-weight: bold;
 }
 /*
  * Views fields
@@ -8842,6 +8836,137 @@ a.view .more-link:focus {
 .block-system .field-name-field-civievent + .field-name-field-add-to-calendar {
   display: none;
 }
+.block-system .comment-add,
+.block-system .field-name-field-civievent .field-item,
+.block-system .field-name-field-add-to-calendar .field-item {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777777;
+  border-radius: 10px;
+  width: 270px;
+  max-width: 100%;
+  padding: 20px 15px;
+  border-radius: 30px;
+  background: #02426f;
+  font-size: 18px;
+}
+.block-system .comment-add:empty,
+.block-system .field-name-field-civievent .field-item:empty,
+.block-system .field-name-field-add-to-calendar .field-item:empty {
+  display: none;
+}
+.btn .block-system .comment-add,
+.btn .block-system .field-name-field-civievent .field-item,
+.btn .block-system .field-name-field-add-to-calendar .field-item {
+  position: relative;
+  top: -1px;
+}
+.btn-xs .block-system .comment-add,
+.btn-xs .block-system .field-name-field-civievent .field-item,
+.btn-xs .block-system .field-name-field-add-to-calendar .field-item,
+.btn-group-xs > .btn .block-system .comment-add,
+.btn-group-xs > .btn .block-system .field-name-field-civievent .field-item,
+.btn-group-xs > .btn .block-system .field-name-field-add-to-calendar .field-item {
+  top: 0;
+  padding: 1px 5px;
+}
+a.block-system .comment-add:hover,
+a.block-system .field-name-field-civievent .field-item:hover,
+a.block-system .field-name-field-add-to-calendar .field-item:hover,
+a.block-system .comment-add:focus,
+a.block-system .field-name-field-civievent .field-item:focus,
+a.block-system .field-name-field-add-to-calendar .field-item:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.list-group-item.active > .block-system .comment-add,
+.list-group-item.active > .block-system .field-name-field-civievent .field-item,
+.list-group-item.active > .block-system .field-name-field-add-to-calendar .field-item,
+.nav-pills > .active > a > .block-system .comment-add,
+.nav-pills > .active > a > .block-system .field-name-field-civievent .field-item,
+.nav-pills > .active > a > .block-system .field-name-field-add-to-calendar .field-item {
+  color: #02426f;
+  background-color: #ffffff;
+}
+.list-group-item > .block-system .comment-add,
+.list-group-item > .block-system .field-name-field-civievent .field-item,
+.list-group-item > .block-system .field-name-field-add-to-calendar .field-item {
+  float: right;
+}
+.list-group-item > .block-system .comment-add + .block-system .comment-add,
+.list-group-item > .block-system .comment-add + .block-system .field-name-field-civievent .field-item,
+.list-group-item > .block-system .comment-add + .block-system .field-name-field-add-to-calendar .field-item,
+.list-group-item > .block-system .field-name-field-civievent .field-item + .block-system .comment-add,
+.list-group-item > .block-system .field-name-field-civievent .field-item + .block-system .field-name-field-civievent .field-item,
+.list-group-item > .block-system .field-name-field-civievent .field-item + .block-system .field-name-field-add-to-calendar .field-item,
+.list-group-item > .block-system .field-name-field-add-to-calendar .field-item + .block-system .comment-add,
+.list-group-item > .block-system .field-name-field-add-to-calendar .field-item + .block-system .field-name-field-civievent .field-item,
+.list-group-item > .block-system .field-name-field-add-to-calendar .field-item + .block-system .field-name-field-add-to-calendar .field-item {
+  margin-right: 5px;
+}
+.nav-pills > li > a > .block-system .comment-add,
+.nav-pills > li > a > .block-system .field-name-field-civievent .field-item,
+.nav-pills > li > a > .block-system .field-name-field-add-to-calendar .field-item {
+  margin-left: 3px;
+}
+.block-system .comment-add a,
+.block-system .field-name-field-civievent .field-item a,
+.block-system .field-name-field-add-to-calendar .field-item a,
+.block-system .comment-add a:hover,
+.block-system .field-name-field-civievent .field-item a:hover,
+.block-system .field-name-field-add-to-calendar .field-item a:hover,
+.block-system .comment-add a:focus,
+.block-system .field-name-field-civievent .field-item a:focus,
+.block-system .field-name-field-add-to-calendar .field-item a:focus {
+  font-weight: bold;
+  color: white;
+  background: #02426f;
+}
+.block-system .comment-add .dropdown a,
+.block-system .field-name-field-civievent .field-item .dropdown a,
+.block-system .field-name-field-add-to-calendar .field-item .dropdown a {
+  padding: 0;
+  height: 20px;
+}
+.block-system .comment-add .dropdown-menu a,
+.block-system .field-name-field-civievent .field-item .dropdown-menu a,
+.block-system .field-name-field-add-to-calendar .field-item .dropdown-menu a,
+.block-system .comment-add .dropdown-menu a:hover,
+.block-system .field-name-field-civievent .field-item .dropdown-menu a:hover,
+.block-system .field-name-field-add-to-calendar .field-item .dropdown-menu a:hover,
+.block-system .comment-add .dropdown-menu a:focus,
+.block-system .field-name-field-civievent .field-item .dropdown-menu a:focus,
+.block-system .field-name-field-add-to-calendar .field-item .dropdown-menu a:focus {
+  padding: 7px;
+  height: 40px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  color: #02426f;
+  background: white;
+}
+.block-system .field-name-field-civievent .field-item a,
+.block-system .field-name-field-add-to-calendar .field-item a {
+  font-size: 14px;
+}
+@media (min-width: 480px) {
+  .block-system .field-name-field-civievent .field-item a,
+  .block-system .field-name-field-add-to-calendar .field-item a {
+    font-size: 18px;
+  }
+}
+.block-system .comment-add {
+  margin-bottom: 20px;
+}
 .block-system .field-name-field-speakers .field-label,
 .block-system .field-name-field-bible-reference .field-label,
 .block-system .field-name-field-episode-date .field-label {
@@ -8959,140 +9084,6 @@ a.block-system .field-name-field-topics .field-item:focus {
 }
 .block-system .entity-property-label {
   display: none;
-}
-.block-system .comment-add {
-  margin-bottom: 20px;
-}
-.block-system .comment-add,
-.block-system .field-name-field-civievent .field-item,
-.block-system .field-name-field-add-to-calendar .field-item {
-  display: inline-block;
-  min-width: 10px;
-  padding: 3px 7px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #ffffff;
-  line-height: 1;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-align: center;
-  background-color: #777777;
-  border-radius: 10px;
-  width: 270px;
-  max-width: 100%;
-  padding: 20px 15px;
-  border-radius: 30px;
-  background: #02426f;
-}
-.block-system .comment-add:empty,
-.block-system .field-name-field-civievent .field-item:empty,
-.block-system .field-name-field-add-to-calendar .field-item:empty {
-  display: none;
-}
-.btn .block-system .comment-add,
-.btn .block-system .field-name-field-civievent .field-item,
-.btn .block-system .field-name-field-add-to-calendar .field-item {
-  position: relative;
-  top: -1px;
-}
-.btn-xs .block-system .comment-add,
-.btn-xs .block-system .field-name-field-civievent .field-item,
-.btn-xs .block-system .field-name-field-add-to-calendar .field-item,
-.btn-group-xs > .btn .block-system .comment-add,
-.btn-group-xs > .btn .block-system .field-name-field-civievent .field-item,
-.btn-group-xs > .btn .block-system .field-name-field-add-to-calendar .field-item {
-  top: 0;
-  padding: 1px 5px;
-}
-a.block-system .comment-add:hover,
-a.block-system .field-name-field-civievent .field-item:hover,
-a.block-system .field-name-field-add-to-calendar .field-item:hover,
-a.block-system .comment-add:focus,
-a.block-system .field-name-field-civievent .field-item:focus,
-a.block-system .field-name-field-add-to-calendar .field-item:focus {
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-}
-.list-group-item.active > .block-system .comment-add,
-.list-group-item.active > .block-system .field-name-field-civievent .field-item,
-.list-group-item.active > .block-system .field-name-field-add-to-calendar .field-item,
-.nav-pills > .active > a > .block-system .comment-add,
-.nav-pills > .active > a > .block-system .field-name-field-civievent .field-item,
-.nav-pills > .active > a > .block-system .field-name-field-add-to-calendar .field-item {
-  color: #02426f;
-  background-color: #ffffff;
-}
-.list-group-item > .block-system .comment-add,
-.list-group-item > .block-system .field-name-field-civievent .field-item,
-.list-group-item > .block-system .field-name-field-add-to-calendar .field-item {
-  float: right;
-}
-.list-group-item > .block-system .comment-add + .block-system .comment-add,
-.list-group-item > .block-system .comment-add + .block-system .field-name-field-civievent .field-item,
-.list-group-item > .block-system .comment-add + .block-system .field-name-field-add-to-calendar .field-item,
-.list-group-item > .block-system .field-name-field-civievent .field-item + .block-system .comment-add,
-.list-group-item > .block-system .field-name-field-civievent .field-item + .block-system .field-name-field-civievent .field-item,
-.list-group-item > .block-system .field-name-field-civievent .field-item + .block-system .field-name-field-add-to-calendar .field-item,
-.list-group-item > .block-system .field-name-field-add-to-calendar .field-item + .block-system .comment-add,
-.list-group-item > .block-system .field-name-field-add-to-calendar .field-item + .block-system .field-name-field-civievent .field-item,
-.list-group-item > .block-system .field-name-field-add-to-calendar .field-item + .block-system .field-name-field-add-to-calendar .field-item {
-  margin-right: 5px;
-}
-.nav-pills > li > a > .block-system .comment-add,
-.nav-pills > li > a > .block-system .field-name-field-civievent .field-item,
-.nav-pills > li > a > .block-system .field-name-field-add-to-calendar .field-item {
-  margin-left: 3px;
-}
-.block-system .comment-add a,
-.block-system .field-name-field-civievent .field-item a,
-.block-system .field-name-field-add-to-calendar .field-item a,
-.block-system .comment-add a:hover,
-.block-system .field-name-field-civievent .field-item a:hover,
-.block-system .field-name-field-add-to-calendar .field-item a:hover,
-.block-system .comment-add a:focus,
-.block-system .field-name-field-civievent .field-item a:focus,
-.block-system .field-name-field-add-to-calendar .field-item a:focus {
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  background: #02426f;
-}
-@media (min-width: 480px) {
-  .block-system .comment-add a,
-  .block-system .field-name-field-civievent .field-item a,
-  .block-system .field-name-field-add-to-calendar .field-item a,
-  .block-system .comment-add a:hover,
-  .block-system .field-name-field-civievent .field-item a:hover,
-  .block-system .field-name-field-add-to-calendar .field-item a:hover,
-  .block-system .comment-add a:focus,
-  .block-system .field-name-field-civievent .field-item a:focus,
-  .block-system .field-name-field-add-to-calendar .field-item a:focus {
-    font-size: 18px;
-  }
-}
-.block-system .comment-add .dropdown a,
-.block-system .field-name-field-civievent .field-item .dropdown a,
-.block-system .field-name-field-add-to-calendar .field-item .dropdown a {
-  padding: 0;
-  height: 20px;
-}
-.block-system .comment-add .dropdown-menu a,
-.block-system .field-name-field-civievent .field-item .dropdown-menu a,
-.block-system .field-name-field-add-to-calendar .field-item .dropdown-menu a,
-.block-system .comment-add .dropdown-menu a:hover,
-.block-system .field-name-field-civievent .field-item .dropdown-menu a:hover,
-.block-system .field-name-field-add-to-calendar .field-item .dropdown-menu a:hover,
-.block-system .comment-add .dropdown-menu a:focus,
-.block-system .field-name-field-civievent .field-item .dropdown-menu a:focus,
-.block-system .field-name-field-add-to-calendar .field-item .dropdown-menu a:focus {
-  padding: 7px;
-  height: 40px;
-  text-align: left;
-  font-size: 14px;
-  font-weight: normal;
-  color: #02426f;
-  background: white;
 }
 /*
  * jPlayer configuration
