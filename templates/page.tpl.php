@@ -95,21 +95,21 @@
         <?php endif; ?>
 
         <?php if (!empty($primary_nav)): ?>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-primary">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-parent="#navbar-collapse-group" href="#navbar-collapse-primary">
             <span class="sr-only"><?php print t('Toggle primary navigation'); ?></span>
             <i class="fa fa-fw fa-bars"></i>
           </button>
         <?php endif; ?>
 
         <?php if (!empty($secondary_nav)): ?>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-secondary">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-parent="#navbar-collapse-group" href="#navbar-collapse-secondary">
             <span class="sr-only"><?php print t('Toggle city navigation'); ?></span>
             <i class="fa fa-fw fa-map-marker"></i>
           </button>
         <?php endif; ?>
 
         <?php if (!empty($page['navigation'])): ?>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-search">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-parent="#navbar-collapse-group" href="#navbar-collapse-search">
             <span class="sr-only"><?php print t('Toggle search'); ?></span>
             <i class="fa fa-fw fa-search"></i>
           </button>
@@ -117,29 +117,30 @@
       </div>
     </div>
 
-    <?php if (!empty($primary_nav)): ?>
-      <div class="navbar-collapse collapse" id="navbar-collapse-primary">
-        <nav role="navigation">
-          <?php print render($primary_nav); ?>
-       </nav>
+    <div class="panel-group navbar-collapse" id="navbar-collapse-group">
+      <div class="panel">
+        <div class="panel-collapse collapse" id="navbar-collapse-primary">
+          <nav class="panel-body" role="navigation">
+            <?php print render($primary_nav); ?>
+          </nav>
+        </div>
       </div>
-    <?php endif; ?>
+      <div class="panel">
+        <div class="panel-collapse collapse" id="navbar-collapse-secondary">
+          <nav class="panel-body" role="navigation">
+            <?php print render($secondary_nav); ?>
+          </nav>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-collapse collapse" id="navbar-collapse-search">
+          <nav class="panel-body" role="navigation">
+            <?php print render($page['navigation']); ?>
+          </nav>
+        </div>
+      </div>
+    </div>
 
-    <?php if (!empty($secondary_nav)): ?>
-      <div class="navbar-collapse collapse" id="navbar-collapse-secondary">
-        <nav role="navigation">
-          <?php print render($secondary_nav); ?>
-       </nav>
-      </div>
-    <?php endif; ?>
-
-    <?php if (!empty($page['navigation'])): ?>
-      <div class="navbar-collapse collapse" id="navbar-collapse-search">
-        <nav role="navigation">
-          <?php print render($page['navigation']); ?>
-       </nav>
-      </div>
-    <?php endif; ?>
   </div>
 </header>
 

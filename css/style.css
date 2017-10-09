@@ -7362,6 +7362,12 @@ table .checkbox input[type="checkbox"] {
   z-index: 1;
   overflow-y: unset;
 }
+.navbar-default .navbar-collapse.panel-group .panel {
+  border: 0;
+}
+.navbar-default .navbar-collapse.panel-group .panel + .panel {
+  margin-top: 0;
+}
 .navbar-default .navbar-collapse nav {
   padding: 60px 0 20px;
 }

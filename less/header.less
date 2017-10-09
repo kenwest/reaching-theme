@@ -35,6 +35,16 @@
     z-index: 1;
     overflow-y: unset;
 
+    &.panel-group {
+      .panel {
+        border: 0;
+      }
+
+      .panel + .panel{
+        margin-top: 0;
+      }
+    }
+
     nav {
       padding: (3 * @line-height-computed) 0 @line-height-computed;
     }

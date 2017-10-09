@@ -56,18 +56,6 @@ function reaching_preprocess_page(&$variables) {
           });
         }
       });
-      jQuery(".navbar-toggle").click(function() {
-        var target = jQuery(this).attr("data-target");
-        jQuery(".navbar-toggle").each(function () {
-          var other = jQuery(this).attr("data-target");
-          if (other != target) {
-            jQuery(this).toggleClass("collapsed", true);
-            jQuery(this).attr("aria-expanded", "false")
-            jQuery(other).toggleClass("in", false);
-            jQuery(other).attr("aria-expanded", "false")
-          }
-        });
-      });
     });
     jQuery(window).resize( function() {
       cbfStandardiseHeights();
