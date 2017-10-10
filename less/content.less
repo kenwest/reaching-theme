@@ -413,6 +413,7 @@ ul + p {
       bottom: @block-footer-height;
       padding: 0 floor(@grid-gutter-width / 2);
       pointer-events: none;
+      z-index: 5; // Sit above form-control features, eg in the library search block
 
       &::before {
         content: " ";

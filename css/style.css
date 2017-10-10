@@ -8592,6 +8592,7 @@ a.page-civicrm-event .views-field-id:focus {
   bottom: 40px;
   padding: 0 15px;
   pointer-events: none;
+  z-index: 5;
 }
 .block.bounded .block-header::before {
   content: " ";
