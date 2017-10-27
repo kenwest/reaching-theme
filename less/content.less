@@ -267,6 +267,66 @@ ul + p {
         .make-sm-column(6);
         .make-md-column(6);
       }
+
+      .block.block-views {
+        .block-title,
+        .block-panel > .view,
+        .block-footer > i {
+          margin: 0;
+          border-width: 0 1px;
+          border-color: @block-border-colour;
+          border-style: solid;
+          padding: @line-height-computed (floor(@grid-gutter-width/2) - 1);
+        }
+
+        .block-title,
+        .view:first-child {
+          border-top-width: 1px;
+          padding-top: (@line-height-computed - 1);
+        }
+
+        .block-panel:last-child > .view,
+        .block-footer > i {
+          border-bottom-width: 1px;
+          padding-bottom: (@line-height-computed - 1);
+        }
+
+        &.bounded .block-header {
+          /*
+           * When a .bounded block is closed, the header is positioned absolutely
+           * so we need more horizontal padding.
+           * Don't overlay the border (+1).
+           */
+          padding: 0 (floor(@grid-gutter-width/2) + 1);
+        }
+
+        &.bounded .block-footer {
+          /*
+           * When a .bounded block is closed, the footer is positioned absolutely
+           * so we need more horizontal padding.
+           */
+          padding: 0 floor(@grid-gutter-width/2);
+
+          i {
+            margin: 0;
+            padding: 0;
+          }
+        }
+
+        &.bounded.open .block-footer {
+          /*
+           * When a .bounded block is open, the footer is positioned relatively
+           * so we don't need the extra horizontal padding.
+           */
+          padding: 0;
+
+          i {
+            // The js rotates the I element when the .bounded .block is .open, so change the border side
+            border-top-width: 1px;
+            border-bottom-width: 0;
+          }
+        }
+      }
     }
   }
 }
@@ -317,66 +377,6 @@ ul + p {
 
   .block {
     .make-xs-column(12);
-  }
-
-  .block.block-views {
-    .block-title,
-    .block-panel > .view,
-    .block-footer > i {
-      margin: 0;
-      border-width: 0 1px;
-      border-color: @block-border-colour;
-      border-style: solid;
-      padding: @line-height-computed (floor(@grid-gutter-width/2) - 1);
-    }
-
-    .block-title,
-    .block-panel:first-child > .view {
-      border-top-width: 1px;
-      padding-top: (@line-height-computed - 1);
-    }
-
-    .block-panel:last-child > .view,
-    .block-footer > i {
-      border-bottom-width: 1px;
-      padding-bottom: (@line-height-computed - 1);
-    }
-
-    &.bounded .block-header {
-      /*
-       * When a .bounded block is closed, the header is positioned absolutely
-       * so we need more horizontal padding.
-       * Don't overlay the border (+1).
-       */
-      padding: 0 (floor(@grid-gutter-width/2) + 1);
-    }
-
-    &.bounded .block-footer {
-      /*
-       * When a .bounded block is closed, the footer is positioned absolutely
-       * so we need more horizontal padding.
-       */
-      padding: 0 floor(@grid-gutter-width/2);
-
-      i {
-        margin: 0;
-        padding: 0;
-      }
-    }
-
-    &.bounded.open .block-footer {
-      /*
-       * When a .bounded block is open, the footer is positioned relatively
-       * so we don't need the extra horizontal padding.
-       */
-      padding: 0;
-
-      i {
-        // The js rotates the I element when the .bounded .block is .open, so change the border side
-        border-top-width: 1px;
-        border-bottom-width: 0;
-      }
-    }
   }
 }
 
