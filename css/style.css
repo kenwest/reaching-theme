@@ -8765,6 +8765,7 @@ a.view .more-link:focus {
   margin-left: 75px;
 }
 .views-field + .views-field-field-subtitle,
+.views-field + .views-field-field-short-form,
 .views-field + .views-field-body {
   margin-top: 20px;
 }
@@ -8776,6 +8777,41 @@ a.view .more-link:focus {
 }
 .views-field-field-date-text {
   font-style: italic;
+}
+/*
+ * Bootstrap thumbnail views fields
+ */
+.thumbnail .views-field-field-image {
+  max-width: 50%;
+  float: right;
+  margin: 0 0 20px 15px;
+  padding: 0 0 0 15px;
+}
+@media (min-width: 768px) {
+  .thumbnail .views-field-field-image {
+    max-width: 100%;
+    float: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+}
+.thumbnail .views-field-field-image img {
+  margin: auto;
+}
+.thumbnail .views-field-title {
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .thumbnail .views-field-title {
+    font-weight: normal;
+  }
+}
+.thumbnail .views-field-title,
+.thumbnail .views-field-field-subtitle {
+  margin-left: 0;
+}
+.thumbnail .views-field-field-subtitle {
+  font-size: 18px;
 }
 /*
  * Specific view formatting
