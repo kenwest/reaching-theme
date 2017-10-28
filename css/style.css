@@ -8922,6 +8922,62 @@ a.view .more-link:focus {
 .views-field-field-date-text {
   font-style: italic;
 }
+.views-field-field-order-url ul {
+  list-style: none;
+  padding-left: 0;
+}
+.views-field-field-order-url ul li a {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777777;
+  border-radius: 10px;
+  margin: 20px 0 0 0;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background: #02426f;
+  font-size: 14px;
+  line-height: 20px;
+}
+.views-field-field-order-url ul li a:empty {
+  display: none;
+}
+.btn .views-field-field-order-url ul li a {
+  position: relative;
+  top: -1px;
+}
+.btn-xs .views-field-field-order-url ul li a,
+.btn-group-xs > .btn .views-field-field-order-url ul li a {
+  top: 0;
+  padding: 1px 5px;
+}
+a.views-field-field-order-url ul li a:hover,
+a.views-field-field-order-url ul li a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.list-group-item.active > .views-field-field-order-url ul li a,
+.nav-pills > .active > a > .views-field-field-order-url ul li a {
+  color: #02426f;
+  background-color: #ffffff;
+}
+.list-group-item > .views-field-field-order-url ul li a {
+  float: right;
+}
+.list-group-item > .views-field-field-order-url ul li a + .views-field-field-order-url ul li a {
+  margin-right: 5px;
+}
+.nav-pills > li > a > .views-field-field-order-url ul li a {
+  margin-left: 3px;
+}
 /*
  * Bootstrap thumbnail views fields
  */

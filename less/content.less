@@ -577,6 +577,25 @@ ul + p {
   font-style: italic;
 }
 
+.views-field-field-order-url {
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      a {
+        .badge;
+        margin: @line-height-computed 0 0 0;
+        padding: floor(@line-height-computed/2) floor(@grid-gutter-width/2);
+        border-radius: @line-height-computed;
+        background: @brand-primary;
+        font-size: @font-size-base;
+        line-height: @line-height-computed;
+      }
+    }
+  }
+}
+
 /*
  * Bootstrap thumbnail views fields
  */
