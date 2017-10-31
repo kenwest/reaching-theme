@@ -577,11 +577,16 @@ ul + p {
   font-style: italic;
 }
 
+.views-field-field-attachment,
 .views-field-field-order-url {
   ul {
     list-style: none;
     padding-left: 0;
+  }
+}
 
+.views-field-field-order-url {
+  ul {
     li {
       a {
         .badge;
@@ -633,6 +638,7 @@ ul + p {
 
   .views-field-field-subtitle {
     font-size: @font-size-large;
+    line-height: @line-height-large;
   }
 }
 
@@ -666,7 +672,7 @@ ul + p {
 }
 
 /*
- * Node and entity formatting
+ * Node and entity and product formatting
  */
 .block-system {
   .blog_usernames_blog {
@@ -685,6 +691,7 @@ ul + p {
     }
   }
 
+  .views-field-field-image,
   .field-name-field-image,
   .field-name-field-series-image {
     width: (9 * @grid-gutter-width) + floor(@grid-gutter-width/2);
@@ -694,6 +701,7 @@ ul + p {
     }
   }
 
+  .views-field-field-image,
   .field-name-field-image,
   .field-name-field-series-image,
   .field-name-field-civievent,
@@ -802,6 +810,7 @@ ul + p {
     font-weight: bold;
   }
 
+  .views-field-field-subtitle,
   .field-name-field-subtitle,
   .field-name-field-date-text,
   .entity-property-summary {
@@ -809,6 +818,9 @@ ul + p {
     line-height: @line-height-large;
   }
 
+  .views-field-field-subtitle,
+  .views-field-field-attachment,
+  .views-field-field-sidebar-content,   // The product's long description
   .field-name-field-subtitle,
   .field-name-field-date-text,
   .field-name-field-episode-date,

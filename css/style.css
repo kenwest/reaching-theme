@@ -8922,6 +8922,7 @@ a.view .more-link:focus {
 .views-field-field-date-text {
   font-style: italic;
 }
+.views-field-field-attachment ul,
 .views-field-field-order-url ul {
   list-style: none;
   padding-left: 0;
@@ -9012,6 +9013,7 @@ a.views-field-field-order-url ul li a:focus {
 }
 .thumbnail .views-field-field-subtitle {
   font-size: 18px;
+  line-height: 1.3333333;
 }
 /*
  * Specific view formatting
@@ -9036,7 +9038,7 @@ a.views-field-field-order-url ul li a:focus {
   padding: 0;
 }
 /*
- * Node and entity formatting
+ * Node and entity and product formatting
  */
 .block-system .blog_usernames_blog {
   display: none;
@@ -9052,16 +9054,19 @@ a.views-field-field-order-url ul li a:focus {
     line-height: 1.3333333;
   }
 }
+.block-system .views-field-field-image,
 .block-system .field-name-field-image,
 .block-system .field-name-field-series-image {
   width: 285px;
 }
+.block-system .views-field-field-image img,
 .block-system .field-name-field-image img,
 .block-system .field-name-field-series-image img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+.block-system .views-field-field-image,
 .block-system .field-name-field-image,
 .block-system .field-name-field-series-image,
 .block-system .field-name-field-civievent,
@@ -9072,6 +9077,7 @@ a.views-field-field-order-url ul li a:focus {
   margin-left: 15px;
   padding-left: 15px;
 }
+.block-system .views-field-field-image .field-item,
 .block-system .field-name-field-image .field-item,
 .block-system .field-name-field-series-image .field-item,
 .block-system .field-name-field-civievent .field-item,
@@ -9297,12 +9303,16 @@ a.block-system .field-name-field-topics .field-item:focus {
 .block-system .field-name-field-date-text {
   font-weight: bold;
 }
+.block-system .views-field-field-subtitle,
 .block-system .field-name-field-subtitle,
 .block-system .field-name-field-date-text,
 .block-system .entity-property-summary {
   font-size: 18px;
   line-height: 1.3333333;
 }
+.block-system .views-field-field-subtitle,
+.block-system .views-field-field-attachment,
+.block-system .views-field-field-sidebar-content,
 .block-system .field-name-field-subtitle,
 .block-system .field-name-field-date-text,
 .block-system .field-name-field-episode-date,
