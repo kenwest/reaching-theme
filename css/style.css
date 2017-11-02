@@ -7668,6 +7668,15 @@ a.link-button:focus {
   font-weight: bold;
 }
 /*
+ * Common page formatting
+ */
+.page-civicrm-event .tabs--primary.nav-tabs,
+.page-node .tabs--primary.nav-tabs,
+.page-civicrm-event ul.action-links,
+.page-node ul.action-links {
+  display: none;
+}
+/*
  * Common block formatting
  */
 .block-system,
