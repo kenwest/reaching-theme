@@ -8101,7 +8101,7 @@ ul + p {
   margin-bottom: 0;
   line-height: 1.3333333;
   font-weight: bold;
-  color: white;
+  color: #1070a4;
   height: 220px;
   font-size: 24px;
 }
@@ -9711,6 +9711,7 @@ a.block-system .field-name-field-topics .field-item:focus {
   background-color: #333333;
   color: white;
   width: 100%;
+  margin-top: 40px;
 }
 .footer .block {
   margin-bottom: 0;
@@ -9722,6 +9723,23 @@ a.block-system .field-name-field-topics .field-item:focus {
 .region-footer {
   margin-left: -15px;
   margin-right: -15px;
+}
+.region-footer .block-title {
+  display: block;
+  color: #1070a4;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.3333333;
+  margin: 0 0 40px 0;
+  padding: 0 30px;
+}
+.region-footer .block-title span {
+  display: inline;
+}
+@media (min-width: 768px) {
+  .region-footer .block-title span {
+    display: inline-block;
+  }
 }
 .region-footer .footer-column {
   float: left;
@@ -9745,6 +9763,7 @@ a.block-system .field-name-field-topics .field-item:focus {
 .region-footer .footer-column .nav > li > a {
   color: white;
   font-size: 14px;
+  font-style: normal;
   line-height: 20px;
   margin: 0;
   padding: 10px 15px;
@@ -9783,7 +9802,7 @@ a.block-system .field-name-field-topics .field-item:focus {
   padding-left: 15px;
   padding-right: 15px;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 1.3333333;
 }
 @media (min-width: 768px) {
   .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-header {
