@@ -8961,6 +8961,7 @@ a.view .more-link:focus {
   background: #02426f;
   font-size: 14px;
   line-height: 20px;
+  white-space: normal;
 }
 .views-field-field-order-url ul li a:empty {
   display: none;
@@ -9735,9 +9736,10 @@ a.block-system .field-name-field-topics .field-item:focus {
 }
 .region-footer .block-title {
   display: block;
-  color: #1070a4;
+  color: #1e9dd8;
   font-size: 24px;
   font-style: italic;
+  font-weight: 600;
   line-height: 1.3333333;
   margin: 0 0 40px 0;
   padding: 0 30px;
@@ -9775,7 +9777,11 @@ a.block-system .field-name-field-topics .field-item:focus {
   font-style: normal;
   line-height: 20px;
   margin: 0;
-  padding: 10px 15px;
+  padding: 5px 15px;
+}
+.region-footer .footer-column .block-title {
+  font-weight: bold;
+  padding-bottom: 15px;
 }
 .region-footer .footer-column .nav > li > a:hover {
   color: #333333;
@@ -9869,7 +9875,7 @@ a.block-system .field-name-field-topics .field-item:focus {
 }
 .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content h3 {
   margin: 0;
-  padding: 10px 15px;
+  padding: 10px 15px 15px;
   font-size: 14px;
   line-height: 20px;
   color: white;
@@ -9888,7 +9894,7 @@ a.block-system .field-name-field-topics .field-item:focus {
 .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title a {
   display: block;
   color: white;
-  padding: 10px 15px;
+  padding: 5px 15px;
 }
 .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title a:hover {
   color: #333333;

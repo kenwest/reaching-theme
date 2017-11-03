@@ -19,9 +19,10 @@
 
   .block-title {
     display: block;
-    color: @brand-ternary;
+    color: @brand-secondary;
     font-size: @font-size-h3;
     font-style: italic;
+    font-weight: 600;
     line-height: @line-height-large;
     margin: 0 0 (2*@line-height-computed) 0;
     padding: 0 @grid-gutter-width;
@@ -52,7 +53,12 @@
       font-style: normal;
       line-height: @line-height-computed;
       margin: 0;
-      padding: floor(@line-height-computed / 2) floor(@grid-gutter-width / 2);
+      padding: floor(@line-height-computed/4) floor(@grid-gutter-width/2);
+    }
+
+    .block-title {
+      font-weight: bold;
+      padding-bottom: floor(3*@line-height-computed/4);
     }
 
     .nav > li > a:hover {
@@ -120,7 +126,7 @@
                 h3 {
                   // Activity category
                   margin: 0;
-                  padding: floor(@line-height-computed / 2) floor(@grid-gutter-width / 2);
+                  padding: floor(@line-height-computed/2) floor(@grid-gutter-width/2) floor(3*@line-height-computed/4);
                   font-size: @font-size-base;
                   line-height: @line-height-computed;
                   color: white;
@@ -142,7 +148,7 @@
                   a {
                     display: block;
                     color: white;
-                    padding: floor(@line-height-computed / 2) floor(@grid-gutter-width / 2);
+                    padding: floor(@line-height-computed/4) floor(@grid-gutter-width/2);
                   }
 
                   a:hover {
