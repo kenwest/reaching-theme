@@ -42,8 +42,12 @@
 
     margin-bottom: (2*@line-height-computed);
 
-    .nav:first-child {
-      margin-top: (2*@line-height-computed);
+    .block-panel {
+      padding-top: (2*@line-height-computed);
+
+      & > .block-title {
+        margin-top: -(2*@line-height-computed);
+      }
     }
 
     .block-title,
