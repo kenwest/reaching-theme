@@ -611,6 +611,12 @@ ul + p {
   }
 }
 
+.views-field-commerce-price {
+  float: right;
+  margin-top: floor(3*@line-height-computed/2);     // Add 1/2 a line to allow for the order-url padding
+  font-weight: 600;
+}
+
 /*
  * Bootstrap thumbnail views fields
  */
@@ -703,7 +709,8 @@ ul + p {
 
   .views-field-field-image,
   .field-name-field-image,
-  .field-name-field-series-image {
+  .field-name-field-series-image,
+  .views-field-commerce-price {
     width: (9 * @grid-gutter-width) + floor(@grid-gutter-width/2);
 
     img {
@@ -862,6 +869,13 @@ ul + p {
 
   .entity-property-label {
     display: none;
+  }
+
+  .views-field-commerce-price {
+    padding-left: floor(@grid-gutter-width/2);
+    margin: 0 0 @line-height-computed floor(@grid-gutter-width/2);
+    font-size: @font-size-h2;
+    line-height: @line-height-large;
   }
 }
 

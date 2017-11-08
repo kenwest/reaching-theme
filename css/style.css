@@ -8995,6 +8995,11 @@ a.views-field-field-order-url ul li a:focus {
 .nav-pills > li > a > .views-field-field-order-url ul li a {
   margin-left: 3px;
 }
+.views-field-commerce-price {
+  float: right;
+  margin-top: 30px;
+  font-weight: 600;
+}
 /*
  * Bootstrap thumbnail views fields
  */
@@ -9072,12 +9077,14 @@ a.views-field-field-order-url ul li a:focus {
 }
 .block-system .views-field-field-image,
 .block-system .field-name-field-image,
-.block-system .field-name-field-series-image {
+.block-system .field-name-field-series-image,
+.block-system .views-field-commerce-price {
   width: 285px;
 }
 .block-system .views-field-field-image img,
 .block-system .field-name-field-image img,
-.block-system .field-name-field-series-image img {
+.block-system .field-name-field-series-image img,
+.block-system .views-field-commerce-price img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -9357,6 +9364,12 @@ a.block-system .field-name-field-topics .field-item:focus {
 }
 .block-system .entity-property-label {
   display: none;
+}
+.block-system .views-field-commerce-price {
+  padding-left: 15px;
+  margin: 0 0 20px 15px;
+  font-size: 30px;
+  line-height: 1.3333333;
 }
 /*
  * jPlayer configuration
