@@ -9917,3 +9917,14 @@ a.block-system .field-name-field-topics .field-item:focus {
   background-color: white;
   text-decoration: none;
 }
+@media (min-width: 768px) {
+  .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .join-in:first-child > .view-grouping-content,
+  .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .come-along + .check-out > .view-grouping-content {
+    margin-left: 33.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .check-out:first-child > .view-grouping-content {
+    margin-left: 66.66666667%;
+  }
+}
