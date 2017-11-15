@@ -9750,12 +9750,17 @@ a.block-system .field-name-field-topics .field-item:focus {
 .region-footer .block-title {
   display: block;
   color: #1e9dd8;
-  font-size: 24px;
   font-style: italic;
-  font-weight: 600;
+  font-weight: normal;
   line-height: 1.3333333;
   margin: 0 0 40px 0;
   padding: 0 30px;
+  font-size: 24px;
+}
+@media (min-width: 1200px) {
+  .region-footer .block-title {
+    font-size: 30px;
+  }
 }
 .region-footer .block-title span {
   display: inline;

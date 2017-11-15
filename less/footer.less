@@ -20,12 +20,17 @@
   .block-title {
     display: block;
     color: @brand-secondary;
-    font-size: @font-size-h3;
     font-style: italic;
-    font-weight: 600;
+    font-weight: normal;
     line-height: @line-height-large;
     margin: 0 0 (2*@line-height-computed) 0;
     padding: 0 @grid-gutter-width;
+
+    // Mobile:
+      font-size: @font-size-h3;
+    @media (min-width: @screen-lg-min) {
+      font-size: @font-size-h2;
+    }
 
     span {
       // Mobile:
