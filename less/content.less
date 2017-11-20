@@ -722,7 +722,8 @@ ul + p {
   .field-name-field-image,
   .field-name-field-series-image,
   .field-name-field-civievent,
-  .field-name-field-add-to-calendar {
+  .field-name-field-add-to-calendar,
+  .views-field-commerce-price {
     float: right;
     clear: right;
     max-width: 50%;
@@ -872,10 +873,15 @@ ul + p {
   }
 
   .views-field-commerce-price {
-    padding-left: floor(@grid-gutter-width/2);
-    margin: 0 0 @line-height-computed floor(@grid-gutter-width/2);
+    margin-top: 0;
     font-size: @font-size-h2;
     line-height: @line-height-large;
+
+    // Mobile:
+      font-size: @font-size-h3;
+    @media (min-width: @screen-xs-min) {
+      font-size: @font-size-h2;
+    }
   }
 }
 

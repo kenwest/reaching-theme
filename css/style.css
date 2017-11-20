@@ -9111,7 +9111,8 @@ a.views-field-field-order-url ul li a:focus {
 .block-system .field-name-field-image,
 .block-system .field-name-field-series-image,
 .block-system .field-name-field-civievent,
-.block-system .field-name-field-add-to-calendar {
+.block-system .field-name-field-add-to-calendar,
+.block-system .views-field-commerce-price {
   float: right;
   clear: right;
   max-width: 50%;
@@ -9122,7 +9123,8 @@ a.views-field-field-order-url ul li a:focus {
 .block-system .field-name-field-image .field-item,
 .block-system .field-name-field-series-image .field-item,
 .block-system .field-name-field-civievent .field-item,
-.block-system .field-name-field-add-to-calendar .field-item {
+.block-system .field-name-field-add-to-calendar .field-item,
+.block-system .views-field-commerce-price .field-item {
   margin-bottom: 20px;
 }
 .block-system .field-name-field-civievent + .field-name-field-add-to-calendar {
@@ -9384,10 +9386,15 @@ a.block-system .field-name-field-topics .field-item:focus {
   display: none;
 }
 .block-system .views-field-commerce-price {
-  padding-left: 15px;
-  margin: 0 0 20px 15px;
+  margin-top: 0;
   font-size: 30px;
   line-height: 1.3333333;
+  font-size: 24px;
+}
+@media (min-width: 480px) {
+  .block-system .views-field-commerce-price {
+    font-size: 30px;
+  }
 }
 /*
  * jPlayer configuration
