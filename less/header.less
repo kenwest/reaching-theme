@@ -213,3 +213,50 @@
     margin: 0;
   }
 }
+
+.breadcrumb-container {
+  margin-top: -(2*@line-height-computed);
+  margin-bottom: (2*@line-height-computed);
+
+  // Mobile:
+    font-size: @font-size-h4;
+    line-height: (2*@line-height-computed);
+  @media (min-width: @screen-sm-min) {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: @font-size-h3;
+  }
+
+  .breadcrumb {
+    .make-xs-column(12);
+
+    margin: 0;
+    padding: 0 floor(@grid-gutter-width/2);
+    color: @brand-secondary;
+    background-color: transparent;
+
+    .crumb {
+      &:first-child {
+        // Need to investigate why this is required to line up breadcrumb with content
+        // Mobile:
+          margin-left: 0;
+        @media (min-width: @screen-sm-min) {
+          margin-left: 5px;
+        }
+        @media (min-width: @screen-lg-min) {
+          margin-left: 0;
+        }
+      }
+
+      a {
+        color: @brand-secondary;
+      }
+    }
+
+    .crumb + .crumb {
+      &::before {
+        content: "\2002\203A\2002"; // &ensp; &rsaquo; &ensp;
+      }
+    }
+  }
+}

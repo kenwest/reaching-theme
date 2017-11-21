@@ -71,3 +71,27 @@ function reaching_preprocess_page(&$variables) {
 function reaching_entity_property($variables) {
   return cbf_entity_property($variables);
 }
+
+/*
+ * Returns HTML for a breadcrumb trail
+ */
+ function reaching_breadcrumb($variables) {
+  $structure = array(
+    'front' => array(),
+    'node' => array(
+      'home' => null,
+      'city' => null,
+      'type' => null,
+    ),
+    'civicrm-event' => array(
+      'home' => null,
+      'city' => null,
+      'type' => 'Events',
+    ),
+    'default' => array(
+      'home' => null,
+      'city' => null,
+    ),
+  );
+  return cbf_breadcrumb($variables, $structure);
+}

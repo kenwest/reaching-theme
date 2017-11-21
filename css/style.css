@@ -7526,6 +7526,50 @@ table .checkbox input[type="checkbox"] {
 .block.block-search .form-group {
   margin: 0;
 }
+.breadcrumb-container {
+  margin-top: -40px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 40px;
+}
+@media (min-width: 768px) {
+  .breadcrumb-container {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 24px;
+  }
+}
+.breadcrumb-container .breadcrumb {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  padding: 0 15px;
+  color: #1e9dd8;
+  background-color: transparent;
+}
+.breadcrumb-container .breadcrumb .crumb:first-child {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .breadcrumb-container .breadcrumb .crumb:first-child {
+    margin-left: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  .breadcrumb-container .breadcrumb .crumb:first-child {
+    margin-left: 0;
+  }
+}
+.breadcrumb-container .breadcrumb .crumb a {
+  color: #1e9dd8;
+}
+.breadcrumb-container .breadcrumb .crumb + .crumb::before {
+  content: "\2002\203A\2002";
+}
 /*
  * Common text formatting
  */
@@ -8114,9 +8158,6 @@ ul + p {
     font-size: 30px;
   }
 }
-.breadcrumb {
-  background-color: transparent;
-}
 /*
  * Front page
  */
@@ -8343,13 +8384,6 @@ ul + p {
 .page-city-hobart {
   /* Content on city pages is in two columns */
 }
-.page-city-sydney .breadcrumb,
-.page-city-canberra .breadcrumb,
-.page-city-melbourne .breadcrumb,
-.page-city-brisbane .breadcrumb,
-.page-city-perth .breadcrumb,
-.page-city-adelaide .breadcrumb,
-.page-city-hobart .breadcrumb,
 .page-city-sydney .page-header,
 .page-city-canberra .page-header,
 .page-city-melbourne .page-header,
@@ -8624,9 +8658,6 @@ ul + p {
 /*
  * Product pages
  */
-.page-product .breadcrumb {
-  display: none;
-}
 /*
  * CiviCRM Event entity pages
  */
