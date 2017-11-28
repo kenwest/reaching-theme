@@ -7499,6 +7499,11 @@ table .checkbox input[type="checkbox"] {
     height: 520px;
   }
 }
+@media (min-width: 1200px) {
+  .front .hero {
+    height: 640px;
+  }
+}
 .front .navbar-default {
   margin: 0;
   background: transparent;
@@ -7507,6 +7512,11 @@ table .checkbox input[type="checkbox"] {
 @media (min-width: 768px) {
   .front .navbar-default {
     height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .front .navbar-default {
+    height: 380px;
   }
 }
 .block.block-search {
@@ -8240,6 +8250,11 @@ ul + p {
 @media (min-width: 992px) {
   .front .lead {
     padding-right: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .front .lead {
+    height: 200px;
   }
 }
 .front .lead span {
