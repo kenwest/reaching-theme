@@ -8704,6 +8704,16 @@ ul + p {
 /*
  * Product pages
  */
+.page-product .views-field-field-subtitle {
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.page-product .views-field-field-subtitle {
+  margin: 0 0 20px;
+}
+.page-product .views-field + .views-field-field-subtitle {
+  margin-top: 0;
+}
 /*
  * CiviCRM Event entity pages
  */
@@ -9423,14 +9433,12 @@ a.block-system .field-name-field-topics .field-item:focus {
 .block-system .field-name-field-date-text {
   font-weight: bold;
 }
-.block-system .views-field-field-subtitle,
 .block-system .field-name-field-subtitle,
 .block-system .field-name-field-date-text,
 .block-system .entity-property-summary {
   font-size: 18px;
   line-height: 1.3333333;
 }
-.block-system .views-field-field-subtitle,
 .block-system .views-field-field-attachment,
 .block-system .views-field-field-long-description,
 .block-system .field-name-field-subtitle,

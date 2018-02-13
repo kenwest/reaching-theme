@@ -333,6 +333,18 @@ ul + p {
  * Product pages
  */
 .page-product {
+  .views-field-field-subtitle {
+    font-size: @font-size-large;
+    line-height: @line-height-large;
+  }
+
+  .views-field-field-subtitle {
+    margin: 0 0 @line-height-computed;
+  }
+
+  .views-field + .views-field-field-subtitle {
+    margin-top: 0;
+  }
 }
 
 /*
@@ -823,7 +835,6 @@ ul + p {
     font-weight: bold;
   }
 
-  .views-field-field-subtitle,
   .field-name-field-subtitle,
   .field-name-field-date-text,
   .entity-property-summary {
@@ -831,7 +842,6 @@ ul + p {
     line-height: @line-height-large;
   }
 
-  .views-field-field-subtitle,
   .views-field-field-attachment,
   .views-field-field-long-description,
   .field-name-field-subtitle,
