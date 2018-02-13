@@ -9026,6 +9026,7 @@ a.view .more-link:focus {
 .views-field-field-speakers,
 .views-field-field-date-text,
 .views-field-taxonomy-vocabulary-1,
+.views-field-taxonomy-vocabulary-1-1,
 .views-field-field-staff-contact,
 .views-field-field-subtitle,
 .views-field-body {
@@ -9037,6 +9038,7 @@ a.view .more-link:focus {
   margin-top: 20px;
 }
 .views-field-taxonomy-vocabulary-1,
+.views-field-taxonomy-vocabulary-1-1,
 .views-field-field-staff-contact,
 .views-field-field-in-activity {
   font-size: 18px;
