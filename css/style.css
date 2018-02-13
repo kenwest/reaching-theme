@@ -8717,9 +8717,6 @@ ul + p {
 .page-product .views-field-field-subtitle {
   margin: 0 0 20px;
 }
-.page-product .views-field + .views-field-field-subtitle {
-  margin-top: 0;
-}
 /*
  * CiviCRM Event entity pages
  */
@@ -9034,7 +9031,7 @@ a.view .more-link:focus {
 .views-field-body {
   margin-left: 75px;
 }
-.views-field + .views-field-field-subtitle,
+.views-field-field-date-text + .views-field-field-subtitle,
 .views-field + .views-field-field-short-form,
 .views-field + .views-field-body {
   margin-top: 20px;
