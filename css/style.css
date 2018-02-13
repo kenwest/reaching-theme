@@ -8154,7 +8154,7 @@ ul + p {
 .view-content > h3 {
   padding: 0;
   border: 0;
-  margin: 0 0 20px;
+  margin: 0;
   display: flex;
   font-size: 18px;
 }
@@ -8183,6 +8183,12 @@ ul + p {
   .view-content > h3 i {
     line-height: 40px;
   }
+}
+.page-header,
+.block-title,
+.block-block > h3,
+.view-content > h3 {
+  margin: 0 0 20px;
 }
 /*
  * In order to mix full-width content and contained content
