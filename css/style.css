@@ -8918,10 +8918,10 @@ a.page-civicrm-event .views-field-id:focus {
 .view-header {
   margin-left: 75px;
 }
-.view-header + .view-content,
-.views-row + .views-row {
+.view-header + .view-content {
   padding-top: 20px;
 }
+.views-row + .views-row,
 .views-row + h3 {
   padding-top: 40px;
 }
