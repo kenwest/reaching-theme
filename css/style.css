@@ -9590,7 +9590,6 @@ a.block-system .field-name-field-topics .field-item:focus {
 }
 .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
 .jcarousel-skin-default .jcarousel-item .views-field-title {
-  margin: 0;
   font-size: 14px;
 }
 @media (min-width: 768px) {
@@ -9605,6 +9604,7 @@ a.block-system .field-name-field-topics .field-item:focus {
     font-size: 24px;
   }
 }
+.jcarousel-skin-default .jcarousel-item .views-field-title,
 .jcarousel-skin-default .jcarousel-item .views-field-field-subtitle {
   margin: 0 5px 0 0;
   /* Add a small margin to prevent subtitles running into each other */
