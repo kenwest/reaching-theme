@@ -7489,11 +7489,9 @@ table .checkbox input[type="checkbox"] {
     font-size: 36px;
   }
 }
-.navbar-default .navbar-header .navbar-toggles .navbar-toggle:hover {
-  background-color: white;
-}
+.navbar-default .navbar-header .navbar-toggles .navbar-toggle:hover,
 .navbar-default .navbar-header .navbar-toggles .navbar-toggle:focus {
-  background-color: transparent;
+  color: #1070a4;
 }
 .front .hero {
   background: url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
