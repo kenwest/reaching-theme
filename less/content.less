@@ -639,6 +639,9 @@ ul + p {
       float: right;
       margin: 0 0 @line-height-computed floor(@grid-gutter-width/2);
       padding: 0 0 0 floor(@grid-gutter-width/2);
+    @media (min-width: @screen-xs-min) {
+      max-width: (5*@grid-gutter-width);
+    }
     @media (min-width: @screen-sm-min) {
       max-width: 100%;
       float: none;
