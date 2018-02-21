@@ -82,9 +82,14 @@
   <div class="container">
     <div class="navbar-header">
       <?php if ($logo): ?>
-        <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+        <a class="logo horizontal navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <object data="<?php print $logo; ?>" type="image/svg+xml">
             <img src="<?php print str_replace('.svg', '.png', $logo); ?>" alt="<?php print t('Home'); ?>" />
+          </object>
+        </a>
+        <a class="logo vertical navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+          <object data="<?php print str_replace('logo.', 'vertical-logo.', $logo); ?>" type="image/svg+xml">
+            <img src="<?php print str_replace('logo.svg', 'vertical-logo.png', $logo); ?>" alt="<?php print t('Home'); ?>" />
           </object>
         </a>
       <?php endif; ?>
