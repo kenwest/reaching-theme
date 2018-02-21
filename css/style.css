@@ -7442,6 +7442,10 @@ table .checkbox input[type="checkbox"] {
     display: none;
   }
 }
+.navbar-default .navbar-header .logo.vertical img,
+.navbar-default .navbar-header .logo.vertical object {
+  max-width: 90px;
+}
 .navbar-default .navbar-header .navbar-toggles {
   float: left;
   width: 58.33333333%;
