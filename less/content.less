@@ -34,6 +34,15 @@ ul + p {
   margin-top: @line-height-computed;
 }
 
+td, th {
+  padding-bottom: @line-height-computed;
+  vertical-align: top;
+}
+
+td + td, th + th {
+  padding-left: floor(@grid-gutter-width/2);
+}
+
 /*
  * Use contextual links for actions on Nodes. Only affects staff.
  */

@@ -8155,6 +8155,15 @@ ul {
 ul + p {
   margin-top: 20px;
 }
+td,
+th {
+  padding-bottom: 20px;
+  vertical-align: top;
+}
+td + td,
+th + th {
+  padding-left: 15px;
+}
 /*
  * Use contextual links for actions on Nodes. Only affects staff.
  */
