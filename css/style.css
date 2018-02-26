@@ -8075,6 +8075,7 @@ form .captcha {
 form .deform .webform-component .form-control[readonly] {
   border: 0;
   padding: 0;
+  height: auto;
   background-color: transparent;
   box-shadow: unset;
 }
