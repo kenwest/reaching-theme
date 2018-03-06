@@ -145,7 +145,6 @@
       .make-md-column(8);
 
       .navbar-toggle {
-        margin: 0 floor(@grid-gutter-width/2);
         color: @brand-primary;
         background-color: transparent;
         z-index: 2;
@@ -154,23 +153,25 @@
         border-width: 0;
         border-radius: 0;
 
+        .fa-fw {
+          width: 1em;
+        }
+
         // Mobile:
-          width: floor(3/2*@grid-gutter-width);
+          // Since the .fa-fw icon is 1em wide, the width is the padding-left plus the font-size
+          padding-left: floor(3/2*@grid-gutter-width) - @font-size-h2;
           font-size: @font-size-h2;
         @media (min-width: @screen-sm-min) {
-          width: (2*@grid-gutter-width);
+          padding-left: (2*@grid-gutter-width) - @font-size-h2;
         }
         @media (min-width: @screen-md-min) {
+          padding-left: (2*@grid-gutter-width) - @font-size-h1;
           font-size: @font-size-h1;
         }
 
         &:hover,
         &:focus {
           color: @brand-ternary;
-        }
-
-        .fa-fw {
-          text-align: right;
         }
       }
     }
