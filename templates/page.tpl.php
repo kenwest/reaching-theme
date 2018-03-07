@@ -227,6 +227,8 @@
   <?php endif; ?>
 </div>
 
+<scripts/>
+
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer">
     <div class="container">
