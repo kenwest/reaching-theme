@@ -73,6 +73,17 @@
  * @ingroup templates
  */
 ?>
+<?php if (!empty($page['first'])): ?>
+  <div class="first-menu container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <?php print render($page['first']); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>
 <?php if ($is_front): ?>
   <div class="hero">
     &ensp;

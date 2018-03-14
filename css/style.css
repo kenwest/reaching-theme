@@ -7329,6 +7329,45 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #843534;
 }
+.first-menu {
+  background-color: #02426f;
+}
+.first-menu .block {
+  margin-bottom: 0;
+}
+.first-menu .nav {
+  float: right;
+  text-align: right;
+  font-size: 12px;
+  line-height: 20px;
+}
+@media (min-width: 480px) {
+  .first-menu .nav {
+    font-size: 14px;
+  }
+}
+.first-menu .nav > li {
+  display: inline-block;
+}
+.first-menu .nav > li > a {
+  padding: 0;
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.first-menu .nav > li > a:hover,
+.first-menu .nav > li > a:focus {
+  text-decoration: underline;
+  background-color: #02426f;
+}
+.first-menu .nav li + li {
+  margin-left: 15px;
+}
+@media (min-width: 768px) {
+  .first-menu .nav li + li {
+    margin-left: 30px;
+  }
+}
 .navbar.container {
   margin-top: 0;
   max-width: 100%;
@@ -7353,6 +7392,7 @@ table .checkbox input[type="checkbox"] {
 .navbar-default .navbar-collapse {
   padding: 0;
   margin: 0;
+  border: 0;
   position: absolute;
   background-color: white;
   width: 300px;
@@ -7508,7 +7548,7 @@ table .checkbox input[type="checkbox"] {
   background: linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
   background-size: cover;
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   width: 100%;
   z-index: -1;

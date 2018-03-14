@@ -1,3 +1,48 @@
+.first-menu {
+  background-color: @brand-primary;
+
+  .block {
+    margin-bottom: 0;
+  }
+
+  .nav {
+    float: right;
+    text-align: right;
+
+    // Mobile:
+      font-size: @font-size-small;
+      line-height: @line-height-computed;
+    @media (min-width: @screen-xs-min) {
+      font-size: @font-size-base;
+    }
+
+    > li {
+      display: inline-block;
+
+      > a {
+        padding: 0;
+        color: white;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+
+      > a:hover,
+      > a:focus {
+        text-decoration: underline;
+        background-color: @brand-primary;
+      }
+    }
+
+    li + li {
+      // Mobile:
+        margin-left: floor(@grid-gutter-width/2);
+      @media (min-width: @screen-sm-min) {
+        margin-left: @grid-gutter-width;
+      }
+    }
+  }
+}
+
 .navbar.container {
   margin-top: 0;
   max-width: 100%;
@@ -26,6 +71,7 @@
   .navbar-collapse {
     padding: 0;
     margin: 0;
+    border: 0;
     position: absolute;
     background-color: white;
     width: (10 * @grid-gutter-width);
@@ -191,7 +237,7 @@
                 url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
     background-size: cover;
     position: absolute;
-    top: 0;
+    top: @line-height-computed;
     left: 0;
     width: 100%;
     z-index: -1;
