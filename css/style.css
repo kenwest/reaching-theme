@@ -7502,10 +7502,10 @@ table .checkbox input[type="checkbox"] {
 }
 .front .hero {
   background: url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
-  background: -webkit-linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
-  background: -o-linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
-  background: -moz-linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
-  background: linear-gradient(#ffffff, transparent, transparent, #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
+  background: -webkit-linear-gradient(#ffffff, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
+  background: -o-linear-gradient(#ffffff, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
+  background: -moz-linear-gradient(#ffffff, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
+  background: linear-gradient(#ffffff, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #ffffff), url('/sites/all/themes/reaching/images/hero/home.jpg') repeat scroll 0% 50%;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -8922,10 +8922,10 @@ a.page-civicrm-event .views-field-id:focus {
   display: block;
   width: 100%;
   height: 160px;
-  background: -webkit-linear-gradient(transparent, #ffffff);
-  background: -o-linear-gradient(transparent, #ffffff);
-  background: -moz-linear-gradient(transparent, #ffffff);
-  background: linear-gradient(transparent, #ffffff);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  background: -o-linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  background: -moz-linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff);
 }
 .block.bounded .more-link {
   display: none !important;
