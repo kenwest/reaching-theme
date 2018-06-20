@@ -8620,20 +8620,20 @@ th + th {
 .page-city-perth.not-front .region-content-second .block.block-views .block-title,
 .page-city-adelaide.not-front .region-content-second .block.block-views .block-title,
 .page-city-hobart.not-front .region-content-second .block.block-views .block-title,
-.page-city-sydney.not-front .region-content .block.block-views .view:first-child,
-.page-city-canberra.not-front .region-content .block.block-views .view:first-child,
-.page-city-melbourne.not-front .region-content .block.block-views .view:first-child,
-.page-city-brisbane.not-front .region-content .block.block-views .view:first-child,
-.page-city-perth.not-front .region-content .block.block-views .view:first-child,
-.page-city-adelaide.not-front .region-content .block.block-views .view:first-child,
-.page-city-hobart.not-front .region-content .block.block-views .view:first-child,
-.page-city-sydney.not-front .region-content-second .block.block-views .view:first-child,
-.page-city-canberra.not-front .region-content-second .block.block-views .view:first-child,
-.page-city-melbourne.not-front .region-content-second .block.block-views .view:first-child,
-.page-city-brisbane.not-front .region-content-second .block.block-views .view:first-child,
-.page-city-perth.not-front .region-content-second .block.block-views .view:first-child,
-.page-city-adelaide.not-front .region-content-second .block.block-views .view:first-child,
-.page-city-hobart.not-front .region-content-second .block.block-views .view:first-child {
+.page-city-sydney.not-front .region-content .block.block-views > .view:first-child,
+.page-city-canberra.not-front .region-content .block.block-views > .view:first-child,
+.page-city-melbourne.not-front .region-content .block.block-views > .view:first-child,
+.page-city-brisbane.not-front .region-content .block.block-views > .view:first-child,
+.page-city-perth.not-front .region-content .block.block-views > .view:first-child,
+.page-city-adelaide.not-front .region-content .block.block-views > .view:first-child,
+.page-city-hobart.not-front .region-content .block.block-views > .view:first-child,
+.page-city-sydney.not-front .region-content-second .block.block-views > .view:first-child,
+.page-city-canberra.not-front .region-content-second .block.block-views > .view:first-child,
+.page-city-melbourne.not-front .region-content-second .block.block-views > .view:first-child,
+.page-city-brisbane.not-front .region-content-second .block.block-views > .view:first-child,
+.page-city-perth.not-front .region-content-second .block.block-views > .view:first-child,
+.page-city-adelaide.not-front .region-content-second .block.block-views > .view:first-child,
+.page-city-hobart.not-front .region-content-second .block.block-views > .view:first-child {
   border-top-width: 1px;
   padding-top: 19px;
 }
@@ -9613,80 +9613,80 @@ a.block-system .field-name-field-topics .field-item:focus {
 /*
  * jCarousel configuration
  */
-.jcarousel-skin-default {
+.block .jcarousel-skin-default {
   text-align: left;
 }
-.jcarousel-skin-default .jcarousel-container-horizontal {
+.block .jcarousel-skin-default .jcarousel-container-horizontal {
   width: 100%;
   padding: 0;
   height: 180px;
 }
 @media (min-width: 768px) {
-  .jcarousel-skin-default .jcarousel-container-horizontal {
+  .block .jcarousel-skin-default .jcarousel-container-horizontal {
     height: 240px;
   }
 }
 @media (min-width: 992px) {
-  .jcarousel-skin-default .jcarousel-container-horizontal {
+  .block .jcarousel-skin-default .jcarousel-container-horizontal {
     height: 400px;
   }
 }
-.jcarousel-skin-default .jcarousel-clip-horizontal {
+.block .jcarousel-skin-default .jcarousel-clip-horizontal {
   width: 100%;
 }
-.jcarousel-skin-default .jcarousel-item {
+.block .jcarousel-skin-default .jcarousel-item {
   height: auto;
   border: 0px;
   width: 240px !important;
 }
 @media (min-width: 768px) {
-  .jcarousel-skin-default .jcarousel-item {
+  .block .jcarousel-skin-default .jcarousel-item {
     width: 320px !important;
   }
 }
 @media (min-width: 992px) {
-  .jcarousel-skin-default .jcarousel-item {
+  .block .jcarousel-skin-default .jcarousel-item {
     width: 640px !important;
   }
 }
-.jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
-.jcarousel-skin-default .jcarousel-item .views-field-title {
+.block .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
+.block .jcarousel-skin-default .jcarousel-item .views-field-title {
   font-size: 14px;
 }
 @media (min-width: 768px) {
-  .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
-  .jcarousel-skin-default .jcarousel-item .views-field-title {
+  .block .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
+  .block .jcarousel-skin-default .jcarousel-item .views-field-title {
     font-size: 18px;
   }
 }
 @media (min-width: 992px) {
-  .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
-  .jcarousel-skin-default .jcarousel-item .views-field-title {
+  .block .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
+  .block .jcarousel-skin-default .jcarousel-item .views-field-title {
     font-size: 24px;
   }
 }
-.jcarousel-skin-default .jcarousel-item .views-field-title,
-.jcarousel-skin-default .jcarousel-item .views-field-field-subtitle {
+.block .jcarousel-skin-default .jcarousel-item .views-field-title,
+.block .jcarousel-skin-default .jcarousel-item .views-field-field-subtitle {
   margin: 0 5px 0 0;
   /* Add a small margin to prevent subtitles running into each other */
 }
-.jcarousel-skin-default .jcarousel-item-horizontal {
+.block .jcarousel-skin-default .jcarousel-item-horizontal {
   margin: 0;
 }
-.jcarousel-skin-default .jcarousel-prev-horizontal {
+.block .jcarousel-skin-default .jcarousel-prev-horizontal {
   left: 15px;
 }
-.jcarousel-skin-default .jcarousel-prev-horizontal::before {
+.block .jcarousel-skin-default .jcarousel-prev-horizontal::before {
   content: "\f060";
 }
-.jcarousel-skin-default .jcarousel-next-horizontal {
+.block .jcarousel-skin-default .jcarousel-next-horizontal {
   right: 15px;
 }
-.jcarousel-skin-default .jcarousel-next-horizontal::before {
+.block .jcarousel-skin-default .jcarousel-next-horizontal::before {
   content: "\f061";
 }
-.jcarousel-skin-default .jcarousel-prev-horizontal,
-.jcarousel-skin-default .jcarousel-next-horizontal {
+.block .jcarousel-skin-default .jcarousel-prev-horizontal,
+.block .jcarousel-skin-default .jcarousel-next-horizontal {
   display: block;
   height: 60px;
   width: 60px;
@@ -9702,19 +9702,19 @@ a.block-system .field-name-field-topics .field-item:focus {
   top: 40px;
 }
 @media (min-width: 768px) {
-  .jcarousel-skin-default .jcarousel-prev-horizontal,
-  .jcarousel-skin-default .jcarousel-next-horizontal {
+  .block .jcarousel-skin-default .jcarousel-prev-horizontal,
+  .block .jcarousel-skin-default .jcarousel-next-horizontal {
     top: 60px;
   }
 }
 @media (min-width: 992px) {
-  .jcarousel-skin-default .jcarousel-prev-horizontal,
-  .jcarousel-skin-default .jcarousel-next-horizontal {
+  .block .jcarousel-skin-default .jcarousel-prev-horizontal,
+  .block .jcarousel-skin-default .jcarousel-next-horizontal {
     top: 140px;
   }
 }
-.jcarousel-skin-default .jcarousel-prev-horizontal::before,
-.jcarousel-skin-default .jcarousel-next-horizontal::before {
+.block .jcarousel-skin-default .jcarousel-prev-horizontal::before,
+.block .jcarousel-skin-default .jcarousel-next-horizontal::before {
   font-size: 40px;
   line-height: 60px;
 }
