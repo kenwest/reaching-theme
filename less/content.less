@@ -58,6 +58,7 @@ td + td, th + th {
 .page-header,
 .block-title,
 .views-field-title,
+.views-field-field-title,
 .block-block > h3,
 .view-content > h3 {
   padding: 0;
@@ -578,6 +579,7 @@ td + td, th + th {
 }
 
 .views-field-title,
+.views-field-field-title,
 .views-field-field-in-activity,
 .views-field-field-speakers,
 .views-field-field-date-text,
@@ -663,7 +665,8 @@ td + td, th + th {
     }
   }
 
-  .views-field-title {
+  .views-field-title,
+  .views-field-field-title {
     // Mobile:
       font-weight: bold;
     @media (min-width: @screen-sm-min) {
@@ -672,6 +675,7 @@ td + td, th + th {
   }
 
   .views-field-title,
+  .views-field-field-title,
   .views-field-field-subtitle {
     margin-left: 0;
   }
@@ -1016,7 +1020,8 @@ td + td, th + th {
 
 
     .views-field-field-highlight,
-    .views-field-title {
+    .views-field-title,
+    .views-field-field-title {
       // Mobile and tablet:
         font-size: @font-size-h5;
       @media (min-width: @screen-sm-min) {
@@ -1028,6 +1033,7 @@ td + td, th + th {
     }
 
     .views-field-title,
+    .views-field-field-title,
     .views-field-field-subtitle {
       margin: 0 5px 0 0;          /* Add a small margin to prevent subtitles running into each other */
     }
@@ -1116,7 +1122,8 @@ td + td, th + th {
       }
 
       .views-field-field-highlight,
-      .views-field-title {
+      .views-field-title,
+      .views-field-field-title {
         // Mobile and tablet:
           font-size: @font-size-h4;
         @media (min-width: @screen-sm-min) {
@@ -1240,7 +1247,8 @@ td + td, th + th {
       }
 
       .views-field-field-highlight,
-      .views-field-title {
+      .views-field-title,
+      .views-field-field-title {
         @media (min-width: @screen-md-min) {
           font-size: @font-size-h4;
         }

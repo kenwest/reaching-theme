@@ -8206,6 +8206,7 @@ th + th {
 .page-header,
 .block-title,
 .views-field-title,
+.views-field-field-title,
 .block-block > h3,
 .view-content > h3 {
   padding: 0;
@@ -8218,6 +8219,7 @@ th + th {
   .page-header,
   .block-title,
   .views-field-title,
+  .views-field-field-title,
   .block-block > h3,
   .view-content > h3 {
     font-size: 24px;
@@ -8226,6 +8228,7 @@ th + th {
 .page-header i,
 .block-title i,
 .views-field-title i,
+.views-field-field-title i,
 .block-block > h3 i,
 .view-content > h3 i {
   min-width: 60px;
@@ -8235,6 +8238,7 @@ th + th {
   .page-header i,
   .block-title i,
   .views-field-title i,
+  .views-field-field-title i,
   .block-block > h3 i,
   .view-content > h3 i {
     line-height: 40px;
@@ -9078,6 +9082,7 @@ a.view .more-link:focus {
   }
 }
 .views-field-title,
+.views-field-field-title,
 .views-field-field-in-activity,
 .views-field-field-speakers,
 .views-field-field-date-text,
@@ -9191,15 +9196,18 @@ a.views-field-field-order-url ul li a:focus {
 .thumbnail .views-field-field-image img {
   margin: auto;
 }
-.thumbnail .views-field-title {
+.thumbnail .views-field-title,
+.thumbnail .views-field-field-title {
   font-weight: bold;
 }
 @media (min-width: 768px) {
-  .thumbnail .views-field-title {
+  .thumbnail .views-field-title,
+  .thumbnail .views-field-field-title {
     font-weight: normal;
   }
 }
 .thumbnail .views-field-title,
+.thumbnail .views-field-field-title,
 .thumbnail .views-field-field-subtitle {
   margin-left: 0;
 }
@@ -9650,22 +9658,26 @@ a.block-system .field-name-field-topics .field-item:focus {
   }
 }
 .block .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
-.block .jcarousel-skin-default .jcarousel-item .views-field-title {
+.block .jcarousel-skin-default .jcarousel-item .views-field-title,
+.block .jcarousel-skin-default .jcarousel-item .views-field-field-title {
   font-size: 14px;
 }
 @media (min-width: 768px) {
   .block .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
-  .block .jcarousel-skin-default .jcarousel-item .views-field-title {
+  .block .jcarousel-skin-default .jcarousel-item .views-field-title,
+  .block .jcarousel-skin-default .jcarousel-item .views-field-field-title {
     font-size: 18px;
   }
 }
 @media (min-width: 992px) {
   .block .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
-  .block .jcarousel-skin-default .jcarousel-item .views-field-title {
+  .block .jcarousel-skin-default .jcarousel-item .views-field-title,
+  .block .jcarousel-skin-default .jcarousel-item .views-field-field-title {
     font-size: 24px;
   }
 }
 .block .jcarousel-skin-default .jcarousel-item .views-field-title,
+.block .jcarousel-skin-default .jcarousel-item .views-field-field-title,
 .block .jcarousel-skin-default .jcarousel-item .views-field-field-subtitle {
   margin: 0 5px 0 0;
   /* Add a small margin to prevent subtitles running into each other */
@@ -9750,12 +9762,14 @@ a.block-system .field-name-field-topics .field-item:focus {
   }
 }
 .views-1-row .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
-.views-1-row .jcarousel-skin-default .jcarousel-item .views-field-title {
+.views-1-row .jcarousel-skin-default .jcarousel-item .views-field-title,
+.views-1-row .jcarousel-skin-default .jcarousel-item .views-field-field-title {
   font-size: 18px;
 }
 @media (min-width: 768px) {
   .views-1-row .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
-  .views-1-row .jcarousel-skin-default .jcarousel-item .views-field-title {
+  .views-1-row .jcarousel-skin-default .jcarousel-item .views-field-title,
+  .views-1-row .jcarousel-skin-default .jcarousel-item .views-field-field-title {
     font-size: 24px;
   }
 }
@@ -9900,7 +9914,8 @@ a.block-system .field-name-field-topics .field-item:focus {
 }
 @media (min-width: 992px) {
   .views-3-rows .jcarousel-skin-default .jcarousel-item .views-field-field-highlight,
-  .views-3-rows .jcarousel-skin-default .jcarousel-item .views-field-title {
+  .views-3-rows .jcarousel-skin-default .jcarousel-item .views-field-title,
+  .views-3-rows .jcarousel-skin-default .jcarousel-item .views-field-field-title {
     font-size: 18px;
   }
 }
@@ -10084,20 +10099,24 @@ a.block-system .field-name-field-topics .field-item:focus {
 .region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-row + .views-row {
   padding-top: 0;
 }
-.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title {
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title,
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-field-title {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
 }
-.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title .field-content {
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title .field-content,
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-field-title .field-content {
   width: 100%;
 }
-.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title a {
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title a,
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-field-title a {
   display: block;
   color: white;
   padding: 5px 15px;
 }
-.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title a:hover {
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-title a:hover,
+.region-footer .view-reaching-city-city-to-activity .view-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content > .view-grouping > .view-grouping-content .views-field-field-title a:hover {
   color: #333333;
   background-color: white;
   text-decoration: none;
