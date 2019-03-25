@@ -72,7 +72,8 @@ td + td, th + th {
     font-size: @font-size-h3;
   }
 
-  i {
+  i,
+  svg.svg-inline--fa {
     min-width: @view-thumbnail-width;
     margin-right: floor(@grid-gutter-width / 2);
 
@@ -286,7 +287,8 @@ td + td, th + th {
       .block.block-views {
         .block-title,
         .block-panel > .view,
-        .block-footer > i {
+        .block-footer > i,
+        .block-footer > svg.svg-inline--fa {
           margin: 0;
           border-width: 0 1px;
           border-color: @block-border-colour;
@@ -301,7 +303,8 @@ td + td, th + th {
         }
 
         .block-panel:last-child > .view,
-        .block-footer > i {
+        .block-footer > i,
+        .block-footer > svg.svg-inline--fa {
           border-bottom-width: 1px;
           padding-bottom: (@line-height-computed - 1);
         }
@@ -322,7 +325,8 @@ td + td, th + th {
            */
           padding: 0 floor(@grid-gutter-width/2);
 
-          i {
+          i,
+          svg.svg-inline--fa {
             margin: 0;
             padding: 0;
           }
@@ -335,7 +339,8 @@ td + td, th + th {
            */
           padding: 0;
 
-          i {
+          i,
+          svg.svg-inline--fa {
             // The js rotates the I element when the .bounded .block is .open, so change the border side
             border-top-width: 1px;
             border-bottom-width: 0;
@@ -468,7 +473,8 @@ td + td, th + th {
       padding: 0 floor(@grid-gutter-width / 2);
       cursor: pointer;
 
-      i {
+      i,
+      svg.svg-inline--fa {
         display: block;
         width: 100%;
         height: @block-footer-height;
@@ -497,7 +503,8 @@ td + td, th + th {
         bottom: initial;
         padding: initial;
 
-        i {
+        i,
+        svg.svg-inline--fa {
           height: @block-footer-height + (2*@line-height-computed);
         }
       }
@@ -567,7 +574,8 @@ td + td, th + th {
   width: @view-thumbnail-width;
   height: @view-thumbnail-height;
 
-  i {
+  i,
+  svg.svg-inline--fa {
     min-width: @view-thumbnail-width;
     height: @view-thumbnail-height;
     font-size: (@view-thumbnail-height - @line-height-computed);
